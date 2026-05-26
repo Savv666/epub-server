@@ -910,7 +910,6 @@ function filterNovels() {
 
 function sortNovels(novels) {
   var sortFilter = document.getElementById("sortFilter");
-  var updateAllButton = document.getElementById("updateAllNovelsButton");
   var sortValue = sortFilter ? sortFilter.value : "updated_desc";
 
   return novels.slice().sort(function (a, b) {
@@ -1493,6 +1492,7 @@ function setupEvents() {
   var searchBox = document.getElementById("searchBox");
   var siteFilter = document.getElementById("siteFilter");
   var sortFilter = document.getElementById("sortFilter");
+  var updateAllButton = document.getElementById("updateAllNovelsButton");
 
   if (searchBox) {
     searchBox.addEventListener("input", renderLibrary);
