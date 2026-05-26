@@ -14,7 +14,7 @@ var siteSettings = {
   default_new_novel_batches: 1,
   default_continue_chapters: 100,
   default_continue_batches: 1,
-  latest_epubs_count: 10
+  latest_epubs_count: 3
 };
 
 var COVER_OVERRIDES_KEY = "coverOverrides";
@@ -1122,7 +1122,7 @@ function renderLatestEpubs() {
     return;
   }
 
-  var count = Number(getSetting("latest_epubs_count", 10)) || 10;
+  var count = Number(getSetting("latest_epubs_count", 3)) || 3;
   var entries = getAllDownloadEntries().slice(0, count);
 
   if (!entries.length) {
