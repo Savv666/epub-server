@@ -1330,14 +1330,7 @@ function showLibraryError(message) {
 }
 
 function loadSiteSettings() {
-  return fetch(SITE_SETTINGS_URL + "?v=" + Date.now())
-    .then(function (response) {
-      if (!response.ok) {
-        throw new Error("No site settings found");
-      }
-
-      return response.json();
-    })
+  return fetchJsonWithFallback([SITE_SETTINGS_URL, "./" + SITE_SETTINGS_URL, "docs/" + SITE_SETTINGS_URL])
     .then(function (data) {
       if (data && typeof data === "object" && !Array.isArray(data)) {
         siteSettings = Object.assign({}, siteSettings, data);
@@ -1359,14 +1352,7 @@ function loadLibrary() {
       + '</div>';
   }
 
-  fetch(LIBRARY_URL + "?v=" + Date.now())
-    .then(function (response) {
-      if (!response.ok) {
-        throw new Error("Failed to load library.json: " + response.status);
-      }
-
-      return response.json();
-    })
+  fetchJsonWithFallback([LIBRARY_URL, "./" + LIBRARY_URL, "docs/" + LIBRARY_URL])
     .then(function (data) {
       if (!Array.isArray(data)) {
         throw new Error("library.json must contain a JSON array.");
@@ -1389,20 +1375,54 @@ function loadSiteLastUpdated() {
     return;
   }
 
-  fetch("last-updated.txt?v=" + Date.now())
-    .then(function (response) {
-      if (!response.ok) {
-        throw new Error("No timestamp found");
-      }
-
-      return response.text();
-    })
+  fetchTextWithFallback(["last-updated.txt", "./last-updated.txt", "docs/last-updated.txt"])
     .then(function (text) {
       element.textContent = "Website last updated: " + text.trim();
     })
     .catch(function () {
       element.textContent = "Website last updated: not available yet";
     });
+}
+
+function fetchJsonWithFallback(urls) {
+  return fetchWithFallback(urls).then(function (response) {
+    return response.json();
+  });
+}
+
+function fetchTextWithFallback(urls) {
+  return fetchWithFallback(urls).then(function (response) {
+    return response.text();
+  });
+}
+
+function fetchWithFallback(urls) {
+  var queue = (Array.isArray(urls) ? urls : []).map(function (url) {
+    return safeText(url, "").trim();
+  }).filter(Boolean);
+  var cacheBuster = "?v=" + Date.now();
+
+  function attempt(index, lastError) {
+    if (index >= queue.length) {
+      throw lastError || new Error("All fetch attempts failed.");
+    }
+
+    var baseUrl = queue[index];
+    var url = baseUrl + (baseUrl.indexOf("?") === -1 ? cacheBuster : ("&v=" + Date.now()));
+
+    return fetch(url, { cache: "no-store" })
+      .then(function (response) {
+        if (!response.ok) {
+          throw new Error(baseUrl + " returned " + response.status);
+        }
+        return response;
+      })
+      .catch(function (error) {
+        return attempt(index + 1, error);
+      });
+  }
+
+  return attempt(0);
 }
 
 function setupAddNovelForm() {
