@@ -231,18 +231,36 @@ button {
 
 .latest-epubs {
   display: grid;
-  gap: 8px;
+  gap: 14px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.latest-epub-row {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 12px;
-  align-items: center;
+.latest-epub-card {
+  position: relative;
   border: 1px solid var(--border);
   border-radius: 14px;
   background: rgba(23, 17, 13, 0.94);
+  overflow: hidden;
+  min-height: 240px;
+}
+
+.latest-epub-cover {
+  width: 100%;
+  height: 100%;
+  min-height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.latest-epub-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 10px;
   padding: 12px;
+  background: linear-gradient(180deg, rgba(6, 5, 4, 0.12) 0%, rgba(6, 5, 4, 0.74) 60%, rgba(6, 5, 4, 0.93) 100%);
 }
 
 .latest-epub-info strong {
@@ -658,6 +676,10 @@ button {
     grid-template-columns: 1fr;
   }
 
+  .latest-epubs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .toolbar {
     grid-template-columns: 1fr;
   }
@@ -668,6 +690,10 @@ button {
 }
 
 @media (max-width: 680px) {
+  .latest-epubs {
+    grid-template-columns: 1fr;
+  }
+
   .hero {
     justify-content: flex-start;
   }
@@ -709,10 +735,6 @@ button {
   .download-actions,
   .latest-epub-actions {
     justify-content: flex-start;
-  }
-
-  .latest-epub-row {
-    grid-template-columns: 1fr;
   }
 
   .alternate-source-row {
