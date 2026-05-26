@@ -1,0 +1,16 @@
+{
+  "normal_chapters_per_epub": 10,
+  "normal_max_batches": 1,
+  "test_chapters_per_epub": 10,
+  "test_max_batches": 1,
+  "update_all_chapters_per_epub": 10,
+  "update_all_max_batches": 1,
+  "request_delay_seconds": 1.5,
+  "default_engine": "Auto",
+  "default_new_novel_chapters": 10,
+  "default_new_novel_batches": 1,
+  "default_continue_chapters": 100,
+  "default_continue_batches": 1,
+  "latest_epubs_count": 10,
+  "rss_item_limit": 50
+}
