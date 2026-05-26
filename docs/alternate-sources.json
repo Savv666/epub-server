@@ -1,0 +1,79 @@
+[
+  {
+    "name": "NovelFull",
+    "engine": "FanFicFare / Generic",
+    "type": "web novel",
+    "enabled": true,
+    "search_url": "https://www.google.com/search?q={query}+site%3Anovelfull.com"
+  },
+  {
+    "name": "NovelOnlineFull",
+    "engine": "FanFicFare / Generic",
+    "type": "web novel",
+    "enabled": true,
+    "search_url": "https://www.google.com/search?q={query}+site%3Anovelonlinefull.com"
+  },
+  {
+    "name": "NovelAll",
+    "engine": "FanFicFare / Generic",
+    "type": "web novel",
+    "enabled": true,
+    "search_url": "https://www.google.com/search?q={query}+site%3Anovelall.com"
+  },
+  {
+    "name": "RoyalRoad",
+    "engine": "FanFicFare / Generic",
+    "type": "fiction",
+    "enabled": true,
+    "search_url": "https://www.google.com/search?q={query}+site%3Aroyalroad.com"
+  },
+  {
+    "name": "ScribbleHub",
+    "engine": "FanFicFare / Generic",
+    "type": "fiction",
+    "enabled": true,
+    "search_url": "https://www.google.com/search?q={query}+site%3Ascribblehub.com"
+  },
+  {
+    "name": "Wattpad",
+    "engine": "FanFicFare",
+    "type": "fiction",
+    "enabled": true,
+    "search_url": "https://www.google.com/search?q={query}+site%3Awattpad.com"
+  },
+  {
+    "name": "Archive of Our Own",
+    "engine": "FanFicFare",
+    "type": "fanfiction",
+    "enabled": true,
+    "search_url": "https://www.google.com/search?q={query}+site%3Aarchiveofourown.org"
+  },
+  {
+    "name": "FanFiction.Net",
+    "engine": "FanFicFare",
+    "type": "fanfiction",
+    "enabled": true,
+    "search_url": "https://www.google.com/search?q={query}+site%3Afanfiction.net"
+  },
+  {
+    "name": "FictionPress",
+    "engine": "FanFicFare",
+    "type": "fiction",
+    "enabled": true,
+    "search_url": "https://www.google.com/search?q={query}+site%3Afictionpress.com"
+  },
+  {
+    "name": "StoriesOnline",
+    "engine": "FanFicFare",
+    "type": "fiction",
+    "enabled": true,
+    "search_url": "https://www.google.com/search?q={query}+site%3Astoriesonline.net"
+  },
+  {
+    "name": "Literotica",
+    "engine": "FanFicFare",
+    "type": "fiction",
+    "enabled": false,
+    "search_url": "https://www.google.com/search?q={query}+site%3Aliterotica.com"
+  }
+]
