@@ -60,7 +60,7 @@ def get_site_url():
         owner, repo = repository.split('/', 1)
         return f'https://{owner.lower()}.github.io/{repo}/'
 
-    return 'https://savv666.github.io/wuxia-epub-server/'
+    return 'https://savv666.github.io/Epub-Server/'
 
 
 def parse_date(value):
@@ -182,7 +182,7 @@ def make_item_page(site_url, item):
     <p><strong>Direct EPUB URL:</strong></p>
     <div class="url-box">{epub_url}</div>
     <p><a class="secondary-link" href="{links_url}">Open all EPUB links</a></p>
-    <p><a class="secondary-link" href="{library_url}">Open Wuxia EPUB Library</a></p>
+    <p><a class="secondary-link" href="{library_url}">Open Epub Library</a></p>
   </main>
 </body>
 </html>
@@ -272,12 +272,12 @@ def build_rss(site_url, items, rss_item_limit):
     })
 
     channel = ET.SubElement(rss, 'channel')
-    add_text(channel, 'title', 'Wuxia EPUB Library')
+    add_text(channel, 'title', 'Epub Library')
     add_text(channel, 'link', site_url)
-    add_text(channel, 'description', 'Latest EPUB batches generated from the Wuxia EPUB Library.')
+    add_text(channel, 'description', 'Latest EPUB batches generated from the Epub Library.')
     add_text(channel, 'language', 'en-gb')
     add_text(channel, 'lastBuildDate', email.utils.format_datetime(datetime.now(timezone.utc)))
-    add_text(channel, 'generator', 'wuxia-epub-server')
+    add_text(channel, 'generator', 'epub-server')
     add_text(channel, 'ttl', '5')
 
     atom_link = ET.SubElement(channel, '{http://www.w3.org/2005/Atom}link')
