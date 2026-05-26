@@ -1,0 +1,380 @@
+name: EPUB Manager
+
+on:
+  issues:
+    types:
+      - opened
+
+permissions:
+  contents: write
+  issues: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: epub-manager-main
+  cancel-in-progress: false
+
+jobs:
+  build-epub:
+    if: startsWith(github.event.issue.title, '[EPUB MANAGER]')
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - name: Sync with latest main
+        run: |
+          git fetch origin main
+          git checkout main
+          git pull --rebase origin main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Extract issue request
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: |
+          python - <<'PY'
+          import os
+          import re
+          import json
+          from pathlib import Path
+
+          title = os.environ.get("ISSUE_TITLE", "")
+          body = os.environ.get("ISSUE_BODY", "")
+
+          def get_field(label):
+              pattern = rf"### {re.escape(label)}\s*\n\s*(.*?)\s*(?=\n### |\Z)"
+              match = re.search(pattern, body, re.S)
+              if not match:
+                  return ""
+              value = match.group(1).strip()
+              value = value.replace("_No response_", "").strip()
+              return value
+
+          def safe_int(value, default):
+              try:
+                  return int(str(value).strip())
+              except Exception:
+                  return default
+
+          def clean_title_delete_name(issue_title):
+              name = issue_title.strip()
+              name = re.sub(r"^\[EPUB MANAGER\]\s*", "", name, flags=re.I)
+              name = re.sub(r"^Delete\s+", "", name, flags=re.I)
+              return name.strip()
+
+          def clean_title_update_cover_name(issue_title):
+              name = issue_title.strip()
+              name = re.sub(r"^\[EPUB MANAGER\]\s*", "", name, flags=re.I)
+              name = re.sub(r"^Update Cover\s+", "", name, flags=re.I)
+              name = re.sub(r"^Cover\s+", "", name, flags=re.I)
+              return name.strip()
+
+          def find_first_image_url(text):
+              match = re.search(
+                  r"https?://[^\s<>)\"']+\.(?:jpg|jpeg|png|webp)(?:\?[^\s<>)\"']*)?",
+                  text,
+                  re.I
+              )
+              if match:
+                  return match.group(0).strip()
+              return ""
+
+          original_mode = get_field("Request mode")
+          mode = original_mode
+          engine = get_field("Engine") or "Auto"
+          lower_title = title.lower()
+
+          if lower_title.startswith("[epub manager] delete epub"):
+              mode = "Delete EPUB"
+          elif lower_title.startswith("[epub manager] rebuild"):
+              mode = "Rebuild EPUB"
+          elif lower_title.startswith("[epub manager] delete"):
+              mode = "Delete Novel"
+          elif lower_title.startswith("[epub manager] update cover") or lower_title.startswith("[epub manager] cover"):
+              mode = "Update Cover Image"
+
+          if not mode:
+              if lower_title.startswith("[epub manager] delete epub"):
+                  mode = "Delete EPUB"
+              elif lower_title.startswith("[epub manager] rebuild"):
+                  mode = "Rebuild EPUB"
+              elif lower_title.startswith("[epub manager] delete"):
+                  mode = "Delete Novel"
+              elif lower_title.startswith("[epub manager] update cover") or lower_title.startswith("[epub manager] cover"):
+                  mode = "Update Cover Image"
+              elif lower_title.startswith("[epub manager] continue"):
+                  mode = "New Novel"
+              else:
+                  mode = "New Novel"
+
+          override_chapters = safe_int(get_field("Chapters to download"), 10)
+          override_batches = safe_int(get_field("Batch size"), 1)
+
+          items = []
+          delete_data = {}
+          delete_epub_data = {}
+          update_cover_data = {}
+
+          if mode == "New Novel":
+              for i in range(1, 11):
+                  url = get_field(f"Novel {i} Link")
+                  novel_title = get_field(f"Novel {i} Name")
+                  start_value = get_field(f"Novel {i} Starting Chapter")
+
+                  if not url and not novel_title:
+                      continue
+
+                  if not url or not novel_title:
+                      print(f"Skipping Novel {i}: missing link or name.")
+                      continue
+
+                  start_chapter = safe_int(start_value, 1)
+
+                  items.append({
+                      "start_url": url,
+                      "novel_title": novel_title,
+                      "start_chapter": start_chapter
+                  })
+
+              if not items:
+                  raise SystemExit("No valid novel entries found for New Novel mode.")
+
+          elif mode == "Rebuild EPUB":
+              rebuild_title = get_field("Rebuild Novel Name")
+              rebuild_url = get_field("Rebuild Source URL")
+              rebuild_start = safe_int(get_field("Rebuild Starting Chapter"), 1)
+              rebuild_end = safe_int(get_field("Rebuild Ending Chapter"), rebuild_start)
+
+              if not rebuild_title:
+                  raise SystemExit("Rebuild EPUB mode requires Rebuild Novel Name.")
+              if not rebuild_url:
+                  raise SystemExit("Rebuild EPUB mode requires Rebuild Source URL.")
+
+              if rebuild_end < rebuild_start:
+                  rebuild_end = rebuild_start
+
+              override_chapters = max(1, rebuild_end - rebuild_start + 1)
+              override_batches = 1
+              mode = "New Novel"
+              items.append({
+                  "start_url": rebuild_url,
+                  "novel_title": rebuild_title,
+                  "start_chapter": rebuild_start
+              })
+
+          elif mode == "Update All Existing Novels":
+              items = []
+
+          elif mode == "Update Cover Image":
+              update_cover_novel_name = get_field("Update Cover Novel Name")
+              update_cover_image_url = get_field("Update Cover Image URL")
+
+              if not update_cover_novel_name:
+                  update_cover_novel_name = clean_title_update_cover_name(title)
+
+              if not update_cover_image_url:
+                  update_cover_image_url = find_first_image_url(body)
+
+              if not update_cover_novel_name:
+                  raise SystemExit("Update Cover Image mode requires a novel name.")
+
+              if not update_cover_image_url:
+                  raise SystemExit("Update Cover Image mode requires an image URL.")
+
+              update_cover_data = {
+                  "novel_name": update_cover_novel_name,
+                  "image_url": update_cover_image_url
+              }
+
+          elif mode == "Delete Novel":
+              delete_novel_name = get_field("Delete Novel Name")
+              delete_files = get_field("Delete EPUB files") or "Yes"
+
+              if not delete_novel_name:
+                  delete_novel_name = clean_title_delete_name(title)
+
+              if not delete_novel_name:
+                  raise SystemExit("Delete Novel mode requires Delete Novel Name.")
+
+              delete_data = {
+                  "novel_name": delete_novel_name,
+                  "delete_files": delete_files
+              }
+
+          elif mode == "Delete EPUB":
+              delete_epub_novel_name = get_field("Delete EPUB Novel Name")
+              delete_epub_url = get_field("Delete EPUB URL")
+              delete_epub_start = safe_int(get_field("Delete EPUB Start Chapter"), 0)
+              delete_epub_end = safe_int(get_field("Delete EPUB End Chapter"), 0)
+
+              if not delete_epub_novel_name:
+                  raise SystemExit("Delete EPUB mode requires Delete EPUB Novel Name.")
+
+              delete_epub_data = {
+                  "novel_name": delete_epub_novel_name,
+                  "epub_url": delete_epub_url,
+                  "start_chapter": delete_epub_start,
+                  "end_chapter": delete_epub_end
+              }
+
+          else:
+              raise SystemExit(f"Unknown Request mode: {mode}")
+
+          request = {
+              "mode": mode,
+              "original_mode": original_mode or mode,
+              "engine": engine,
+              "overrides": {
+                  "chapters_per_epub": override_chapters,
+                  "max_batches": override_batches
+              },
+              "items": items,
+              "delete": delete_data,
+              "delete_epub": delete_epub_data,
+              "update_cover": update_cover_data
+          }
+
+          Path("data").mkdir(exist_ok=True)
+          Path("data/epub_manager_request.json").write_text(
+              json.dumps(request, indent=2, ensure_ascii=False),
+              encoding="utf-8"
+          )
+
+          print(json.dumps(request, indent=2, ensure_ascii=False))
+          PY
+
+      - name: Run EPUB Manager
+        id: run_manager
+        continue-on-error: true
+        run: |
+          MODE=$(python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path("data/epub_manager_request.json").read_text(encoding="utf-8"))
+          print(data.get("mode", ""))
+          PY
+          )
+
+          if [ "$MODE" = "Delete Novel" ]; then
+            python scripts/delete_novel.py
+          elif [ "$MODE" = "Delete EPUB" ]; then
+            python scripts/delete_epub.py
+          elif [ "$MODE" = "Update Cover Image" ]; then
+            python scripts/update_cover.py
+          else
+            python scripts/engine_router.py
+          fi
+
+      - name: Generate RSS feed
+        id: generate_rss
+        continue-on-error: true
+        run: python scripts/generate_rss.py
+
+      - name: Validate library
+        id: validate_library
+        continue-on-error: true
+        run: python scripts/validate_library.py
+
+      - name: Commit EPUB library and RSS updates
+        id: commit_docs
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          date -u +"%Y-%m-%dT%H:%M:%SZ" > docs/last-updated.txt
+
+          git add docs/
+
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No docs changes to commit"
+          else
+            git commit -m "Process EPUB Manager issue #${{ github.event.issue.number }}"
+            git push origin main
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Configure GitHub Pages
+        if: always()
+        uses: actions/configure-pages@v5
+
+      - name: Upload website files
+        if: always()
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - name: Deploy GitHub Pages
+        if: always()
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Comment on issue
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -f data/epub_manager_results.json ]; then
+            echo "EPUB Manager request finished. Results:" > issue-comment.txt
+            echo "" >> issue-comment.txt
+            cat data/epub_manager_results.json >> issue-comment.txt
+            echo "" >> issue-comment.txt
+
+            if [ "${{ steps.run_manager.outcome }}" = "failure" ]; then
+              echo "EPUB Manager reported a failure. This usually means the selected source could not be downloaded, was blocked, no readable chapters were found, or the cover image URL could not be downloaded." >> issue-comment.txt
+            else
+              echo "EPUB Manager completed." >> issue-comment.txt
+            fi
+
+            if [ "${{ steps.generate_rss.outcome }}" = "failure" ]; then
+              echo "" >> issue-comment.txt
+              echo "RSS feed generation reported a problem. See the GitHub Actions log for details." >> issue-comment.txt
+            else
+              echo "" >> issue-comment.txt
+              echo "RSS feed was regenerated: https://savv666.github.io/wuxia-epub-server/feed.xml" >> issue-comment.txt
+              echo "Direct EPUB links page was regenerated: https://savv666.github.io/wuxia-epub-server/epub-links.html" >> issue-comment.txt
+            fi
+
+            if [ "${{ steps.validate_library.outcome }}" = "failure" ]; then
+              echo "" >> issue-comment.txt
+              echo "Library validation reported a problem. See the GitHub Actions log for details." >> issue-comment.txt
+            fi
+
+            echo "" >> issue-comment.txt
+            echo "Website deploy step was run." >> issue-comment.txt
+
+            gh issue comment ${{ github.event.issue.number }} --body-file issue-comment.txt
+          else
+            gh issue comment ${{ github.event.issue.number }} --body "EPUB Manager failed before creating a result file. Website deploy step was still attempted."
+          fi
+
+      - name: Close issue
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue close ${{ github.event.issue.number }} --comment "Request finished. Check the result comment and GitHub Actions log."
+
+      - name: Fail workflow if EPUB Manager failed
+        if: steps.run_manager.outcome == 'failure' || steps.generate_rss.outcome == 'failure' || steps.validate_library.outcome == 'failure'
+        run: |
+          echo "EPUB Manager, RSS generation, or library validation failed. See logs and issue comment."
+          exit 1
