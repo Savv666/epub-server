@@ -1136,9 +1136,12 @@ function renderLatestEpubs() {
     var url = escapeHtml(entry.url);
     var absoluteUrl = escapeHtml(absoluteSiteUrl(entry.url));
     var created = escapeHtml(formatDate(entry.created_at));
+    var coverSrc = escapeHtml(getCoverSrc(entry.novel));
 
     return ''
-      + '<article class="latest-epub-row" data-latest-index="' + index + '">'
+      + '<article class="latest-epub-card" data-latest-index="' + index + '">'
+      + '<img class="latest-epub-cover" src="' + coverSrc + '" alt="' + title + ' cover" loading="lazy" />'
+      + '<div class="latest-epub-overlay">'
       + '<div class="latest-epub-info">'
       + '<strong>' + title + '</strong>'
       + '<span>' + label + ' · ' + created + '</span>'
@@ -1146,6 +1149,7 @@ function renderLatestEpubs() {
       + '<div class="latest-epub-actions">'
       + '<a class="mini-button gold-mini-button" href="' + url + '" download>Download</a>'
       + '<button class="mini-button copy-epub-link-button" type="button" data-url="' + absoluteUrl + '">Copy Link</button>'
+      + '</div>'
       + '</div>'
       + '</article>';
   }).join("");
