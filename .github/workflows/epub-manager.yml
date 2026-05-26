@@ -4,12 +4,11 @@ on:
   issues:
     types:
       - opened
+  workflow_dispatch:
 
 permissions:
   contents: write
   issues: write
-  pages: write
-  id-token: write
 
 concurrency:
   group: epub-manager-main
@@ -17,12 +16,8 @@ concurrency:
 
 jobs:
   build-epub:
-    if: startsWith(github.event.issue.title, '[EPUB MANAGER]')
+    if: github.event_name == 'workflow_dispatch' || startsWith(github.event.issue.title, '[EPUB MANAGER]')
     runs-on: ubuntu-latest
-
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout repo
@@ -43,9 +38,13 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          fi
 
       - name: Extract issue request
+        if: github.event_name == 'issues'
         env:
           ISSUE_TITLE: ${{ github.event.issue.title }}
           ISSUE_BODY: ${{ github.event.issue.body }}
@@ -97,26 +96,17 @@ jobs:
                   return match.group(0).strip()
               return ""
 
-          original_mode = get_field("Request mode")
-          mode = original_mode
+          mode = get_field("Request mode")
           engine = get_field("Engine") or "Auto"
           lower_title = title.lower()
 
-          if lower_title.startswith("[epub manager] delete epub"):
-              mode = "Delete EPUB"
-          elif lower_title.startswith("[epub manager] rebuild"):
-              mode = "Rebuild EPUB"
-          elif lower_title.startswith("[epub manager] delete"):
+          if lower_title.startswith("[epub manager] delete"):
               mode = "Delete Novel"
           elif lower_title.startswith("[epub manager] update cover") or lower_title.startswith("[epub manager] cover"):
               mode = "Update Cover Image"
 
           if not mode:
-              if lower_title.startswith("[epub manager] delete epub"):
-                  mode = "Delete EPUB"
-              elif lower_title.startswith("[epub manager] rebuild"):
-                  mode = "Rebuild EPUB"
-              elif lower_title.startswith("[epub manager] delete"):
+              if lower_title.startswith("[epub manager] delete"):
                   mode = "Delete Novel"
               elif lower_title.startswith("[epub manager] update cover") or lower_title.startswith("[epub manager] cover"):
                   mode = "Update Cover Image"
@@ -130,7 +120,6 @@ jobs:
 
           items = []
           delete_data = {}
-          delete_epub_data = {}
           update_cover_data = {}
 
           if mode == "New Novel":
@@ -156,29 +145,6 @@ jobs:
 
               if not items:
                   raise SystemExit("No valid novel entries found for New Novel mode.")
-
-          elif mode == "Rebuild EPUB":
-              rebuild_title = get_field("Rebuild Novel Name")
-              rebuild_url = get_field("Rebuild Source URL")
-              rebuild_start = safe_int(get_field("Rebuild Starting Chapter"), 1)
-              rebuild_end = safe_int(get_field("Rebuild Ending Chapter"), rebuild_start)
-
-              if not rebuild_title:
-                  raise SystemExit("Rebuild EPUB mode requires Rebuild Novel Name.")
-              if not rebuild_url:
-                  raise SystemExit("Rebuild EPUB mode requires Rebuild Source URL.")
-
-              if rebuild_end < rebuild_start:
-                  rebuild_end = rebuild_start
-
-              override_chapters = max(1, rebuild_end - rebuild_start + 1)
-              override_batches = 1
-              mode = "New Novel"
-              items.append({
-                  "start_url": rebuild_url,
-                  "novel_title": rebuild_title,
-                  "start_chapter": rebuild_start
-              })
 
           elif mode == "Update All Existing Novels":
               items = []
@@ -219,28 +185,11 @@ jobs:
                   "delete_files": delete_files
               }
 
-          elif mode == "Delete EPUB":
-              delete_epub_novel_name = get_field("Delete EPUB Novel Name")
-              delete_epub_url = get_field("Delete EPUB URL")
-              delete_epub_start = safe_int(get_field("Delete EPUB Start Chapter"), 0)
-              delete_epub_end = safe_int(get_field("Delete EPUB End Chapter"), 0)
-
-              if not delete_epub_novel_name:
-                  raise SystemExit("Delete EPUB mode requires Delete EPUB Novel Name.")
-
-              delete_epub_data = {
-                  "novel_name": delete_epub_novel_name,
-                  "epub_url": delete_epub_url,
-                  "start_chapter": delete_epub_start,
-                  "end_chapter": delete_epub_end
-              }
-
           else:
               raise SystemExit(f"Unknown Request mode: {mode}")
 
           request = {
               "mode": mode,
-              "original_mode": original_mode or mode,
               "engine": engine,
               "overrides": {
                   "chapters_per_epub": override_chapters,
@@ -248,7 +197,6 @@ jobs:
               },
               "items": items,
               "delete": delete_data,
-              "delete_epub": delete_epub_data,
               "update_cover": update_cover_data
           }
 
@@ -260,6 +208,24 @@ jobs:
 
           print(json.dumps(request, indent=2, ensure_ascii=False))
           PY
+
+      - name: Create manual test request
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          mkdir -p data
+          cat > data/epub_manager_request.json <<'JSON'
+          {
+            "mode": "Update All Existing Novels",
+            "engine": "Auto",
+            "overrides": {
+              "chapters_per_epub": 10,
+              "max_batches": 1
+            },
+            "items": [],
+            "delete": {},
+            "update_cover": {}
+          }
+          JSON
 
       - name: Run EPUB Manager
         id: run_manager
@@ -275,25 +241,35 @@ jobs:
 
           if [ "$MODE" = "Delete Novel" ]; then
             python scripts/delete_novel.py
-          elif [ "$MODE" = "Delete EPUB" ]; then
-            python scripts/delete_epub.py
           elif [ "$MODE" = "Update Cover Image" ]; then
             python scripts/update_cover.py
+          elif [ "$MODE" = "Delete EPUB" ]; then
+            python scripts/delete_epub.py
           else
             python scripts/engine_router.py
           fi
 
-      - name: Generate RSS feed
+      - name: Generate RSS and direct EPUB links
         id: generate_rss
         continue-on-error: true
-        run: python scripts/generate_rss.py
+        run: |
+          if [ -f scripts/generate_rss.py ]; then
+            python scripts/generate_rss.py
+          else
+            echo "scripts/generate_rss.py not found. Skipping."
+          fi
 
       - name: Validate library
         id: validate_library
         continue-on-error: true
-        run: python scripts/validate_library.py
+        run: |
+          if [ -f scripts/validate_library.py ]; then
+            python scripts/validate_library.py
+          else
+            echo "scripts/validate_library.py not found. Skipping."
+          fi
 
-      - name: Commit EPUB library and RSS updates
+      - name: Commit EPUB and website updates
         id: commit_docs
         run: |
           git config user.name "github-actions"
@@ -301,34 +277,19 @@ jobs:
 
           date -u +"%Y-%m-%dT%H:%M:%SZ" > docs/last-updated.txt
 
-          git add docs/
+          git add docs/ data/settings.json || true
 
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "No docs changes to commit"
+            echo "No changes to commit"
           else
-            git commit -m "Process EPUB Manager issue #${{ github.event.issue.number }}"
+            git commit -m "Process EPUB Manager request"
             git push origin main
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Configure GitHub Pages
-        if: always()
-        uses: actions/configure-pages@v5
-
-      - name: Upload website files
-        if: always()
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs
-
-      - name: Deploy GitHub Pages
-        if: always()
-        id: deployment
-        uses: actions/deploy-pages@v4
-
       - name: Comment on issue
-        if: always()
+        if: always() && github.event_name == 'issues'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -339,35 +300,31 @@ jobs:
             echo "" >> issue-comment.txt
 
             if [ "${{ steps.run_manager.outcome }}" = "failure" ]; then
-              echo "EPUB Manager reported a failure. This usually means the selected source could not be downloaded, was blocked, no readable chapters were found, or the cover image URL could not be downloaded." >> issue-comment.txt
+              echo "EPUB Manager reported a failure. Check the GitHub Actions log." >> issue-comment.txt
             else
               echo "EPUB Manager completed." >> issue-comment.txt
             fi
 
             if [ "${{ steps.generate_rss.outcome }}" = "failure" ]; then
               echo "" >> issue-comment.txt
-              echo "RSS feed generation reported a problem. See the GitHub Actions log for details." >> issue-comment.txt
-            else
-              echo "" >> issue-comment.txt
-              echo "RSS feed was regenerated: https://savv666.github.io/wuxia-epub-server/feed.xml" >> issue-comment.txt
-              echo "Direct EPUB links page was regenerated: https://savv666.github.io/wuxia-epub-server/epub-links.html" >> issue-comment.txt
+              echo "RSS/direct links generation reported a problem." >> issue-comment.txt
             fi
 
             if [ "${{ steps.validate_library.outcome }}" = "failure" ]; then
               echo "" >> issue-comment.txt
-              echo "Library validation reported a problem. See the GitHub Actions log for details." >> issue-comment.txt
+              echo "Library validation reported a problem." >> issue-comment.txt
             fi
 
             echo "" >> issue-comment.txt
-            echo "Website deploy step was run." >> issue-comment.txt
+            echo "GitHub Pages should update automatically from main/docs." >> issue-comment.txt
 
             gh issue comment ${{ github.event.issue.number }} --body-file issue-comment.txt
           else
-            gh issue comment ${{ github.event.issue.number }} --body "EPUB Manager failed before creating a result file. Website deploy step was still attempted."
+            gh issue comment ${{ github.event.issue.number }} --body "EPUB Manager failed before creating a result file. Check the GitHub Actions log."
           fi
 
       - name: Close issue
-        if: always()
+        if: always() && github.event_name == 'issues'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -376,5 +333,5 @@ jobs:
       - name: Fail workflow if EPUB Manager failed
         if: steps.run_manager.outcome == 'failure' || steps.generate_rss.outcome == 'failure' || steps.validate_library.outcome == 'failure'
         run: |
-          echo "EPUB Manager, RSS generation, or library validation failed. See logs and issue comment."
+          echo "EPUB Manager, RSS generation, or validation failed."
           exit 1
