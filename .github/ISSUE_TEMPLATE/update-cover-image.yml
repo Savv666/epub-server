@@ -1,0 +1,54 @@
+name: Update Cover Image
+description: Replace a novel cover image in docs/covers and docs/library.json
+title: "[EPUB MANAGER] Update Cover "
+labels:
+  - epub-manager
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to update one novel's cover image.
+
+        What this does:
+        - Downloads the image from the URL you provide.
+        - Stores it in `docs/covers/`.
+        - Updates the matching cover entry in `docs/library.json`.
+
+        If this form was opened from the website, the issue title and body may already contain the novel name and image URL.
+
+  - type: dropdown
+    id: request_mode
+    attributes:
+      label: Request mode
+      description: Fixed for this template.
+      options:
+        - Update Cover Image
+    validations:
+      required: true
+
+  - type: input
+    id: update_cover_novel_name
+    attributes:
+      label: Update Cover Novel Name
+      description: Optional. If left blank, the workflow will use the novel name from the issue title or prefilled issue body.
+      placeholder: Against the Gods
+    validations:
+      required: false
+
+  - type: input
+    id: update_cover_image_url
+    attributes:
+      label: Update Cover Image URL
+      description: Paste the direct image URL ending in jpg, jpeg, png, or webp. If left blank, the workflow will use the prefilled issue body if available.
+      placeholder: https://example.com/cover.jpg
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        Notes:
+        - Use a direct image link, not a webpage URL.
+        - Keep the novel name exactly the same as the existing library entry.
+        - If you opened this from the website, you may only need to click Create.

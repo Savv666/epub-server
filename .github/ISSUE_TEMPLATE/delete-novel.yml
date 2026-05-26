@@ -1,0 +1,45 @@
+name: Delete Novel
+description: Remove a novel entry and optionally delete its EPUB files
+title: "[EPUB MANAGER] Delete "
+labels:
+  - epub-manager
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to delete a novel from the website library.
+
+        The novel name can be entered below, or it can be taken from the issue title.
+        Example title:
+        [EPUB MANAGER] Delete Against the Gods
+
+  - type: dropdown
+    id: request_mode
+    attributes:
+      label: Request mode
+      description: Fixed for this template.
+      options:
+        - Delete Novel
+    validations:
+      required: true
+
+  - type: input
+    id: delete-novel-name
+    attributes:
+      label: Delete Novel Name
+      description: Optional. If left blank, the workflow will use the novel name from the issue title.
+      placeholder: Exact novel title from the website
+    validations:
+      required: false
+
+  - type: dropdown
+    id: delete_files
+    attributes:
+      label: Delete EPUB files
+      description: Choose Yes to delete the EPUB files and unused cover from the repo.
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true

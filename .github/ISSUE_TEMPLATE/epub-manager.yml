@@ -1,0 +1,222 @@
+name: EPUB Manager
+description: Build or update EPUB library entries
+title: "[EPUB MANAGER] "
+labels:
+  - epub-manager
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for EPUB requests.
+
+        Request modes:
+
+        New Novel:
+        - Add one or more novels.
+        - Fill Novel 1, Novel 2, etc.
+        - Use Chapters to download and Batch size to control the build.
+
+        Update All Existing Novels:
+        - Leave novel boxes blank.
+        - The system updates all novels from where they stopped.
+
+  - type: dropdown
+    id: request_mode
+    attributes:
+      label: Request mode
+      description: Choose what you want to do.
+      options:
+        - New Novel
+        - Update All Existing Novels
+    validations:
+      required: true
+
+  - type: dropdown
+    id: engine
+    attributes:
+      label: Engine
+      description: Choose which downloader engine to use. Auto is the default.
+      options:
+        - Auto
+        - Generic Scraper
+        - Pattern Scraper
+        - FreeWebNovel
+        - FanFicFare
+    validations:
+      required: true
+
+  - type: dropdown
+    id: override_chapters_per_epub
+    attributes:
+      label: Chapters to download
+      description: Number of chapters to put into each EPUB file.
+      options:
+        - "10"
+        - "1"
+        - "20"
+        - "50"
+        - "100"
+        - "200"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: override_max_batches
+    attributes:
+      label: Batch size
+      description: Number of EPUB batches to create.
+      options:
+        - "1"
+        - "2"
+        - "5"
+        - "10"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Novel 1
+
+        For **Update All Existing Novels**, leave these boxes blank.
+
+  - type: input
+    id: novel_1_link
+    attributes:
+      label: Novel 1 Link
+      placeholder: https://www.wuxiaworld.com/novel/nine-star-hegemon/nshba-chapter-1
+    validations:
+      required: false
+
+  - type: input
+    id: novel_1_name
+    attributes:
+      label: Novel 1 Name
+      placeholder: Nine Star Hegemon Body Art
+    validations:
+      required: false
+
+  - type: input
+    id: novel_1_start
+    attributes:
+      label: Novel 1 Starting Chapter
+      placeholder: "1"
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Novel 2
+
+  - type: input
+    id: novel_2_link
+    attributes:
+      label: Novel 2 Link
+      placeholder: Optional
+    validations:
+      required: false
+
+  - type: input
+    id: novel_2_name
+    attributes:
+      label: Novel 2 Name
+      placeholder: Optional
+    validations:
+      required: false
+
+  - type: input
+    id: novel_2_start
+    attributes:
+      label: Novel 2 Starting Chapter
+      placeholder: "1"
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Novel 3
+
+  - type: input
+    id: novel_3_link
+    attributes:
+      label: Novel 3 Link
+      placeholder: Optional
+    validations:
+      required: false
+
+  - type: input
+    id: novel_3_name
+    attributes:
+      label: Novel 3 Name
+      placeholder: Optional
+    validations:
+      required: false
+
+  - type: input
+    id: novel_3_start
+    attributes:
+      label: Novel 3 Starting Chapter
+      placeholder: "1"
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Novel 4
+
+  - type: input
+    id: novel_4_link
+    attributes:
+      label: Novel 4 Link
+      placeholder: Optional
+    validations:
+      required: false
+
+  - type: input
+    id: novel_4_name
+    attributes:
+      label: Novel 4 Name
+      placeholder: Optional
+    validations:
+      required: false
+
+  - type: input
+    id: novel_4_start
+    attributes:
+      label: Novel 4 Starting Chapter
+      placeholder: "1"
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Novel 5
+
+  - type: input
+    id: novel_5_link
+    attributes:
+      label: Novel 5 Link
+      placeholder: Optional
+    validations:
+      required: false
+
+  - type: input
+    id: novel_5_name
+    attributes:
+      label: Novel 5 Name
+      placeholder: Optional
+    validations:
+      required: false
+
+  - type: input
+    id: novel_5_start
+    attributes:
+      label: Novel 5 Starting Chapter
+      placeholder: "1"
+    validations:
+      required: false
