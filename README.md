@@ -1,4 +1,4 @@
-# Wuxia EPUB Server
+# Epub Server
 
 A GitHub-based EPUB library system for creating downloadable EPUB files from online web novel chapter links.
 
@@ -632,7 +632,7 @@ https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/
 Example:
 
 ```text
-https://sav666.github.io/wuxia-epub-server/
+https://savv666.github.io/Epub-Server/
 ```
 
 After a successful EPUB build, open the website and refresh with:

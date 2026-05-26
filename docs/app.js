@@ -96,7 +96,7 @@ function getGitHubRepoUrl() {
     return "https://github.com/" + owner + "/" + repo;
   }
 
-  return "https://github.com/Sav666/wuxia-epub-server";
+  return "https://github.com/Sav666/Epub-Server";
 }
 
 function safeText(value, fallback) {
