@@ -5,6 +5,8 @@ on:
     types:
       - opened
   workflow_dispatch:
+  schedule:
+    - cron: "15 2 * * *"
 
 permissions:
   contents: write
@@ -16,7 +18,7 @@ concurrency:
 
 jobs:
   build-epub:
-    if: github.event_name == 'workflow_dispatch' || startsWith(github.event.issue.title, '[EPUB MANAGER]')
+    if: github.event_name == 'workflow_dispatch' || github.event_name == 'schedule' || github.event_name == 'schedule' || startsWith(github.event.issue.title, '[EPUB MANAGER]')
     runs-on: ubuntu-latest
 
     steps:
@@ -210,7 +212,7 @@ jobs:
           PY
 
       - name: Create manual test request
-        if: github.event_name == 'workflow_dispatch'
+        if: github.event_name == 'workflow_dispatch' || github.event_name == 'schedule'
         run: |
           mkdir -p data
           cat > data/epub_manager_request.json <<'JSON'
@@ -227,6 +229,11 @@ jobs:
           }
           JSON
 
+
+      - name: Queue request
+        run: |
+          python -c "from scripts.queue_manager import enqueue_from_request,pop_next_job_to_request; enqueue_from_request('scheduled' if "${{ github.event_name }}"=='schedule' else 'workflow'); pop_next_job_to_request()"
+
       - name: Run EPUB Manager
         id: run_manager
         continue-on-error: true
@@ -239,7 +246,9 @@ jobs:
           PY
           )
 
-          if [ "$MODE" = "Delete Novel" ]; then
+          if [ "$MODE" = "Combine EPUB Chunks" ]; then
+            python scripts/combine_epubs.py
+          elif [ "$MODE" = "Delete Novel" ]; then
             python scripts/delete_novel.py
           elif [ "$MODE" = "Update Cover Image" ]; then
             python scripts/update_cover.py

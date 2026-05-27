@@ -29,6 +29,10 @@ body:
       options:
         - New Novel
         - Update All Existing Novels
+        - Combine EPUB Chunks
+        - Delete Novel
+        - Update Cover Image
+        - Delete EPUB
     validations:
       required: true
 
@@ -218,5 +222,39 @@ body:
     attributes:
       label: Novel 5 Starting Chapter
       placeholder: "1"
+    validations:
+      required: false
+
+  - type: input
+    id: combine_novel_name
+    attributes:
+      label: Combine Novel Name
+      placeholder: Martial Peak
+    validations:
+      required: false
+
+  - type: input
+    id: combine_start
+    attributes:
+      label: Combine Start Chapter
+      placeholder: "1"
+    validations:
+      required: false
+
+  - type: input
+    id: combine_end
+    attributes:
+      label: Combine End Chapter
+      placeholder: "200"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: combine_overwrite
+    attributes:
+      label: Overwrite Combined File
+      options:
+        - "No"
+        - "Yes"
     validations:
       required: false
