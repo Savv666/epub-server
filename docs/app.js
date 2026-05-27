@@ -405,6 +405,17 @@ function buildNewNovelIssueBody(novelLink, novelName, startingChapter, chaptersT
   ].join("\n");
 }
 
+function buildScheduleUpdateIssueUrl(startAtIso, repeatDays) {
+  var issueTitle = "[EPUB MANAGER] Schedule Update All";
+  var issueBody = [
+    "### Request mode", "", "Schedule Update All", "",
+    "### Start at (UTC)", "", startAtIso, "",
+    "### Repeat days", "", String(repeatDays || 1), "",
+    "### Engine", "", getSetting("default_engine", "Auto")
+  ].join("\n");
+  return buildIssueUrl(issueTitle, issueBody, "epub-manager.yml");
+}
+
 function buildUpdateAllIssueUrl() {
   var issueTitle = "[EPUB MANAGER] Update All Existing Novels";
 
@@ -795,6 +806,7 @@ function buildNovelCard(novel, index) {
     + buildContinueButton(novel)
     + '<a class="button button-secondary" href="' + sourceUrl + '" target="_blank" rel="noopener noreferrer">Source</a>'
     + '<button class="button button-secondary alternate-source-button" type="button">Alternate sources</button>'
+    + '<a class="button button-secondary" href="novel.html?slug=' + encodeURIComponent(safeText(novel && novel.slug, '')) + '">Details</a>'
     + '<button class="button button-secondary chapters-toggle" type="button">Chapters Available</button>'
     + '</div>'
     + '<div class="downloads-panel is-hidden">'
@@ -1532,17 +1544,16 @@ function setupEvents() {
 
   if (updateAllButton) {
     updateAllButton.addEventListener("click", function () {
-      var confirmed = window.confirm(
-        "Create a GitHub issue to update all existing novels?\n\n" +
-        "Default engine: " + getSetting("default_engine", "Auto") + "\n" +
-        "Chapters: " + getSetting("default_continue_chapters", 100)
-      );
-
-      if (!confirmed) {
-        return;
-      }
-
-      openIssueComposer(buildUpdateAllIssueUrl());
+      var date = window.prompt("Start date (UTC) YYYY-MM-DD", new Date().toISOString().slice(0,10));
+      if (date === null) { return; }
+      var time = window.prompt("Start time (UTC) HH:MM", "02:00");
+      if (time === null) { return; }
+      var repeat = window.prompt("Repeat every days: 1, 7, 14, 21, 30", "1");
+      if (repeat === null) { return; }
+      var repeatDays = Number(repeat);
+      if ([1,7,14,21,30].indexOf(repeatDays) === -1) { repeatDays = 1; }
+      var startAt = (String(date).trim() || new Date().toISOString().slice(0,10)) + "T" + ((String(time).trim() || "02:00") + ":00Z");
+      openIssueComposer(buildScheduleUpdateIssueUrl(startAt, repeatDays));
     });
   }
 

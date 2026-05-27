@@ -5,6 +5,8 @@ on:
     types:
       - opened
   workflow_dispatch:
+  schedule:
+    - cron: "15 2 * * *"
 
 permissions:
   contents: write
@@ -16,7 +18,7 @@ concurrency:
 
 jobs:
   build-epub:
-    if: github.event_name == 'workflow_dispatch' || startsWith(github.event.issue.title, '[EPUB MANAGER]')
+    if: github.event_name == 'workflow_dispatch' || github.event_name == 'schedule' || startsWith(github.event.issue.title, '[EPUB MANAGER]')
     runs-on: ubuntu-latest
 
     steps:
@@ -104,6 +106,10 @@ jobs:
               mode = "Delete Novel"
           elif lower_title.startswith("[epub manager] update cover") or lower_title.startswith("[epub manager] cover"):
               mode = "Update Cover Image"
+          elif "combine epub chunks" in lower_title:
+              mode = "Combine EPUB Chunks"
+          elif "schedule update all" in lower_title:
+              mode = "Schedule Update All"
 
           if not mode:
               if lower_title.startswith("[epub manager] delete"):
@@ -121,6 +127,8 @@ jobs:
           items = []
           delete_data = {}
           update_cover_data = {}
+          combine_data = {}
+          schedule_data = {}
 
           if mode == "New Novel":
               for i in range(1, 11):
@@ -170,6 +178,22 @@ jobs:
                   "image_url": update_cover_image_url
               }
 
+          elif mode == "Combine EPUB Chunks":
+              name = get_field("Novel name") or get_field("Combine Novel Name")
+              slug = get_field("Novel slug")
+              files = get_field("Selected EPUB files")
+              start = safe_int(get_field("Start chapter") or get_field("Combine Start Chapter"), 1)
+              end = safe_int(get_field("End chapter") or get_field("Combine End Chapter"), start)
+              overwrite = (get_field("Overwrite combined file") or get_field("Overwrite Combined File") or "No")
+              file_list = [line.strip() for line in files.splitlines() if line.strip()]
+              combine_data = {"novel_name": name, "novel_slug": slug, "files": file_list, "start": start, "end": end, "overwrite": overwrite}
+
+          elif mode == "Schedule Update All":
+              schedule_data = {
+                  "start_at": get_field("Start at (UTC)") or get_field("Start at") or "",
+                  "repeat_days": safe_int(get_field("Repeat days"), 1)
+              }
+
           elif mode == "Delete Novel":
               delete_novel_name = get_field("Delete Novel Name")
               delete_files = get_field("Delete EPUB files") or "Yes"
@@ -197,7 +221,9 @@ jobs:
               },
               "items": items,
               "delete": delete_data,
-              "update_cover": update_cover_data
+              "update_cover": update_cover_data,
+              "combine": combine_data,
+              "schedule": schedule_data
           }
 
           Path("data").mkdir(exist_ok=True)
@@ -207,6 +233,22 @@ jobs:
           )
 
           print(json.dumps(request, indent=2, ensure_ascii=False))
+          PY
+
+
+      - name: Cron schedule guard and due sync
+        if: github.event_name == 'schedule'
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from scripts.queue_manager import sync_due_schedules_to_queue
+          settings = json.loads(Path('data/settings.json').read_text(encoding='utf-8')) if Path('data/settings.json').exists() else {}
+          if not settings.get('scheduled_update_enabled', True):
+              print('scheduled_update_enabled=false; exiting safely')
+              raise SystemExit(0)
+          due = sync_due_schedules_to_queue()
+          print('due schedules synced:', due)
           PY
 
       - name: Create manual test request
@@ -227,6 +269,15 @@ jobs:
           }
           JSON
 
+
+      - name: Queue request
+        run: |
+          python - <<'PY'
+from scripts.queue_manager import enqueue_from_request, pop_next_job_to_request
+enqueue_from_request('scheduled' if '${{ github.event_name }}' == 'schedule' else 'workflow')
+pop_next_job_to_request()
+PY
+
       - name: Run EPUB Manager
         id: run_manager
         continue-on-error: true
@@ -239,12 +290,29 @@ jobs:
           PY
           )
 
-          if [ "$MODE" = "Delete Novel" ]; then
+          if [ "$MODE" = "combine_epubs" ]; then
+            python scripts/combine_epubs.py
+          elif [ "$MODE" = "delete_novel" ] || [ "$MODE" = "Delete Novel" ]; then
             python scripts/delete_novel.py
-          elif [ "$MODE" = "Update Cover Image" ]; then
+          elif [ "$MODE" = "update_cover" ] || [ "$MODE" = "Update Cover Image" ]; then
             python scripts/update_cover.py
-          elif [ "$MODE" = "Delete EPUB" ]; then
+          elif [ "$MODE" = "delete_epub" ] || [ "$MODE" = "Delete EPUB" ]; then
             python scripts/delete_epub.py
+          elif [ "$MODE" = "scheduled_update_all" ]; then
+            python - <<'PY'
+import json
+from pathlib import Path
+from scripts.queue_manager import add_schedule
+req=json.loads(Path('data/epub_manager_request.json').read_text(encoding='utf-8'))
+s=req.get('schedule',{})
+start=s.get('start_at') or req.get('schedule',{}).get('start_at')
+repeat=int(s.get('repeat_days',1) or 1)
+if start:
+    add_schedule(start, repeat)
+    print('Schedule added:', start, repeat)
+else:
+    print('No start_at provided; skipping schedule create')
+PY
           else
             python scripts/engine_router.py
           fi

@@ -1,0 +1,49 @@
+name: Combine EPUB Chunks
+description: Combine selected EPUB chunks into a larger EPUB.
+title: "[EPUB MANAGER] Combine EPUB Chunks"
+labels:
+  - epub-manager
+body:
+  - type: input
+    id: novel_name
+    attributes:
+      label: Novel name
+    validations:
+      required: true
+  - type: input
+    id: novel_slug
+    attributes:
+      label: Novel slug
+    validations:
+      required: false
+  - type: textarea
+    id: selected_files
+    attributes:
+      label: Selected EPUB files
+      description: One file per line
+      placeholder: |
+        martial-peak_ch001-100.epub
+        martial-peak_ch101-200.epub
+    validations:
+      required: true
+  - type: input
+    id: start_chapter
+    attributes:
+      label: Start chapter
+      placeholder: "1"
+  - type: input
+    id: end_chapter
+    attributes:
+      label: End chapter
+      placeholder: "200"
+  - type: dropdown
+    id: overwrite
+    attributes:
+      label: Overwrite combined file
+      options: ["No", "Yes"]
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
