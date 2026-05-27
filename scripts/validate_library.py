@@ -5,6 +5,7 @@ from pathlib import Path
 ROOT = Path('.')
 DOCS_DIR = ROOT / 'docs'
 LIBRARY_FILE = DOCS_DIR / 'library.json'
+QUEUE_FILE = ROOT / 'data' / 'queue.json'
 
 
 def fail(message, errors):
@@ -54,6 +55,25 @@ def validate():
     errors = []
     warnings = []
     library = load_library(errors)
+
+    if not QUEUE_FILE.exists():
+        warn("data/queue.json does not exist.", warnings)
+    else:
+        try:
+            q = json.loads(QUEUE_FILE.read_text(encoding='utf-8'))
+            if isinstance(q, list):
+                valid = {'queued','running','success','partial','failed','skipped'}
+                for i, job in enumerate(q, start=1):
+                    if job.get('status') not in valid:
+                        warn(f'queue job #{i} has invalid status: {job.get("status")}', warnings)
+                    if job.get('status') in {'queued','running'}:
+                        for f in ['id','mode','status','created_at']:
+                            if not job.get(f):
+                                warn(f'queue job #{i} missing {f}.', warnings)
+            else:
+                warn('data/queue.json should be a list.', warnings)
+        except Exception as exc:
+            warn(f'Could not parse data/queue.json: {exc}', warnings)
 
     titles = {}
     slugs = {}
