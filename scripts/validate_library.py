@@ -114,7 +114,7 @@ def validate():
             range_key = (start, end)
 
             if range_key in seen_ranges:
-                fail(f'{title}: duplicate chapter range {start}-{end}.', errors)
+                warn(f'{title}: duplicate chapter range {start}-{end}.', warnings)
             else:
                 seen_ranges.add(range_key)
 
@@ -129,6 +129,9 @@ def validate():
             else:
                 fail(f'{title}: download #{dindex} has no URL.', errors)
 
+            if download.get('combined') and not isinstance(download.get('combined_from'), list):
+                warn(f'{title}: combined EPUB {url} missing combined_from list.', warnings)
+
             ranges.append((start, end))
 
         ranges.sort()
@@ -136,10 +139,7 @@ def validate():
             prev_start, prev_end = previous
             cur_start, cur_end = current
             if cur_start <= prev_end:
-                fail(
-                    f'{title}: overlapping chapter ranges {prev_start}-{prev_end} and {cur_start}-{cur_end}.',
-                    errors
-                )
+                warn(f"{title}: overlapping chapter ranges {prev_start}-{prev_end} and {cur_start}-{cur_end}.", warnings)
 
         declared_last = novel.get('last_chapter_number') or novel.get('chapters') or 0
         try:

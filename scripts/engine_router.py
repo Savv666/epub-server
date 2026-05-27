@@ -237,7 +237,10 @@ def run_order(request_data, item, order):
 
         if is_success(result):
             result['engine_order'] = ' → '.join(order)
+            result.setdefault('attempted_engines',[]).append(engine_name)
             return result
+
+        result.setdefault('attempted_engines',[]).append(engine_name)
 
         failures.append({
             'engine': engine_name,
@@ -261,6 +264,22 @@ def run_order(request_data, item, order):
     }
 
 
+
+
+def detect_engine_plan(url):
+    u=(url or '').lower()
+    domain=u.split('/')[2] if '://' in u else u
+    domain=domain.replace('www.','')
+    if 'freewebnovel.com' in domain:
+        return {'site_name':'FreeWebNovel','domain':domain,'preferred_order':['FreeWebNovel','Pattern Scraper','Generic Scraper'],'reason':'Known FreeWebNovel domain'}
+    if 'fanfiction.net' in domain or 'archiveofourown.org' in domain:
+        return {'site_name':'FanFic','domain':domain,'preferred_order':['FanFicFare','Generic Scraper'],'reason':'Known FanFicFare-first domain'}
+    if 'royalroad.com' in domain:
+        return {'site_name':'RoyalRoad','domain':domain,'preferred_order':['Generic Scraper','Pattern Scraper','FanFicFare'],'reason':'Known generic-first domain'}
+    if any(k in domain for k in ['wuxiaworld.com','novelbin','novelfull','lightnovelworld','readnovelfull']):
+        return {'site_name':domain,'domain':domain,'preferred_order':['Generic Scraper','Pattern Scraper','FanFicFare'],'reason':'Known generic/pattern domain'}
+    return {'site_name':domain or 'Unknown','domain':domain,'preferred_order':['Pattern Scraper','Generic Scraper','FanFicFare'],'reason':'Unknown domain fallback order'}
+
 def choose_order(request_data, item):
     engine = get_engine(request_data)
     start_url = item.get('start_url', '')
@@ -281,13 +300,9 @@ def choose_order(request_data, item):
             return ['generic', 'pattern', 'freewebnovel', 'fanficfare']
         return ['generic', 'fanficfare']
 
-    if is_freewebnovel(start_url):
-        return ['pattern', 'freewebnovel', 'generic', 'fanficfare']
-
-    if should_use_generic_first(start_url):
-        return ['generic', 'pattern', 'fanficfare']
-
-    return ['fanficfare', 'generic', 'pattern']
+    plan=detect_engine_plan(start_url)
+    mapn={'Generic Scraper':'generic','Pattern Scraper':'pattern','FreeWebNovel':'freewebnovel','FanFicFare':'fanficfare'}
+    return [mapn.get(x,'generic') for x in plan['preferred_order']]
 
 
 def process_new_novel(request_data):

@@ -760,3 +760,13 @@ After uploading, confirm:
 ## Final note
 
 This stable v2 version is intended to be a simple GitHub-hosted EPUB library manager. Keep changes small, test one feature at a time, and keep a backup zip before making major edits.
+
+## v2.1 features
+
+- Scheduled daily update checks (safe-limited via `data/settings.json`).
+- Queue processing (`data/queue.json`, `scripts/queue_manager.py`).
+- Novel details page (`docs/novel.html`).
+- Better Auto engine routing with domain plan fallbacks.
+- Combine EPUB chunks (`scripts/combine_epubs.py`).
+- Duplicate/overlap-aware validation improvements.
+- Metadata/title cleanup helper module (`scripts/epub_metadata.py`).

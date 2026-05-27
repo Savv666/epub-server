@@ -12,5 +12,8 @@
   "default_continue_chapters": 100,
   "default_continue_batches": 1,
   "latest_epubs_count": 10,
-  "rss_item_limit": 50
+  "rss_item_limit": 50,
+  "scheduled_update_enabled": true,
+  "scheduled_update_chapters_per_epub": 10,
+  "scheduled_update_max_batches": 1
 }

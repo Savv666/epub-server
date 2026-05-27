@@ -795,6 +795,7 @@ function buildNovelCard(novel, index) {
     + buildContinueButton(novel)
     + '<a class="button button-secondary" href="' + sourceUrl + '" target="_blank" rel="noopener noreferrer">Source</a>'
     + '<button class="button button-secondary alternate-source-button" type="button">Alternate sources</button>'
+    + '<a class="button button-secondary" href="novel.html?slug=' + encodeURIComponent(safeText(novel && novel.slug, '')) + '">Details</a>'
     + '<button class="button button-secondary chapters-toggle" type="button">Chapters Available</button>'
     + '</div>'
     + '<div class="downloads-panel is-hidden">'
