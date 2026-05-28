@@ -64,8 +64,8 @@ def get_site_url():
     repository = clean_text(os.environ.get('GITHUB_REPOSITORY'))
     if repository and '/' in repository:
         owner, repo = repository.split('/', 1)
-        return f'https://{owner.lower()}.github.io/{repo}/'
-    return 'https://savv666.github.io/Epub-Server/'
+        return f'https://{owner.lower()}.github.io/{repo.lower()}/'
+    return 'https://savv666.github.io/epub-server/'
 
 
 def mime_for_cover(path):

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
-  <id>https://savv666.github.io/Epub-Server/opds/novels/martial-peak.xml</id>
+  <id>https://savv666.github.io/epub-server/opds/novels/martial-peak.xml</id>
   <title>Martial Peak</title>
-  <updated>2026-05-28T08:07:34.613584Z</updated>
-  <link rel="self" href="https://savv666.github.io/Epub-Server/opds/novels/martial-peak.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
-  <link rel="start" href="https://savv666.github.io/Epub-Server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
+  <updated>2026-05-28T08:51:49.683644Z</updated>
+  <link rel="self" href="https://savv666.github.io/epub-server/opds/novels/martial-peak.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
+  <link rel="start" href="https://savv666.github.io/epub-server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
   <entry>
     <title>Martial Peak — Chapters 1-10</title>
     <id>urn:epub-server:35437175ea3e32dd029a8c168e2b272f05e16e93</id>
@@ -13,8 +13,8 @@
       <name>NovelFull</name>
     </author>
     <content>Martial Peak (Built)</content>
-    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/Epub-Server/epubs/martial-peak_ch001-010.epub" type="application/epub+zip"/>
-    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/Epub-Server/covers/martial-peak.webp" type="image/webp"/>
-    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/Epub-Server/covers/martial-peak.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/martial-peak_ch001-010.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/martial-peak.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/martial-peak.webp" type="image/webp"/>
   </entry>
 </feed>

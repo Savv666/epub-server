@@ -96,7 +96,7 @@ function getGitHubRepoUrl() {
     return "https://github.com/" + owner + "/" + repo;
   }
 
-  return "https://github.com/Sav666/Epub-Server";
+  return "https://github.com/Sav666/epub-server";
 }
 
 function safeText(value, fallback) {

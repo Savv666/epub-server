@@ -58,9 +58,9 @@ def get_site_url():
 
     if repository and '/' in repository:
         owner, repo = repository.split('/', 1)
-        return f'https://{owner.lower()}.github.io/{repo}/'
+        return f'https://{owner.lower()}.github.io/{repo.lower()}/'
 
-    return 'https://savv666.github.io/Epub-Server/'
+    return 'https://savv666.github.io/epub-server/'
 
 
 def parse_date(value):
