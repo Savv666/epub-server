@@ -826,89 +826,6 @@ function buildContinueIssueUrl(novel, engine, sourceUrl) {
   return buildIssueUrl(issueTitle, issueBody);
 }
 
-function buildContinueButton(novel) {
-  var nextUrl = safeText(novel && novel.next_url, "").trim();
-  var nextChapter = getNextChapterNumber(novel);
-  var title = escapeHtml((novel && novel.title) || "Untitled Novel");
-
-  if (!nextUrl) {
-    return ''
-      + '<button class="button button-warning continue-update-button" type="button" data-title="' + title + '">'
-      + 'Repair / Continue'
-      + '</button>';
-  }
-
-  return ''
-    + '<button class="button button-primary continue-update-button" type="button" data-title="' + title + '">'
-    + 'Continue from Chapter ' + nextChapter
-    + '</button>';
-}
-
-function buildLockedNotice(novel) {
-  var lockedChapter = novel && novel.locked_chapter_number;
-  var lockedUrl = safeText(novel && novel.locked_chapter_url, "").trim();
-  var lockedReason = safeText(novel && novel.locked_reason, "").trim();
-
-  if (!lockedChapter && !lockedReason) {
-    return "";
-  }
-
-  var openLink = "";
-
-  if (lockedUrl) {
-    openLink = ''
-      + '<a class="locked-link" href="' + escapeHtml(lockedUrl) + '" target="_blank" rel="noopener noreferrer">'
-      + 'Open locked chapter'
-      + '</a>';
-  }
-
-  return ''
-    + '<div class="locked-notice">'
-    + '<strong>⚠ Locked / partial chapter detected</strong>'
-    + '<span>Chapter: ' + escapeHtml(lockedChapter || "Unknown") + '</span>'
-    + '<span>Reason: ' + escapeHtml(lockedReason || "Source requires login/unlock") + '</span>'
-    + '<div class="locked-actions">'
-    + openLink
-    + '<button class="locked-link alternate-source-button" type="button">Alternate sources</button>'
-    + '</div>'
-    + '</div>';
-}
-
-function buildDownloadList(novel) {
-  var downloads = getDownloads(novel);
-
-  if (downloads.length === 0) {
-    return '<p class="empty-downloads">No EPUB downloads available yet.</p>';
-  }
-
-  var rows = downloads.map(function (download, downloadIndex) {
-    var labelText = download.label || ("Chapters " + download.start + "-" + download.end);
-    var label = escapeHtml(labelText);
-    var relativeUrl = safeText(download.url || "#", "#");
-    var url = escapeHtml(relativeUrl);
-    var absoluteUrl = escapeHtml(absoluteSiteUrl(relativeUrl));
-    var mode = escapeHtml(download.mode || "");
-    var createdAt = download.created_at ? escapeHtml(formatDate(download.created_at)) : "";
-    var meta = mode + (mode && createdAt ? " · " : "") + createdAt;
-
-    return ''
-      + '<div class="download-row enhanced-download-row" data-download-index="' + downloadIndex + '">'
-      + '<a class="download-main" href="' + url + '" download>'
-      + '<span class="download-label">' + label + '</span>'
-      + '<span class="download-meta">' + meta + '</span>'
-      + '<span class="download-action">Download</span>'
-      + '</a>'
-      + '<div class="download-actions">'
-      + '<button class="mini-button copy-epub-link-button" type="button" data-url="' + absoluteUrl + '">Copy</button>'
-      + '<button class="mini-button danger-mini-button rebuild-epub-button" type="button" data-download-index="' + downloadIndex + '">Rebuild</button>'
-      + '<button class="mini-button danger-mini-button delete-epub-button" type="button" data-download-index="' + downloadIndex + '">Delete</button>'
-      + '</div>'
-      + '</div>';
-  }).join("");
-
-  return '<div class="download-list">' + rows + '</div>';
-}
-
 function buildNovelCard(novel, index) {
   var title = escapeHtml((novel && novel.title) || "Untitled Novel");
   var site = escapeHtml((novel && novel.site) || "Unknown");
@@ -944,30 +861,9 @@ function buildNovelCard(novel, index) {
     + '<div class="action-row card-detail-actions">'
     + '<a class="button button-primary" href="' + detailUrl + '">Details</a>'
     + '</div>'
+    + '<button class="delete-novel-button" type="button" data-title="' + title + '" aria-label="Delete ' + title + '">×</button>'
     + '</div>'
     + '</article>';
-}
-
-function toggleDownloads(button) {
-  var card = button.closest(".novel-card");
-
-  if (!card) {
-    return;
-  }
-
-  var panel = card.querySelector(".downloads-panel");
-
-  if (!panel) {
-    return;
-  }
-
-  panel.classList.toggle("is-hidden");
-
-  if (panel.classList.contains("is-hidden")) {
-    button.textContent = "Chapters Available";
-  } else {
-    button.textContent = "Hide Chapters";
-  }
 }
 
 function renderSiteFilter(novels) {
@@ -1342,14 +1238,6 @@ function renderLibrary() {
     return buildNovelCard(novel, index);
   }).join("");
 
-  var chapterButtons = library.querySelectorAll(".chapters-toggle");
-
-  chapterButtons.forEach(function (button) {
-    button.addEventListener("click", function () {
-      toggleDownloads(button);
-    });
-  });
-
   var coverImages = library.querySelectorAll(".novel-cover");
 
   coverImages.forEach(function (image) {
@@ -1363,51 +1251,6 @@ function renderLibrary() {
       }
 
       openUpdateCoverPrompt(novel, image.getAttribute("src") || "");
-    });
-  });
-
-  var alternateButtons = library.querySelectorAll(".alternate-source-button");
-
-  alternateButtons.forEach(function (button) {
-    button.addEventListener("click", function () {
-      var card = button.closest(".novel-card");
-      var novel = findNovelFromCard(card, filteredNovels);
-
-      if (!novel) {
-        alert("Could not find this novel in the current page data.");
-        return;
-      }
-
-      openAlternateSources(novel);
-    });
-  });
-
-  var continueButtons = library.querySelectorAll(".continue-update-button");
-
-  continueButtons.forEach(function (button) {
-    button.addEventListener("click", function () {
-      var card = button.closest(".novel-card");
-      var novel = findNovelFromCard(card, filteredNovels);
-
-      if (!novel) {
-        alert("Could not find this novel in the current page data.");
-        return;
-      }
-
-      var engine = askEngineForContinue();
-
-      if (!engine) {
-        return;
-      }
-
-      var sourceUrl = askSourceForContinue(novel);
-
-      if (!sourceUrl) {
-        return;
-      }
-
-      var issueUrl = buildContinueIssueUrl(novel, engine, sourceUrl);
-      openIssueComposer(issueUrl);
     });
   });
 
