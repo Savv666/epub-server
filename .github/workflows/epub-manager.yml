@@ -323,6 +323,16 @@ PY
             echo "scripts/generate_rss.py not found. Skipping."
           fi
 
+      - name: Generate OPDS catalogue
+        id: generate_opds
+        continue-on-error: true
+        run: |
+          if [ -f scripts/generate_opds.py ]; then
+            python scripts/generate_opds.py
+          else
+            echo "scripts/generate_opds.py not found. Skipping."
+          fi
+
       - name: Validate library
         id: validate_library
         continue-on-error: true
@@ -374,6 +384,11 @@ PY
               echo "RSS/direct links generation reported a problem." >> issue-comment.txt
             fi
 
+            if [ "${{ steps.generate_opds.outcome }}" = "failure" ]; then
+              echo "" >> issue-comment.txt
+              echo "OPDS catalogue generation reported a problem." >> issue-comment.txt
+            fi
+
             if [ "${{ steps.validate_library.outcome }}" = "failure" ]; then
               echo "" >> issue-comment.txt
               echo "Library validation reported a problem." >> issue-comment.txt
@@ -395,7 +410,7 @@ PY
           gh issue close ${{ github.event.issue.number }} --comment "Request finished. Check the result comment and GitHub Actions log."
 
       - name: Fail workflow if EPUB Manager failed
-        if: steps.run_manager.outcome == 'failure' || steps.generate_rss.outcome == 'failure' || steps.validate_library.outcome == 'failure'
+        if: steps.run_manager.outcome == 'failure' || steps.generate_rss.outcome == 'failure' || steps.generate_opds.outcome == 'failure' || steps.validate_library.outcome == 'failure'
         run: |
-          echo "EPUB Manager, RSS generation, or validation failed."
+          echo "EPUB Manager, RSS generation, OPDS generation, or validation failed."
           exit 1

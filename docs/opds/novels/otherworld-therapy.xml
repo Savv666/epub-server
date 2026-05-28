@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
+  <id>https://savv666.github.io/Epub-Server/opds/novels/otherworld-therapy.xml</id>
+  <title>Otherworld Therapy</title>
+  <updated>2026-05-28T08:07:34.616332Z</updated>
+  <link rel="self" href="https://savv666.github.io/Epub-Server/opds/novels/otherworld-therapy.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
+  <link rel="start" href="https://savv666.github.io/Epub-Server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
+  <entry>
+    <title>Otherworld Therapy — Chapters 1-10</title>
+    <id>urn:epub-server:a3911fe429c1c3b59adfef3536664e141f3d4aed</id>
+    <updated>2026-05-20T10:20:50.166690Z</updated>
+    <author>
+      <name>RoyalRoad</name>
+    </author>
+    <content>Otherworld Therapy (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/Epub-Server/epubs/otherworld-therapy_ch001-010.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/Epub-Server/covers/otherworld-therapy.png" type="image/png"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/Epub-Server/covers/otherworld-therapy.png" type="image/png"/>
+  </entry>
+</feed>

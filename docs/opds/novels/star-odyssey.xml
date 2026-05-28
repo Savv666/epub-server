@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
+  <id>https://savv666.github.io/Epub-Server/opds/novels/star-odyssey.xml</id>
+  <title>Star Odyssey</title>
+  <updated>2026-05-28T08:07:34.619578Z</updated>
+  <link rel="self" href="https://savv666.github.io/Epub-Server/opds/novels/star-odyssey.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
+  <link rel="start" href="https://savv666.github.io/Epub-Server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
+  <entry>
+    <title>Star Odyssey — Chapters 1-10</title>
+    <id>urn:epub-server:ac0de896075be4f0951ca060c89bc0c8eaddacb4</id>
+    <updated>2026-05-20T09:52:05.450377Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Star Odyssey (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/Epub-Server/epubs/star-odyssey_ch001-010.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/Epub-Server/covers/star-odyssey.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/Epub-Server/covers/star-odyssey.webp" type="image/webp"/>
+  </entry>
+</feed>

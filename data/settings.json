@@ -15,5 +15,7 @@
   "rss_item_limit": 50,
   "scheduled_update_enabled": true,
   "scheduled_update_chapters_per_epub": 10,
-  "scheduled_update_max_batches": 1
+  "scheduled_update_max_batches": 1,
+  "opds_latest_limit": 50,
+  "opds_all_limit": 0
 }

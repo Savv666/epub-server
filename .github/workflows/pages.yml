@@ -20,8 +20,18 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate OPDS catalogue
+        run: python scripts/generate_opds.py
+
       - name: Check website files
         run: |
           test -f docs/index.html
           test -f docs/library.json
           echo "Website files exist. GitHub Pages deploys from main/docs."
+          test -f docs/opds.xml
+          test -f docs/opds/latest.xml

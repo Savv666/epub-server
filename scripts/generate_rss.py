@@ -314,6 +314,7 @@ def build_rss(site_url, items, rss_item_limit):
 def build_epub_links_page(site_url, items):
     library_url = absolute_url(site_url, 'index.html')
     feed_url = absolute_url(site_url, 'feed.xml')
+    opds_url = absolute_url(site_url, 'opds.xml')
     rows = []
 
     for index, item in enumerate(items):
@@ -377,6 +378,7 @@ def build_epub_links_page(site_url, items):
     <div class="top-links">
       <a class="button secondary" href="{html.escape(library_url)}">Open Library</a>
       <a class="button secondary" href="{html.escape(feed_url)}">Open RSS Feed</a>
+      <a class="button secondary" href="{html.escape(opds_url)}">Open OPDS Catalogue</a>
     </div>
   </header>
   <main class="grid">
