@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>https://savv666.github.io/epub-server/opds/latest.xml</id>
   <title>Latest EPUBs</title>
-  <updated>2026-05-28T14:44:40.280989Z</updated>
+  <updated>2026-05-28T15:00:11.048370Z</updated>
   <link rel="self" href="https://savv666.github.io/epub-server/opds/latest.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   <link rel="start" href="https://savv666.github.io/epub-server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
   <entry>
@@ -150,18 +150,6 @@
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/emperors-domination.webp" type="image/webp"/>
   </entry>
   <entry>
-    <title>An Alchemist's Path to Eternity — Chapters 51-61</title>
-    <id>urn:epub-server:9114542ebbadd08578819d3754709188614c0aff</id>
-    <updated>2026-05-21T21:47:33Z</updated>
-    <author>
-      <name>RoyalRoad</name>
-    </author>
-    <content>An Alchemist's Path to Eternity (Partial / locked)</content>
-    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/an-alchemist-s-path-to-eternity_ch051-150_fanficfare.epub" type="application/epub+zip"/>
-    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/an-alchemist-s-path-to-eternity.webp" type="image/webp"/>
-    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/an-alchemist-s-path-to-eternity.webp" type="image/webp"/>
-  </entry>
-  <entry>
     <title>Emperor’s Domination — Chapters 11-57</title>
     <id>urn:epub-server:22f1344849cbc20d82611c8435a5e51578241ad8</id>
     <updated>2026-05-21T13:02:17.108021Z</updated>
@@ -172,18 +160,6 @@
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/emperors-domination_ch011-057.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/emperors-domination.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/emperors-domination.webp" type="image/webp"/>
-  </entry>
-  <entry>
-    <title>An Alchemist's Path to Eternity — Chapters 11-50</title>
-    <id>urn:epub-server:57a1a6fc4e46e460ee6ffb85a3e95560758cd2b5</id>
-    <updated>2026-05-21T12:51:30.249792Z</updated>
-    <author>
-      <name>RoyalRoad</name>
-    </author>
-    <content>An Alchemist's Path to Eternity (Partial / locked)</content>
-    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/an-alchemist-s-path-to-eternity_ch011-050.epub" type="application/epub+zip"/>
-    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/an-alchemist-s-path-to-eternity.webp" type="image/webp"/>
-    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/an-alchemist-s-path-to-eternity.webp" type="image/webp"/>
   </entry>
   <entry>
     <title>Xianxia Senior Brother of a Heavens Favoured — Chapters 1-10</title>
@@ -292,18 +268,6 @@
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/star-odyssey_ch001-010.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/star-odyssey.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/star-odyssey.webp" type="image/webp"/>
-  </entry>
-  <entry>
-    <title>An Alchemist's Path to Eternity — Chapters 1-10</title>
-    <id>urn:epub-server:35625a081c89c211ef6db7f351ce972cd78ed916</id>
-    <updated>2026-05-20T09:50:47.485704Z</updated>
-    <author>
-      <name>RoyalRoad</name>
-    </author>
-    <content>An Alchemist's Path to Eternity (Partial / locked)</content>
-    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/an-alchemist-s-path-to-eternity_ch001-010.epub" type="application/epub+zip"/>
-    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/an-alchemist-s-path-to-eternity.webp" type="image/webp"/>
-    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/an-alchemist-s-path-to-eternity.webp" type="image/webp"/>
   </entry>
   <entry>
     <title>Martial God Asura — Chapters 1-10</title>
