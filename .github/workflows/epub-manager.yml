@@ -21,10 +21,7 @@ concurrency:
 
 jobs:
   build-epub:
-    if: >-
-      github.event_name != 'issues' ||
-      startsWith(github.event.issue.title, '[EPUB MANAGER]') ||
-      contains(github.event.issue.labels.*.name, 'epub-manager')
+    if: github.event_name == 'workflow_dispatch' || github.event_name == 'schedule' || startsWith(github.event.issue.title, '[EPUB MANAGER]')
     runs-on: ubuntu-latest
 
     steps:
