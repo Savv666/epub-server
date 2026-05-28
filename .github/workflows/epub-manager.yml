@@ -359,19 +359,19 @@ jobs:
             python scripts/delete_epub.py
           elif [ "$MODE" = "Schedule Update All" ]; then
             python - <<'PY'
-import json
-from pathlib import Path
-from scripts.queue_manager import add_schedule
-req=json.loads(Path('data/epub_manager_request.json').read_text(encoding='utf-8'))
-s=req.get('schedule',{})
-start=s.get('start_at') or req.get('schedule',{}).get('start_at')
-repeat=int(s.get('repeat_days',1) or 1)
-if start:
-    add_schedule(start, repeat)
-    print('Schedule added:', start, repeat)
-else:
-    print('No start_at provided; skipping schedule create')
-PY
+          import json
+          from pathlib import Path
+          from scripts.queue_manager import add_schedule
+          req = json.loads(Path('data/epub_manager_request.json').read_text(encoding='utf-8'))
+          schedule = req.get('schedule', {})
+          start = schedule.get('start_at')
+          repeat = int(schedule.get('repeat_days', 1) or 1)
+          if start:
+              add_schedule(start, repeat)
+              print('Schedule added:', start, repeat)
+          else:
+              print('No start_at provided; skipping schedule create')
+          PY
           else
             python scripts/engine_router.py
           fi
