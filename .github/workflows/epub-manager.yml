@@ -147,7 +147,7 @@ jobs:
           rebuild_data = {}
           alternate_source_data = {}
 
-          if mode == "New Novel":
+          if mode in ("New Novel", "Continue Novel"):
               for i in range(1, 11):
                   url = get_field(f"Novel {i} Link")
                   novel_title = get_field(f"Novel {i} Name")

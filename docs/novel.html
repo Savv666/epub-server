@@ -1,1 +1,48 @@
-<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Novel Details</title><link rel='stylesheet' href='style.css'></head><body><main class='latest-section'><a class='small-link-button' href='index.html'>← Back</a><div id='novelDetail'></div></main><script src='novel.js'></script></body></html>
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Novel Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail-page-body">
+  <main class="novel-detail-shell">
+    <a class="small-link-button" href="index.html">← Back to library</a>
+    <div id="novelDetail" class="novel-detail-page">
+      <div class="empty-state">Loading novel details...</div>
+    </div>
+  </main>
+
+  <div
+    id="alternateSourceModal"
+    class="modal-backdrop is-hidden"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="alternateSourceTitle"
+  >
+    <div class="modal-card">
+      <div class="modal-header">
+        <div>
+          <h2 id="alternateSourceTitle">Alternate sources</h2>
+          <p id="alternateSourceSubtitle">Search supported sources for this novel.</p>
+        </div>
+        <button id="closeAlternateSourceModal" class="modal-close" type="button" aria-label="Close alternate sources">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="alternate-help">
+          <p>Open a source search, find the correct chapter page, copy that chapter URL, then use <strong>Continue with selected URL</strong>.</p>
+        </div>
+        <div id="alternateSourceList" class="alternate-source-list">Loading sources...</div>
+      </div>
+      <div class="modal-actions">
+        <button id="continueWithAlternateUrl" class="button button-primary" type="button">Continue with selected URL</button>
+        <button id="cancelAlternateSources" class="button button-secondary" type="button">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="novel.js"></script>
+</body>
+</html>
