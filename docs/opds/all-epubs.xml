@@ -2,30 +2,18 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>https://savv666.github.io/epub-server/opds/all-epubs.xml</id>
   <title>All EPUBs</title>
-  <updated>2026-05-28T15:15:48.579595Z</updated>
+  <updated>2026-05-28T15:16:08.690438Z</updated>
   <link rel="self" href="https://savv666.github.io/epub-server/opds/all-epubs.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   <link rel="start" href="https://savv666.github.io/epub-server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
   <entry>
     <title>Starting as a Son-in-law to Establish an immortal Family — Chapters 1601-1710 (Combined)</title>
     <id>urn:epub-server:cdb0dc9749e09e65c6cb9d7fced00984692765af</id>
-    <updated>2026-05-28T15:15:48.316758Z</updated>
+    <updated>2026-05-28T15:16:08.426624Z</updated>
     <author>
       <name>NovelFull</name>
     </author>
     <content>Starting as a Son-in-law to Establish an immortal Family (Built)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/starting-as-a-son-in-law-to-establish-an-immortal-family_ch1601-1710_combined.epub" type="application/epub+zip"/>
-    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/starting-as-a-son-in-law-to-establish-an-immortal-family.webp" type="image/webp"/>
-    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/starting-as-a-son-in-law-to-establish-an-immortal-family.webp" type="image/webp"/>
-  </entry>
-  <entry>
-    <title>Starting as a Son-in-law to Establish an immortal Family — Chapters 1611-1710</title>
-    <id>urn:epub-server:8074abae7ccdb297fa8ec602cbb43f032452391d</id>
-    <updated>2026-05-28T14:44:39.858672Z</updated>
-    <author>
-      <name>NovelFull</name>
-    </author>
-    <content>Starting as a Son-in-law to Establish an immortal Family (Built)</content>
-    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/starting-as-a-son-in-law-to-establish-an-immortal-family_ch1611-1710.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/starting-as-a-son-in-law-to-establish-an-immortal-family.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/starting-as-a-son-in-law-to-establish-an-immortal-family.webp" type="image/webp"/>
   </entry>
