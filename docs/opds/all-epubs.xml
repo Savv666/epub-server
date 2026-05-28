@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>https://savv666.github.io/epub-server/opds/all-epubs.xml</id>
   <title>All EPUBs</title>
-  <updated>2026-05-28T13:18:53.510833Z</updated>
+  <updated>2026-05-28T14:39:12.291327Z</updated>
   <link rel="self" href="https://savv666.github.io/epub-server/opds/all-epubs.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   <link rel="start" href="https://savv666.github.io/epub-server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
   <entry>
@@ -174,18 +174,6 @@
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/an-alchemist-s-path-to-eternity.webp" type="image/webp"/>
   </entry>
   <entry>
-    <title>Who Let Him Cultivate?! — Chapters 11-50</title>
-    <id>urn:epub-server:fd14cca62b468fefc319a5f970285836d9e726c7</id>
-    <updated>2026-05-20T21:21:58.265128Z</updated>
-    <author>
-      <name>WuxiaWorld</name>
-    </author>
-    <content>Who Let Him Cultivate?! (Partial / locked)</content>
-    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/who-let-him-cultivate_ch011-050.epub" type="application/epub+zip"/>
-    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/who-let-him-cultivate.webp" type="image/webp"/>
-    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/who-let-him-cultivate.webp" type="image/webp"/>
-  </entry>
-  <entry>
     <title>Xianxia Senior Brother of a Heavens Favoured — Chapters 1-10</title>
     <id>urn:epub-server:079caef0f43cd98831522202f60c17fb257e585d</id>
     <updated>2026-05-20T10:21:46.076340Z</updated>
@@ -232,18 +220,6 @@
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/otherworld-therapy_ch001-010.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/otherworld-therapy.png" type="image/png"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/otherworld-therapy.png" type="image/png"/>
-  </entry>
-  <entry>
-    <title>Who Let Him Cultivate?! — Chapters 1-10</title>
-    <id>urn:epub-server:96578f7d9a1be37e83fe1e1a73dee19121d43c1a</id>
-    <updated>2026-05-20T10:13:31.938507Z</updated>
-    <author>
-      <name>WuxiaWorld</name>
-    </author>
-    <content>Who Let Him Cultivate?! (Partial / locked)</content>
-    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/who-let-him-cultivate_ch001-010.epub" type="application/epub+zip"/>
-    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/who-let-him-cultivate.webp" type="image/webp"/>
-    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/who-let-him-cultivate.webp" type="image/webp"/>
   </entry>
   <entry>
     <title>First Immortal of the Sword — Chapters 1-10</title>
