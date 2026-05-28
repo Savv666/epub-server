@@ -324,7 +324,10 @@ function buildDeleteNovelIssueUrl(novel) {
   var params = new URLSearchParams({
     template: DELETE_NOVEL_TEMPLATE,
     title: issueTitle,
-    labels: "delete-novel",
+    labels: "epub-manager,delete-novel",
+    request_mode: "Delete Novel",
+    "delete-novel-name": novelTitle,
+    delete_files: "Yes",
     body: issueBody
   });
 
