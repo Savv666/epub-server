@@ -422,15 +422,15 @@
     "slug": "starting-as-a-son-in-law-to-establish-an-immortal-family",
     "site": "NovelFull",
     "cover": "covers/starting-as-a-son-in-law-to-establish-an-immortal-family.webp",
-    "chapters": 1610,
+    "chapters": 1710,
     "source_url": "https://novelfull.com/starting-as-a-son-in-law-to-establish-an-immortal-family/chapter-1601-543-mutual-speculation-selling-the-immortal-city-part-3.html",
-    "next_url": "https://novelfull.com/starting-as-a-son-in-law-to-establish-an-immortal-family/chapter-1611-546-teleportation-array-the-deep-sea-demon-whale-king-appears-part-2.html",
-    "last_chapter_url": "https://novelfull.com/starting-as-a-son-in-law-to-establish-an-immortal-family/chapter-1610-546-teleportation-array-the-deep-sea-demon-whale-king-appears.html",
-    "last_chapter_number": 1610,
+    "next_url": "https://novelfull.com/starting-as-a-son-in-law-to-establish-an-immortal-family/chapter-1701-572-new-clan-registry-feature-proposing-to-xi-yue-true-man-part-3.html",
+    "last_chapter_url": "https://novelfull.com/starting-as-a-son-in-law-to-establish-an-immortal-family/chapter-1700-572-new-clan-record-features-seeking-to-marry-true-man-xi-yue-part-2.html",
+    "last_chapter_number": 1710,
     "status": "Built",
     "last_mode": "New Novel",
     "created_at": "2026-05-27T09:08:45.410617+00:00",
-    "last_updated": "2026-05-27T09:08:45.410620+00:00",
+    "last_updated": "2026-05-28T14:44:39.858701+00:00",
     "progress_state": "available",
     "progress_reason": "",
     "last_successful_source_url": "https://novelfull.com/starting-as-a-son-in-law-to-establish-an-immortal-family/chapter-1601-543-mutual-speculation-selling-the-immortal-city-part-3.html",
@@ -442,6 +442,15 @@
         "used_from_chapter": 1601,
         "used_until_chapter": 1610,
         "updated_at": "2026-05-27T09:08:45.410622+00:00"
+      },
+      {
+        "site": "NovelFull",
+        "url": "https://novelfull.com/starting-as-a-son-in-law-to-establish-an-immortal-family/chapter-1601-543-mutual-speculation-selling-the-immortal-city-part-3.html",
+        "engine": "Auto",
+        "used_from_chapter": 1611,
+        "used_until_chapter": 1710,
+        "status": "success",
+        "updated_at": "2026-05-28T14:44:39.858707+00:00"
       }
     ],
     "downloads": [
@@ -452,9 +461,19 @@
         "url": "epubs/starting-as-a-son-in-law-to-establish-an-immortal-family_ch1601-1610.epub",
         "mode": "New Novel",
         "created_at": "2026-05-27T09:08:45.410594+00:00"
+      },
+      {
+        "label": "Chapters 1611-1710",
+        "start": 1611,
+        "end": 1710,
+        "url": "epubs/starting-as-a-son-in-law-to-establish-an-immortal-family_ch1611-1710.epub",
+        "mode": "New Novel",
+        "created_at": "2026-05-28T14:44:39.858672+00:00"
       }
     ],
-    "cover_updated_at": "2026-05-27T09:11:10.385948+00:00"
+    "cover_updated_at": "2026-05-27T09:11:10.385948+00:00",
+    "preferred_source_url": "https://novelfull.com/starting-as-a-son-in-law-to-establish-an-immortal-family/chapter-1701-572-new-clan-registry-feature-proposing-to-xi-yue-true-man-part-3.html",
+    "preferred_engine": "Auto"
   },
   {
     "title": "The Mirror Legacy",
