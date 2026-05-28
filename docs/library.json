@@ -425,6 +425,18 @@
         "url": "epubs/starting-as-a-son-in-law-to-establish-an-immortal-family_ch1611-1710.epub",
         "mode": "New Novel",
         "created_at": "2026-05-28T14:44:39.858672+00:00"
+      },
+      {
+        "label": "Chapters 1601-1710 (Combined)",
+        "start": 1601,
+        "end": 1710,
+        "url": "epubs/starting-as-a-son-in-law-to-establish-an-immortal-family_ch1601-1710_combined.epub",
+        "mode": "Combined",
+        "combined": true,
+        "combined_from": [
+          "epubs/starting-as-a-son-in-law-to-establish-an-immortal-family_ch1601-1610.epub",
+          "epubs/starting-as-a-son-in-law-to-establish-an-immortal-family_ch1611-1710.epub"
+        ]
       }
     ],
     "cover_updated_at": "2026-05-27T09:11:10.385948+00:00",
