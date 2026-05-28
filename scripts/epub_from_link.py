@@ -757,6 +757,21 @@ def find_existing_library_item(library, novel_title):
     return None
 
 
+
+
+def append_source_history(item, record):
+    history = item.setdefault("source_history", [])
+    if history:
+        last = history[-1]
+        keys = ["site", "url", "engine", "used_from_chapter", "used_until_chapter", "status"]
+        if all(str(last.get(k, "")) == str(record.get(k, "")) for k in keys):
+            last["updated_at"] = record.get("updated_at", now_iso())
+            return
+    history.append(record)
+
+
+def infer_preferred_source(source_url, next_url):
+    return (next_url or source_url or "").strip()
 def save_locked_notice_to_library(
     novel_title,
     source_url,
@@ -815,12 +830,13 @@ def save_locked_notice_to_library(
     if locked_chapter_url:
         item["next_url"] = locked_chapter_url
 
-    history = item.setdefault("source_history", [])
-    history.append({
+    append_source_history(item, {
         "site": detect_site_name(source_url),
         "url": source_url,
+        "engine": item.get("preferred_engine", "Auto"),
         "used_from_chapter": max(1, int(locked_chapter_number)),
         "used_until_chapter": max(0, int(locked_chapter_number) - 1),
+        "status": "partial_locked",
         "updated_at": now_iso()
     })
 
@@ -853,6 +869,12 @@ def resolve_existing_novel_start(library_item):
         raise ValueError(f"{title}: no valid downloaded chapter range found.")
 
     next_chapter = last_chapter + 1
+
+    preferred_url = library_item.get("preferred_source_url", "").strip()
+
+    if preferred_url:
+        print(f"{title}: using preferred_source_url for chapter {next_chapter}.")
+        return preferred_url, next_chapter
 
     stored_next_url = library_item.get("next_url", "").strip()
 
@@ -954,12 +976,15 @@ def update_library(
         )
         existing["progress_reason"] = locked_reason or ""
 
-        history = existing.setdefault("source_history", [])
-        history.append({
+        existing["preferred_source_url"] = infer_preferred_source(source_url, next_url)
+        existing["preferred_engine"] = mode if mode in ["Generic Scraper", "Pattern Scraper", "FreeWebNovel", "FanFicFare"] else "Auto"
+        append_source_history(existing, {
             "site": site_name,
             "url": source_url,
+            "engine": existing.get("preferred_engine", "Auto"),
             "used_from_chapter": start_chapter,
             "used_until_chapter": end_chapter,
+            "status": "partial_locked" if locked_chapter_number else "success",
             "updated_at": now_iso()
         })
 
@@ -1005,13 +1030,17 @@ def update_library(
             ),
             "progress_reason": locked_reason or "",
             "last_successful_source_url": source_url,
+            "preferred_source_url": infer_preferred_source(source_url, next_url),
+            "preferred_engine": mode if mode in ["Generic Scraper", "Pattern Scraper", "FreeWebNovel", "FanFicFare"] else "Auto",
             "last_successful_site": site_name,
             "source_history": [
                 {
                     "site": site_name,
                     "url": source_url,
+                    "engine": mode if mode in ["Generic Scraper", "Pattern Scraper", "FreeWebNovel", "FanFicFare"] else "Auto",
                     "used_from_chapter": start_chapter,
                     "used_until_chapter": end_chapter,
+                    "status": "partial_locked" if locked_chapter_number else "success",
                     "updated_at": now_iso()
                 }
             ],

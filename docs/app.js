@@ -614,12 +614,12 @@ function getPreferredSourceUrl(novel, startChapter) {
     }
   }
 
-  return safeText(novel.last_successful_source_url || novel.next_url || novel.source_url, "").trim();
+  return safeText(novel.preferred_source_url || novel.last_successful_source_url || novel.next_url || novel.source_url, "").trim();
 }
 
 function buildDeleteIssueBody(novel) {
   var title = safeText(novel && novel.title, "").trim();
-  var sourceUrl = safeText(novel && novel.source_url, "").trim();
+  var sourceUrl = safeText(novel && (novel.preferred_source_url || novel.source_url), "").trim();
   var status = getNovelStatus(novel);
   var lastChapter = getLastChapterNumber(novel);
   var downloads = getDownloads(novel);
