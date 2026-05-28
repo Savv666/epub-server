@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
+  <id>https://savv666.github.io/Epub-Server/opds/novels/first-immortal-of-the-sword.xml</id>
+  <title>First Immortal of the Sword</title>
+  <updated>2026-05-28T08:07:34.611972Z</updated>
+  <link rel="self" href="https://savv666.github.io/Epub-Server/opds/novels/first-immortal-of-the-sword.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
+  <link rel="start" href="https://savv666.github.io/Epub-Server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
+  <entry>
+    <title>First Immortal of the Sword — Chapters 1-10</title>
+    <id>urn:epub-server:c9b11686a0d6b9a2cf50f48a8e0ac35d0274c13b</id>
+    <updated>2026-05-20T10:13:14.460624Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>First Immortal of the Sword (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/Epub-Server/epubs/first-immortal-of-the-sword_ch001-010.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/Epub-Server/covers/first-immortal-of-the-sword.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/Epub-Server/covers/first-immortal-of-the-sword.webp" type="image/webp"/>
+  </entry>
+</feed>

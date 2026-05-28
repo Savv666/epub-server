@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
+  <id>https://savv666.github.io/Epub-Server/opds/novels/emperors-domination.xml</id>
+  <title>Emperor’s Domination</title>
+  <updated>2026-05-28T08:07:34.610157Z</updated>
+  <link rel="self" href="https://savv666.github.io/Epub-Server/opds/novels/emperors-domination.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
+  <link rel="start" href="https://savv666.github.io/Epub-Server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
+  <entry>
+    <title>Emperor’s Domination — Chapters 1-10</title>
+    <id>urn:epub-server:49b768995745fffb5370acc86620d85e5d54b298</id>
+    <updated>2026-05-20T09:49:46.079793Z</updated>
+    <author>
+      <name>NovelFull</name>
+    </author>
+    <content>Emperor’s Domination (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/Epub-Server/epubs/emperors-domination_ch001-010.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/Epub-Server/covers/emperors-domination.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/Epub-Server/covers/emperors-domination.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Emperor’s Domination — Chapters 11-57</title>
+    <id>urn:epub-server:22f1344849cbc20d82611c8435a5e51578241ad8</id>
+    <updated>2026-05-21T13:02:17.108021Z</updated>
+    <author>
+      <name>NovelFull</name>
+    </author>
+    <content>Emperor’s Domination (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/Epub-Server/epubs/emperors-domination_ch011-057.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/Epub-Server/covers/emperors-domination.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/Epub-Server/covers/emperors-domination.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Emperor’s Domination — Chapters 58-157</title>
+    <id>urn:epub-server:fa441f3df16e364d0677665e6f1b3d13b4f9f959</id>
+    <updated>2026-05-22T07:41:45.226616Z</updated>
+    <author>
+      <name>NovelFull</name>
+    </author>
+    <content>Emperor’s Domination (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/Epub-Server/epubs/emperors-domination_ch058-157.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/Epub-Server/covers/emperors-domination.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/Epub-Server/covers/emperors-domination.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Emperor’s Domination — Chapters 158-257</title>
+    <id>urn:epub-server:a7ec478efc3c43514dcadbbc2f83ed0451c4f1c6</id>
+    <updated>2026-05-22T08:21:19.124038Z</updated>
+    <author>
+      <name>NovelFull</name>
+    </author>
+    <content>Emperor’s Domination (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/Epub-Server/epubs/emperors-domination_ch158-257.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/Epub-Server/covers/emperors-domination.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/Epub-Server/covers/emperors-domination.webp" type="image/webp"/>
+  </entry>
+</feed>

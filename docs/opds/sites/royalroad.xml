@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
+  <id>https://savv666.github.io/Epub-Server/opds/sites/royalroad.xml</id>
+  <title>RoyalRoad</title>
+  <updated>2026-05-28T08:07:34.636937Z</updated>
+  <link rel="self" href="https://savv666.github.io/Epub-Server/opds/sites/royalroad.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
+  <link rel="start" href="https://savv666.github.io/Epub-Server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
+  <entry>
+    <title>An Alchemist's Path to Eternity — Chapters 51-61</title>
+    <id>urn:epub-server:9114542ebbadd08578819d3754709188614c0aff</id>
+    <updated>2026-05-21T21:47:33Z</updated>
+    <author>
+      <name>RoyalRoad</name>
+    </author>
+    <content>An Alchemist's Path to Eternity (Partial / locked)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/Epub-Server/epubs/an-alchemist-s-path-to-eternity_ch051-150_fanficfare.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/Epub-Server/covers/an-alchemist-s-path-to-eternity.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/Epub-Server/covers/an-alchemist-s-path-to-eternity.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>An Alchemist's Path to Eternity — Chapters 11-50</title>
+    <id>urn:epub-server:57a1a6fc4e46e460ee6ffb85a3e95560758cd2b5</id>
+    <updated>2026-05-21T12:51:30.249792Z</updated>
+    <author>
+      <name>RoyalRoad</name>
+    </author>
+    <content>An Alchemist's Path to Eternity (Partial / locked)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/Epub-Server/epubs/an-alchemist-s-path-to-eternity_ch011-050.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/Epub-Server/covers/an-alchemist-s-path-to-eternity.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/Epub-Server/covers/an-alchemist-s-path-to-eternity.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Xianxia Senior Brother of a Heavens Favoured — Chapters 1-10</title>
+    <id>urn:epub-server:079caef0f43cd98831522202f60c17fb257e585d</id>
+    <updated>2026-05-20T10:21:46.076340Z</updated>
+    <author>
+      <name>RoyalRoad</name>
+    </author>
+    <content>Xianxia Senior Brother of a Heavens Favoured (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/Epub-Server/epubs/xianxia-senior-brother-of-a-heavens-favoured_ch001-010.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/Epub-Server/covers/xianxia-senior-brother-of-a-heavens-favoured.png" type="image/png"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/Epub-Server/covers/xianxia-senior-brother-of-a-heavens-favoured.png" type="image/png"/>
+  </entry>
+  <entry>
+    <title>Sky Pride — Chapters 1-10</title>
+    <id>urn:epub-server:66e89850b11588a4dd01db30c339f89d42256e45</id>
+    <updated>2026-05-20T10:21:27.307701Z</updated>
+    <author>
+      <name>RoyalRoad</name>
+    </author>
+    <content>Sky Pride (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/Epub-Server/epubs/sky-pride_ch001-010.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/Epub-Server/covers/sky-pride.png" type="image/png"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/Epub-Server/covers/sky-pride.png" type="image/png"/>
+  </entry>
+  <entry>
+    <title>Mother of Learning — Chapters 1-10</title>
+    <id>urn:epub-server:8cd7e4d86baf9c10264d32b024dc398848fac478</id>
+    <updated>2026-05-20T10:21:08.645876Z</updated>
+    <author>
+      <name>RoyalRoad</name>
+    </author>
+    <content>Mother of Learning (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/Epub-Server/epubs/mother-of-learning_ch001-010.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/Epub-Server/covers/mother-of-learning.jpg" type="image/jpeg"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/Epub-Server/covers/mother-of-learning.jpg" type="image/jpeg"/>
+  </entry>
+  <entry>
+    <title>Otherworld Therapy — Chapters 1-10</title>
+    <id>urn:epub-server:a3911fe429c1c3b59adfef3536664e141f3d4aed</id>
+    <updated>2026-05-20T10:20:50.166690Z</updated>
+    <author>
+      <name>RoyalRoad</name>
+    </author>
+    <content>Otherworld Therapy (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/Epub-Server/epubs/otherworld-therapy_ch001-010.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/Epub-Server/covers/otherworld-therapy.png" type="image/png"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/Epub-Server/covers/otherworld-therapy.png" type="image/png"/>
+  </entry>
+  <entry>
+    <title>An Alchemist's Path to Eternity — Chapters 1-10</title>
+    <id>urn:epub-server:35625a081c89c211ef6db7f351ce972cd78ed916</id>
+    <updated>2026-05-20T09:50:47.485704Z</updated>
+    <author>
+      <name>RoyalRoad</name>
+    </author>
+    <content>An Alchemist's Path to Eternity (Partial / locked)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/Epub-Server/epubs/an-alchemist-s-path-to-eternity_ch001-010.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/Epub-Server/covers/an-alchemist-s-path-to-eternity.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/Epub-Server/covers/an-alchemist-s-path-to-eternity.webp" type="image/webp"/>
+  </entry>
+</feed>

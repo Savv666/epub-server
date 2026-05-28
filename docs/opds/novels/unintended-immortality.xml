@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
+  <id>https://savv666.github.io/Epub-Server/opds/novels/unintended-immortality.xml</id>
+  <title>Unintended Immortality</title>
+  <updated>2026-05-28T08:07:34.625423Z</updated>
+  <link rel="self" href="https://savv666.github.io/Epub-Server/opds/novels/unintended-immortality.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
+  <link rel="start" href="https://savv666.github.io/Epub-Server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
+  <entry>
+    <title>Unintended Immortality — Chapters 1-10</title>
+    <id>urn:epub-server:2f75b4be2ef0575106c6422de1d69234b18618e1</id>
+    <updated>2026-05-27T09:12:04.466135Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Unintended Immortality (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/Epub-Server/epubs/unintended-immortality_ch001-010.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/Epub-Server/covers/unintended-immortality.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/Epub-Server/covers/unintended-immortality.webp" type="image/webp"/>
+  </entry>
+</feed>

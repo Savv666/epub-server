@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
+  <id>https://savv666.github.io/Epub-Server/opds/novels/the-prodigies-war.xml</id>
+  <title>The Prodigies War</title>
+  <updated>2026-05-28T08:07:34.622288Z</updated>
+  <link rel="self" href="https://savv666.github.io/Epub-Server/opds/novels/the-prodigies-war.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
+  <link rel="start" href="https://savv666.github.io/Epub-Server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
+  <entry>
+    <title>The Prodigies War — Chapters 1-10</title>
+    <id>urn:epub-server:3a3a54e74e773f83c7a2ba83673873edf0a58321</id>
+    <updated>2026-05-20T10:12:39.621907Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>The Prodigies War (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/Epub-Server/epubs/the-prodigies-war_ch001-010.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/Epub-Server/covers/the-prodigies-war.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/Epub-Server/covers/the-prodigies-war.webp" type="image/webp"/>
+  </entry>
+</feed>
