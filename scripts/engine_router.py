@@ -361,7 +361,7 @@ def main():
                     'error': result.stderr.strip() or result.stdout.strip() or 'Generic scraper failed'
                 }]
 
-        elif mode == 'New Novel':
+        elif mode in ('New Novel', 'Continue Novel'):
             results = process_new_novel(original_request)
 
         else:

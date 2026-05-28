@@ -28,6 +28,7 @@ body:
       description: Choose what you want to do.
       options:
         - New Novel
+        - Continue Novel
         - Update All Existing Novels
         - Combine EPUB Chunks
         - Delete Novel

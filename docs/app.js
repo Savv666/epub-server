@@ -373,6 +373,37 @@ function openIssueComposer(issueUrl) {
   window.location.href = issueUrl;
 }
 
+function openUpdateCoverPrompt(novel, currentSrc) {
+  if (!novel) {
+    alert("Could not find this novel in the current page data.");
+    return;
+  }
+
+  var message = [
+    "Paste a new cover image URL.",
+    "",
+    "After clicking OK, a pre-filled GitHub issue will open.",
+    "Submit the issue to permanently update the website cover.",
+    "",
+    "Current cover:",
+    currentSrc || getEffectiveCover(novel)
+  ].join("\n");
+
+  var enteredSrc = window.prompt(message, "");
+
+  if (enteredSrc === null) {
+    return;
+  }
+
+  enteredSrc = safeText(enteredSrc, "").trim();
+
+  if (!enteredSrc) {
+    return;
+  }
+
+  openIssueComposer(buildUpdateCoverIssueUrl(novel, enteredSrc));
+}
+
 function buildNewNovelIssueBody(novelLink, novelName, startingChapter, chaptersToDownload, batchSize, engine) {
   return [
     "### Request mode",
@@ -521,6 +552,70 @@ function buildDeleteEpubIssueUrl(novel, download) {
   return buildIssueUrl(issueTitle, issueBody);
 }
 
+function buildCombineChunksIssueUrl(novel) {
+  var novelTitle = safeText(novel && novel.title, "Untitled Novel");
+  var slug = safeText(novel && novel.slug, "");
+  var downloads = getDownloads(novel);
+  var start = downloads.length ? Number(downloads[0].start || 1) : 1;
+  var end = downloads.length ? downloads.reduce(function (max, download) {
+    return Math.max(max, Number(download.end || download.start || 0));
+  }, start) : getLastChapterNumber(novel);
+  var files = downloads.map(function (download) {
+    return safeText(download.url, "").replace(/^epubs\//, "");
+  }).filter(Boolean).join("\n");
+
+  var issueTitle = "[EPUB MANAGER] Combine EPUB Chunks " + novelTitle;
+  var issueBody = [
+    "### Request mode",
+    "",
+    "Combine EPUB Chunks",
+    "",
+    "### Novel name",
+    "",
+    novelTitle,
+    "",
+    "### Novel slug",
+    "",
+    slug,
+    "",
+    "### Selected EPUB files",
+    "",
+    files || "PASTE_EPUB_FILENAMES_HERE",
+    "",
+    "### Start chapter",
+    "",
+    String(start || 1),
+    "",
+    "### End chapter",
+    "",
+    String(end || start || 1),
+    "",
+    "### Overwrite combined file",
+    "",
+    "No",
+    "",
+    "### Notes",
+    "",
+    "Combine all separately downloaded EPUB files for this novel into one EPUB."
+  ].join("\n");
+
+  var repoUrl = getGitHubRepoUrl();
+  var params = new URLSearchParams({
+    template: "combine-epub-chunks.yml",
+    title: issueTitle,
+    labels: "epub-manager",
+    novel_name: novelTitle,
+    novel_slug: slug,
+    selected_files: files,
+    start_chapter: String(start || 1),
+    end_chapter: String(end || start || 1),
+    overwrite: "No",
+    body: issueBody
+  });
+
+  return repoUrl + "/issues/new?" + params.toString();
+}
+
 function normaliseEngineChoice(choice) {
   var value = safeText(choice, "1").trim().toLowerCase();
 
@@ -590,6 +685,21 @@ function askSourceForContinue(novel) {
   return storedNextUrl || "PASTE_NEXT_CHAPTER_URL_HERE";
 }
 
+function getLastSuccessfulSourceUrl(novel) {
+  if (!novel) {
+    return "";
+  }
+
+  return safeText(
+    novel.last_successful_source_url ||
+    novel.last_chapter_url ||
+    novel.preferred_source_url ||
+    novel.next_url ||
+    novel.source_url,
+    ""
+  ).trim();
+}
+
 function getPreferredSourceUrl(novel, startChapter) {
   if (!novel) {
     return "";
@@ -614,7 +724,14 @@ function getPreferredSourceUrl(novel, startChapter) {
     }
   }
 
-  return safeText(novel.preferred_source_url || novel.last_successful_source_url || novel.next_url || novel.source_url, "").trim();
+  return safeText(
+    novel.preferred_source_url ||
+    novel.last_successful_source_url ||
+    novel.last_chapter_url ||
+    novel.next_url ||
+    novel.source_url,
+    ""
+  ).trim();
 }
 
 function buildDeleteIssueBody(novel) {
@@ -670,17 +787,41 @@ function buildDeleteIssueBody(novel) {
 function buildContinueIssueUrl(novel, engine, sourceUrl) {
   var novelTitle = safeText(novel && novel.title, "Untitled Novel");
   var nextChapter = getNextChapterNumber(novel);
+  var selectedEngine = engine || getSetting("default_engine", "Auto");
+  var chaptersToDownload = getSetting("default_continue_chapters", 100);
+  var batchSize = getSetting("default_continue_batches", 1);
 
   var issueTitle = "[EPUB MANAGER] Continue " + novelTitle;
 
-  var issueBody = buildNewNovelIssueBody(
+  var issueBody = [
+    "### Request mode",
+    "",
+    "Continue Novel",
+    "",
+    "### Engine",
+    "",
+    selectedEngine,
+    "",
+    "### Chapters to download",
+    "",
+    String(chaptersToDownload),
+    "",
+    "### Batch size",
+    "",
+    String(batchSize),
+    "",
+    "### Novel 1 Link",
+    "",
     sourceUrl || "PASTE_NEXT_CHAPTER_URL_HERE",
+    "",
+    "### Novel 1 Name",
+    "",
     novelTitle,
-    nextChapter,
-    getSetting("default_continue_chapters", 100),
-    getSetting("default_continue_batches", 1),
-    engine || getSetting("default_engine", "Auto")
-  );
+    "",
+    "### Novel 1 Starting Chapter",
+    "",
+    String(nextChapter)
+  ].join("\n");
 
   return buildIssueUrl(issueTitle, issueBody);
 }
@@ -759,8 +900,8 @@ function buildDownloadList(novel) {
       + '</a>'
       + '<div class="download-actions">'
       + '<button class="mini-button copy-epub-link-button" type="button" data-url="' + absoluteUrl + '">Copy</button>'
-      + '<button class="mini-button rebuild-epub-button" type="button" data-download-index="' + downloadIndex + '">Rebuild</button>'
-      + '<button class="mini-button danger-mini-button delete-epub-button" type="button" data-download-index="' + downloadIndex + '">Delete EPUB</button>'
+      + '<button class="mini-button danger-mini-button rebuild-epub-button" type="button" data-download-index="' + downloadIndex + '">Rebuild</button>'
+      + '<button class="mini-button danger-mini-button delete-epub-button" type="button" data-download-index="' + downloadIndex + '">Delete</button>'
       + '</div>'
       + '</div>';
   }).join("");
@@ -772,7 +913,7 @@ function buildNovelCard(novel, index) {
   var title = escapeHtml((novel && novel.title) || "Untitled Novel");
   var site = escapeHtml((novel && novel.site) || "Unknown");
   var cover = escapeHtml(getCoverSrc(novel));
-  var sourceUrl = escapeHtml((novel && novel.source_url) || "#");
+  var detailUrl = "novel.html?slug=" + encodeURIComponent(safeText(novel && novel.slug, ""));
   var status = getNovelStatus(novel);
   var statusClass = getStatusClass(status);
   var lastChapter = getLastChapterNumber(novel);
@@ -782,7 +923,6 @@ function buildNovelCard(novel, index) {
 
   return ''
     + '<article class="novel-card" data-novel-index="' + index + '">'
-    + '<button class="delete-novel-button" type="button" data-title="' + title + '" title="Delete novel">×</button>'
     + '<div class="cover-column">'
     + '<img class="novel-cover" src="' + cover + '" alt="' + title + ' cover" loading="lazy" onerror="this.src=\'covers/default.svg\';" title="Click to update cover image" />'
     + '</div>'
@@ -801,16 +941,8 @@ function buildNovelCard(novel, index) {
     + '<span><strong>Next:</strong> ' + nextChapter + '</span>'
     + '<span><strong>Updated:</strong> ' + lastUpdated + '</span>'
     + '</div>'
-    + buildLockedNotice(novel)
-    + '<div class="action-row">'
-    + buildContinueButton(novel)
-    + '<a class="button button-secondary" href="' + sourceUrl + '" target="_blank" rel="noopener noreferrer">Source</a>'
-    + '<button class="button button-secondary alternate-source-button" type="button">Alternate sources</button>'
-    + '<a class="button button-secondary" href="novel.html?slug=' + encodeURIComponent(safeText(novel && novel.slug, '')) + '">Details</a>'
-    + '<button class="button button-secondary chapters-toggle" type="button">Chapters Available</button>'
-    + '</div>'
-    + '<div class="downloads-panel is-hidden">'
-    + buildDownloadList(novel)
+    + '<div class="action-row card-detail-actions">'
+    + '<a class="button button-primary" href="' + detailUrl + '">Details</a>'
     + '</div>'
     + '</div>'
     + '</article>';
@@ -1230,32 +1362,7 @@ function renderLibrary() {
         return;
       }
 
-      var currentSrc = image.getAttribute("src") || "";
-
-      var message = [
-        "Paste a new cover image URL.",
-        "",
-        "After clicking OK, a pre-filled GitHub issue will open.",
-        "Submit the issue to permanently update the website cover.",
-        "",
-        "Current cover:",
-        currentSrc
-      ].join("\n");
-
-      var enteredSrc = window.prompt(message, "");
-
-      if (enteredSrc === null) {
-        return;
-      }
-
-      enteredSrc = safeText(enteredSrc, "").trim();
-
-      if (!enteredSrc) {
-        return;
-      }
-
-      var issueUrl = buildUpdateCoverIssueUrl(novel, enteredSrc);
-      openIssueComposer(issueUrl);
+      openUpdateCoverPrompt(novel, image.getAttribute("src") || "");
     });
   });
 
