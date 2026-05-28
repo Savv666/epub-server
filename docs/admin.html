@@ -2,7 +2,7 @@
 const repo='https://github.com/Sav666/epub-server';
 const newNovelBody=`### Request mode\n\nNew Novel\n\n### Engine\n\nAuto\n\n### Chapters to download\n\n100\n\n### Batch size\n\n1\n\n### Novel 1 Link\n\nPASTE_NOVEL_CHAPTER_URL_HERE\n\n### Novel 1 Name\n\nNovel Title\n\n### Novel 1 Starting Chapter\n\n1`;
 const updateAllBody=`### Request mode\n\nUpdate All Existing Novels\n\n### Engine\n\nAuto\n\n### Chapters to download\n\n100\n\n### Batch size\n\n1`;
-const issue=(t,b)=>`${repo}/issues/new?${new URLSearchParams({title:t,body:b}).toString()}`;
+const issue=(t,b)=>`${repo}/issues/new?${new URLSearchParams({title:t,body:b,labels:'epub-manager',template:'epub-manager.yml'}).toString()}`;
 const cards=[['Open Library','index.html'],['Add New Novel',issue('[EPUB MANAGER] New Novel',newNovelBody)],['Update All Novels',issue('[EPUB MANAGER] Update All Existing Novels',updateAllBody)],['Repair Centre','repair.html'],['Health Check','health.html'],['Direct EPUB Links','epub-links.html'],['RSS Feed','feed.xml'],['OPDS Catalogue','opds.xml'],['Latest OPDS Feed','opds/latest.xml']];
 document.getElementById('adminGrid').innerHTML=cards.map(c=>`<a class="admin-card" href="${c[1]}" target="${c[1].startsWith('http')?'_blank':'_self'}" rel="noopener noreferrer">${c[0]}</a>`).join('');
 </script></body></html>
