@@ -4,6 +4,9 @@ on:
   issues:
     types:
       - opened
+      - edited
+      - reopened
+      - labeled
   workflow_dispatch:
   schedule:
     - cron: "15 2 * * *"
@@ -18,7 +21,10 @@ concurrency:
 
 jobs:
   build-epub:
-    if: github.event_name == 'workflow_dispatch' || github.event_name == 'schedule' || github.event_name == 'schedule' || startsWith(github.event.issue.title, '[EPUB MANAGER]')
+    if: >-
+      github.event_name != 'issues' ||
+      startsWith(github.event.issue.title, '[EPUB MANAGER]') ||
+      contains(github.event.issue.labels.*.name, 'epub-manager')
     runs-on: ubuntu-latest
 
     steps:
@@ -102,24 +108,35 @@ jobs:
           engine = get_field("Engine") or "Auto"
           lower_title = title.lower()
 
-          if lower_title.startswith("[epub manager] delete"):
+          if lower_title.startswith("[epub manager] delete epub"):
+              mode = "Delete EPUB"
+          elif lower_title.startswith("[epub manager] delete"):
               mode = "Delete Novel"
           elif lower_title.startswith("[epub manager] update cover") or lower_title.startswith("[epub manager] cover"):
               mode = "Update Cover Image"
+          elif lower_title.startswith("[epub manager] rebuild"):
+              mode = "Rebuild EPUB"
           elif "combine epub chunks" in lower_title:
               mode = "Combine EPUB Chunks"
           elif "schedule update all" in lower_title:
               mode = "Schedule Update All"
 
           if not mode:
-              if lower_title.startswith("[epub manager] delete"):
+              if lower_title.startswith("[epub manager] delete epub"):
+                  mode = "Delete EPUB"
+              elif lower_title.startswith("[epub manager] delete"):
                   mode = "Delete Novel"
               elif lower_title.startswith("[epub manager] update cover") or lower_title.startswith("[epub manager] cover"):
                   mode = "Update Cover Image"
+              elif lower_title.startswith("[epub manager] rebuild"):
+                  mode = "Rebuild EPUB"
               elif lower_title.startswith("[epub manager] continue"):
                   mode = "New Novel"
               else:
                   mode = "New Novel"
+
+          from scripts.queue_manager import map_mode
+          mode = map_mode(mode)
 
           override_chapters = safe_int(get_field("Chapters to download"), 10)
           override_batches = safe_int(get_field("Batch size"), 1)
@@ -129,6 +146,9 @@ jobs:
           update_cover_data = {}
           combine_data = {}
           schedule_data = {}
+          delete_epub_data = {}
+          rebuild_data = {}
+          alternate_source_data = {}
 
           if mode == "New Novel":
               for i in range(1, 11):
@@ -194,6 +214,33 @@ jobs:
                   "repeat_days": safe_int(get_field("Repeat days"), 1)
               }
 
+          elif mode == "Delete EPUB":
+              delete_epub_data = {
+                  "novel_name": get_field("Delete EPUB Novel Name"),
+                  "start_chapter": safe_int(get_field("Delete EPUB Start Chapter"), 0),
+                  "end_chapter": safe_int(get_field("Delete EPUB End Chapter"), 0),
+                  "epub_url": get_field("Delete EPUB URL")
+              }
+
+              if not delete_epub_data["novel_name"]:
+                  raise SystemExit("Delete EPUB mode requires Delete EPUB Novel Name.")
+
+          elif mode == "Rebuild EPUB":
+              rebuild_data = {
+                  "novel_name": get_field("Rebuild Novel Name"),
+                  "source_url": get_field("Rebuild Source URL"),
+                  "start_chapter": safe_int(get_field("Rebuild Starting Chapter"), 1),
+                  "end_chapter": safe_int(get_field("Rebuild Ending Chapter"), 0),
+                  "existing_epub_url": get_field("Existing EPUB URL")
+              }
+              if rebuild_data["source_url"] and rebuild_data["novel_name"]:
+                  items = [{
+                      "start_url": rebuild_data["source_url"],
+                      "novel_title": rebuild_data["novel_name"],
+                      "start_chapter": rebuild_data["start_chapter"],
+                      "end_chapter": rebuild_data["end_chapter"]
+                  }]
+
           elif mode == "Delete Novel":
               delete_novel_name = get_field("Delete Novel Name")
               delete_files = get_field("Delete EPUB files") or "Yes"
@@ -223,7 +270,10 @@ jobs:
               "delete": delete_data,
               "update_cover": update_cover_data,
               "combine": combine_data,
-              "schedule": schedule_data
+              "schedule": schedule_data,
+              "delete_epub": delete_epub_data,
+              "rebuild": rebuild_data,
+              "alternate_source": alternate_source_data
           }
 
           Path("data").mkdir(exist_ok=True)
@@ -265,14 +315,29 @@ jobs:
             },
             "items": [],
             "delete": {},
-            "update_cover": {}
+            "update_cover": {},
+            "combine": {},
+            "schedule": {},
+            "delete_epub": {},
+            "rebuild": {},
+            "alternate_source": {}
           }
           JSON
 
 
       - name: Queue request
+        env:
+          EVENT_NAME: ${{ github.event_name }}
         run: |
-          python -c "from scripts.queue_manager import enqueue_from_request,pop_next_job_to_request; enqueue_from_request('scheduled' if "${{ github.event_name }}"=='schedule' else 'workflow'); pop_next_job_to_request()"
+          python - <<'PY'
+          import os
+          from scripts.queue_manager import enqueue_from_request, pop_next_job_to_request
+
+          event_name = os.environ.get("EVENT_NAME", "")
+          source = "scheduled" if event_name == "schedule" else "workflow"
+          enqueue_from_request(source)
+          pop_next_job_to_request()
+          PY
 
       - name: Run EPUB Manager
         id: run_manager
@@ -281,8 +346,9 @@ jobs:
           MODE=$(python - <<'PY'
           import json
           from pathlib import Path
+          from scripts.queue_manager import map_mode
           data = json.loads(Path("data/epub_manager_request.json").read_text(encoding="utf-8"))
-          print(data.get("mode", ""))
+          print(map_mode(data.get("mode", "")))
           PY
           )
 
@@ -294,7 +360,7 @@ jobs:
             python scripts/update_cover.py
           elif [ "$MODE" = "delete_epub" ] || [ "$MODE" = "Delete EPUB" ]; then
             python scripts/delete_epub.py
-          elif [ "$MODE" = "scheduled_update_all" ]; then
+          elif [ "$MODE" = "Schedule Update All" ]; then
             python - <<'PY'
 import json
 from pathlib import Path
