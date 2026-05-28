@@ -325,9 +325,6 @@ function buildDeleteNovelIssueUrl(novel) {
     template: DELETE_NOVEL_TEMPLATE,
     title: issueTitle,
     labels: "epub-manager,delete-novel",
-    request_mode: "Delete Novel",
-    "delete-novel-name": novelTitle,
-    delete_files: "Yes",
     body: issueBody
   });
 
