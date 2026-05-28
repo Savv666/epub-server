@@ -775,3 +775,5 @@ button {
 .rss-link:hover {
   background: rgba(244, 216, 107, 0.18);
 }
+
+.admin-page{max-width:980px;margin:0 auto;padding:1rem}.admin-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.75rem}.admin-card{display:block;padding:1rem;border:1px solid #8b6f2b;border-radius:10px;background:#1a1a1a;color:#f4d27a;text-decoration:none;font-weight:700;text-align:center}.health-green{border-left:4px solid #2ecc71;padding:.75rem}.health-amber{border-left:4px solid #f1c40f;padding:.75rem}.health-red{border-left:4px solid #e74c3c;padding:.75rem}

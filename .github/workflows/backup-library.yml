@@ -1,0 +1,61 @@
+name: Backup Library
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * 0'
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create timestamped backup zip
+        id: backup
+        shell: bash
+        run: |
+          set -euo pipefail
+          TS="$(date -u +'%Y%m%d-%H%M%S')"
+          NAME="epub-library-backup-${TS}"
+          ZIP="${NAME}.zip"
+
+          mkdir -p _backup_payload
+          add_if_exists () {
+            if [ -e "$1" ]; then
+              cp -R "$1" _backup_payload/
+              echo "Included: $1"
+            else
+              echo "Skipped missing: $1"
+            fi
+          }
+
+          add_if_exists docs/library.json
+          add_if_exists docs/epubs
+          add_if_exists docs/covers
+          add_if_exists docs/feed.xml
+          add_if_exists docs/epub-links.html
+          add_if_exists docs/opds.xml
+          add_if_exists docs/opds
+          add_if_exists docs/rss-items
+          add_if_exists data/settings.json
+
+          (cd _backup_payload && zip -r "../${ZIP}" .)
+
+          echo "artifact_name=${NAME}" >> "$GITHUB_OUTPUT"
+          echo "zip_name=${ZIP}" >> "$GITHUB_OUTPUT"
+
+      - name: Upload backup artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.backup.outputs.artifact_name }}
+          path: ${{ steps.backup.outputs.zip_name }}
+          if-no-files-found: error
+
+      - name: Backup summary
+        run: |
+          echo "Backup completed successfully."
+          echo "Artifact: ${{ steps.backup.outputs.artifact_name }}"
+          echo "Zip file: ${{ steps.backup.outputs.zip_name }}"
+          echo "Contains library, EPUBs, covers, and optional feed/OPDS/RSS/settings files if present."
