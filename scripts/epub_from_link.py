@@ -962,7 +962,7 @@ def update_library(
 
         existing["chapters"] = max(int(existing.get("chapters", 0)), end_chapter)
         existing["source_url"] = source_url or existing.get("source_url", "")
-        existing["last_successful_source_url"] = source_url or existing.get("last_successful_source_url", "")
+        existing["last_successful_source_url"] = last_chapter_url or source_url or existing.get("last_successful_source_url", "")
         existing["last_successful_site"] = site_name
         existing["site"] = site_name
         existing["status"] = status
@@ -1029,7 +1029,7 @@ def update_library(
                 "available"
             ),
             "progress_reason": locked_reason or "",
-            "last_successful_source_url": source_url,
+            "last_successful_source_url": last_chapter_url or source_url,
             "preferred_source_url": infer_preferred_source(source_url, next_url),
             "preferred_engine": mode if mode in ["Generic Scraper", "Pattern Scraper", "FreeWebNovel", "FanFicFare"] else "Auto",
             "last_successful_site": site_name,

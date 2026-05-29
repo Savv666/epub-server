@@ -479,6 +479,7 @@ def update_library(
 
         existing["site"] = detect_site_name(source_url)
         existing["source_url"] = source_url or existing.get("source_url", "")
+        existing["last_successful_source_url"] = last_chapter_url or source_url or existing.get("last_successful_source_url", "")
         existing["status"] = status
         existing["last_mode"] = "Pattern Scraper"
         existing["last_updated"] = now_iso()
@@ -508,6 +509,7 @@ def update_library(
             "source_url": source_url,
             "next_url": next_url or "",
             "last_chapter_url": last_chapter_url or "",
+            "last_successful_source_url": last_chapter_url or source_url,
             "last_chapter_number": end_chapter,
             "status": status,
             "last_mode": "Pattern Scraper",

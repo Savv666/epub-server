@@ -691,8 +691,8 @@ function getLastSuccessfulSourceUrl(novel) {
   }
 
   return safeText(
-    novel.last_successful_source_url ||
     novel.last_chapter_url ||
+    novel.last_successful_source_url ||
     novel.preferred_source_url ||
     novel.next_url ||
     novel.source_url,
@@ -865,23 +865,11 @@ function buildLockedNotice(novel) {
     parts.push("Progress state: " + progressState + ".");
   }
 
-  var sourceUrl = getPreferredSourceUrl(novel);
-  var html = ''
+  return ''
     + '<div class="locked-notice">'
     + '<strong>' + escapeHtml(noticeTitle) + '</strong>'
-    + '<span>' + escapeHtml(parts.join(" ") || "This novel may need attention before it can continue.") + '</span>';
-
-  if (sourceUrl) {
-    html += ''
-      + '<div class="locked-actions">'
-      + '<a class="locked-link" href="' + escapeHtml(sourceUrl) + '" target="_blank" rel="noopener noreferrer">Open source</a>'
-      + '<button class="locked-link alternate-source-button" type="button">Find alternate source</button>'
-      + '</div>';
-  }
-
-  html += '</div>';
-
-  return html;
+    + '<span>' + escapeHtml(parts.join(" ") || "This novel may need attention before it can continue.") + '</span>'
+    + '</div>';
 }
 
 function buildNovelCard(novel, index) {
