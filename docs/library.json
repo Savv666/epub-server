@@ -1000,18 +1000,18 @@
     "slug": "unintended-immortality",
     "site": "WuxiaWorld",
     "cover": "covers/unintended-immortality.webp",
-    "chapters": 20,
-    "source_url": "https://www.wuxiaworld.com/novel/unintended-immortality/ui-chapter-11",
-    "next_url": "https://www.wuxiaworld.com/novel/unintended-immortality/ui-chapter-21",
-    "last_chapter_url": "https://www.wuxiaworld.com/novel/unintended-immortality/ui-chapter-20",
-    "last_chapter_number": 20,
-    "status": "Built",
-    "last_mode": "Update All Existing Novels",
+    "chapters": 150,
+    "source_url": "https://www.wuxiaworld.com/novel/unintended-immortality/ui-chapter-21",
+    "next_url": "https://www.wuxiaworld.com/novel/unintended-immortality/ui-chapter-151",
+    "last_chapter_url": "https://www.wuxiaworld.com/novel/unintended-immortality/ui-chapter-150",
+    "last_chapter_number": 150,
+    "status": "Built with Pattern Scraper",
+    "last_mode": "Pattern Scraper",
     "created_at": "2026-05-27T09:12:04.466160+00:00",
-    "last_updated": "2026-05-29T06:40:52.740552+00:00",
-    "progress_state": "available",
-    "progress_reason": "",
-    "last_successful_source_url": "https://www.wuxiaworld.com/novel/unintended-immortality/ui-chapter-11",
+    "last_updated": "2026-05-29T19:46:00.821031+00:00",
+    "progress_state": "locked",
+    "progress_reason": "log in to continue your adventure",
+    "last_successful_source_url": "https://www.wuxiaworld.com/novel/unintended-immortality/ui-chapter-21",
     "last_successful_site": "WuxiaWorld",
     "source_history": [
       {
@@ -1029,6 +1029,24 @@
         "used_until_chapter": 20,
         "status": "success",
         "updated_at": "2026-05-29T06:40:52.740557+00:00"
+      },
+      {
+        "site": "WuxiaWorld",
+        "url": "https://www.wuxiaworld.com/novel/unintended-immortality/ui-chapter-21",
+        "engine": "Auto",
+        "used_from_chapter": 51,
+        "used_until_chapter": 50,
+        "status": "partial_locked",
+        "updated_at": "2026-05-29T19:42:43.588867+00:00"
+      },
+      {
+        "site": "WuxiaWorld",
+        "url": "https://www.wuxiaworld.com/novel/unintended-immortality/ui-chapter-21",
+        "engine": "Auto",
+        "used_from_chapter": 21,
+        "used_until_chapter": 50,
+        "status": "partial_locked",
+        "updated_at": "2026-05-29T19:42:43.630752+00:00"
       }
     ],
     "downloads": [
@@ -1047,9 +1065,25 @@
         "url": "epubs/unintended-immortality_ch011-020.epub",
         "mode": "Update All Existing Novels",
         "created_at": "2026-05-29T06:40:52.740531+00:00"
+      },
+      {
+        "label": "Chapters 21-50",
+        "start": 21,
+        "end": 50,
+        "url": "epubs/unintended-immortality_ch021-050.epub",
+        "mode": "Continue Novel",
+        "created_at": "2026-05-29T19:42:43.630727+00:00"
+      },
+      {
+        "label": "Chapters 51-150",
+        "start": 51,
+        "end": 150,
+        "url": "epubs/unintended-immortality_ch051-150_pattern.epub",
+        "mode": "Pattern Scraper",
+        "created_at": "2026-05-29T19:46:00.820976+00:00"
       }
     ],
-    "preferred_source_url": "https://www.wuxiaworld.com/novel/unintended-immortality/ui-chapter-21",
+    "preferred_source_url": "https://www.wuxiaworld.com/novel/unintended-immortality/ui-chapter-51",
     "preferred_engine": "Auto"
   },
   {
