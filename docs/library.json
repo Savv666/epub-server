@@ -1081,6 +1081,20 @@
         "url": "epubs/unintended-immortality_ch051-150_pattern.epub",
         "mode": "Pattern Scraper",
         "created_at": "2026-05-29T19:46:00.820976+00:00"
+      },
+      {
+        "label": "Chapters 1-150 (Combined)",
+        "start": 1,
+        "end": 150,
+        "url": "epubs/unintended-immortality_ch001-150_combined.epub",
+        "mode": "Combined",
+        "combined": true,
+        "combined_from": [
+          "epubs/unintended-immortality_ch001-010.epub",
+          "epubs/unintended-immortality_ch011-020.epub",
+          "epubs/unintended-immortality_ch021-050.epub",
+          "epubs/unintended-immortality_ch051-150_pattern.epub"
+        ]
       }
     ],
     "preferred_source_url": "https://www.wuxiaworld.com/novel/unintended-immortality/ui-chapter-51",
