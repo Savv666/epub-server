@@ -826,6 +826,64 @@ function buildContinueIssueUrl(novel, engine, sourceUrl) {
   return buildIssueUrl(issueTitle, issueBody);
 }
 
+function buildLockedNotice(novel) {
+  if (!novel) {
+    return "";
+  }
+
+  var lockedChapter = safeText(novel.locked_chapter_number, "").trim();
+  var progressState = safeText(novel.progress_state, "").trim();
+  var progressReason = safeText(novel.progress_reason, "").trim();
+  var lockedReason = safeText(novel.locked_reason, "").trim();
+  var status = safeText(novel.status, "").trim();
+  var lowerStatus = status.toLowerCase();
+  var lowerProgressState = progressState.toLowerCase();
+  var hasLockedState =
+    Boolean(lockedChapter) ||
+    Boolean(lockedReason) ||
+    lowerProgressState === "locked" ||
+    lowerStatus.indexOf("locked") !== -1;
+
+  if (!hasLockedState && !progressReason) {
+    return "";
+  }
+
+  var noticeTitle = hasLockedState ? "Locked chapter notice" : "Progress notice";
+  var parts = [];
+
+  if (lockedChapter) {
+    parts.push("Locked at chapter " + lockedChapter + ".");
+  }
+
+  var reason = lockedReason || progressReason;
+
+  if (reason) {
+    parts.push(reason);
+  }
+
+  if (!parts.length && progressState) {
+    parts.push("Progress state: " + progressState + ".");
+  }
+
+  var sourceUrl = getPreferredSourceUrl(novel);
+  var html = ''
+    + '<div class="locked-notice">'
+    + '<strong>' + escapeHtml(noticeTitle) + '</strong>'
+    + '<span>' + escapeHtml(parts.join(" ") || "This novel may need attention before it can continue.") + '</span>';
+
+  if (sourceUrl) {
+    html += ''
+      + '<div class="locked-actions">'
+      + '<a class="locked-link" href="' + escapeHtml(sourceUrl) + '" target="_blank" rel="noopener noreferrer">Open source</a>'
+      + '<button class="locked-link alternate-source-button" type="button">Find alternate source</button>'
+      + '</div>';
+  }
+
+  html += '</div>';
+
+  return html;
+}
+
 function buildNovelCard(novel, index) {
   var title = escapeHtml((novel && novel.title) || "Untitled Novel");
   var site = escapeHtml((novel && novel.site) || "Unknown");
