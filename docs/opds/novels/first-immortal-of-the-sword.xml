@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>https://savv666.github.io/epub-server/opds/novels/first-immortal-of-the-sword.xml</id>
   <title>First Immortal of the Sword</title>
-  <updated>2026-05-29T20:24:13.853577Z</updated>
+  <updated>2026-05-30T06:03:10.858542Z</updated>
   <link rel="self" href="https://savv666.github.io/epub-server/opds/novels/first-immortal-of-the-sword.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   <link rel="start" href="https://savv666.github.io/epub-server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
   <entry>
@@ -26,6 +26,18 @@
     </author>
     <content>First Immortal of the Sword (Built)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/first-immortal-of-the-sword_ch011-020.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/first-immortal-of-the-sword.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/first-immortal-of-the-sword.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>First Immortal of the Sword — Chapters 21-30</title>
+    <id>urn:epub-server:c43da309f8e1e4c879d6ef7825131a843f80f021</id>
+    <updated>2026-05-30T05:57:43.679447Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>First Immortal of the Sword (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/first-immortal-of-the-sword_ch021-030.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/first-immortal-of-the-sword.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/first-immortal-of-the-sword.webp" type="image/webp"/>
   </entry>
