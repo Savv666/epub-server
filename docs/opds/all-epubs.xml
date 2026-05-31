@@ -2,9 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>https://savv666.github.io/epub-server/opds/all-epubs.xml</id>
   <title>All EPUBs</title>
-  <updated>2026-05-31T06:42:21.117397Z</updated>
+  <updated>2026-05-31T21:52:26.761679Z</updated>
   <link rel="self" href="https://savv666.github.io/epub-server/opds/all-epubs.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   <link rel="start" href="https://savv666.github.io/epub-server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
+  <entry>
+    <title>Test story — Chapters 1-1</title>
+    <id>urn:epub-server:dfb60374baa259cda676ac9e7c023da4f77e3e2d</id>
+    <updated>2026-05-31T21:52:26.474244Z</updated>
+    <author>
+      <name>Sexstories</name>
+    </author>
+    <content>Test story (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/test-story_ch001-001.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/default.svg" type="image/svg+xml"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/default.svg" type="image/svg+xml"/>
+  </entry>
   <entry>
     <title>Xianxia Senior Brother of a Heavens Favoured — Chapters 31-40</title>
     <id>urn:epub-server:bfcb0771ee14a4699f5c3125085b3642faf35cf6</id>

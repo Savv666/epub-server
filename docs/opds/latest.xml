@@ -2,9 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>https://savv666.github.io/epub-server/opds/latest.xml</id>
   <title>Latest EPUBs</title>
-  <updated>2026-05-31T06:42:21.111173Z</updated>
+  <updated>2026-05-31T21:52:26.754993Z</updated>
   <link rel="self" href="https://savv666.github.io/epub-server/opds/latest.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   <link rel="start" href="https://savv666.github.io/epub-server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
+  <entry>
+    <title>Test story — Chapters 1-1</title>
+    <id>urn:epub-server:dfb60374baa259cda676ac9e7c023da4f77e3e2d</id>
+    <updated>2026-05-31T21:52:26.474244Z</updated>
+    <author>
+      <name>Sexstories</name>
+    </author>
+    <content>Test story (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/test-story_ch001-001.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/default.svg" type="image/svg+xml"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/default.svg" type="image/svg+xml"/>
+  </entry>
   <entry>
     <title>Xianxia Senior Brother of a Heavens Favoured — Chapters 31-40</title>
     <id>urn:epub-server:bfcb0771ee14a4699f5c3125085b3642faf35cf6</id>
@@ -592,17 +604,5 @@
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/the-prodigies-war_ch011-020.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/the-prodigies-war.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/the-prodigies-war.webp" type="image/webp"/>
-  </entry>
-  <entry>
-    <title>The Mirror Legacy — Chapters 11-20</title>
-    <id>urn:epub-server:21f09d173ef7dc95ffe678f367f81a6619d6b0b4</id>
-    <updated>2026-05-29T06:39:24.864444Z</updated>
-    <author>
-      <name>WuxiaWorld</name>
-    </author>
-    <content>The Mirror Legacy (Built)</content>
-    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/the-mirror-legacy_ch011-020.epub" type="application/epub+zip"/>
-    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/the-mirror-legacy.webp" type="image/webp"/>
-    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/the-mirror-legacy.webp" type="image/webp"/>
   </entry>
 </feed>
