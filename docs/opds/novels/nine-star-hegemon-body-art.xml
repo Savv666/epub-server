@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>https://savv666.github.io/epub-server/opds/novels/nine-star-hegemon-body-art.xml</id>
   <title>Nine Star Hegemon Body Art</title>
-  <updated>2026-06-02T07:00:59.956038Z</updated>
+  <updated>2026-06-03T07:16:10.128721Z</updated>
   <link rel="self" href="https://savv666.github.io/epub-server/opds/novels/nine-star-hegemon-body-art.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   <link rel="start" href="https://savv666.github.io/epub-server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
   <entry>
@@ -74,6 +74,18 @@
     </author>
     <content>Nine Star Hegemon Body Art (Built)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/nine-star-hegemon-body-art_ch051-060.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Nine Star Hegemon Body Art — Chapters 61-70</title>
+    <id>urn:epub-server:4a3d0bd3b868ce6ae0dd151659d1dbf0cf81ce27</id>
+    <updated>2026-06-03T07:14:49.352481Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Nine Star Hegemon Body Art (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/nine-star-hegemon-body-art_ch061-070.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
   </entry>

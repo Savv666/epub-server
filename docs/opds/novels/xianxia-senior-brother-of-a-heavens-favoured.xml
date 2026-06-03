@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>https://savv666.github.io/epub-server/opds/novels/xianxia-senior-brother-of-a-heavens-favoured.xml</id>
   <title>Xianxia Senior Brother of a Heavens Favoured</title>
-  <updated>2026-06-02T07:00:59.964529Z</updated>
+  <updated>2026-06-03T07:16:10.141522Z</updated>
   <link rel="self" href="https://savv666.github.io/epub-server/opds/novels/xianxia-senior-brother-of-a-heavens-favoured.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   <link rel="start" href="https://savv666.github.io/epub-server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
   <entry>
@@ -74,6 +74,18 @@
     </author>
     <content>Xianxia Senior Brother of a Heavens Favoured (Built)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/xianxia-senior-brother-of-a-heavens-favoured_ch051-060.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/xianxia-senior-brother-of-a-heavens-favoured.png" type="image/png"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/xianxia-senior-brother-of-a-heavens-favoured.png" type="image/png"/>
+  </entry>
+  <entry>
+    <title>Xianxia Senior Brother of a Heavens Favoured — Chapters 61-70</title>
+    <id>urn:epub-server:7a1ae706c52199e1fd66298db36251839e56b7f3</id>
+    <updated>2026-06-03T07:16:09.680467Z</updated>
+    <author>
+      <name>RoyalRoad</name>
+    </author>
+    <content>Xianxia Senior Brother of a Heavens Favoured (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/xianxia-senior-brother-of-a-heavens-favoured_ch061-070.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/xianxia-senior-brother-of-a-heavens-favoured.png" type="image/png"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/xianxia-senior-brother-of-a-heavens-favoured.png" type="image/png"/>
   </entry>
