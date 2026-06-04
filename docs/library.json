@@ -2013,48 +2013,6 @@
     "last_epub_url": "epubs/starting-as-a-son-in-law-to-establish-an-immortal-family_ch1601-1710_combined.epub"
   },
   {
-    "title": "Test story",
-    "slug": "test-story",
-    "site": "Sexstories",
-    "cover": "covers/default.svg",
-    "chapters": 1,
-    "source_url": "https://www.sexstories.com/story/115035/teasing_my_daddy_at_merwin_lake",
-    "next_url": "javascript:getCommentsPerPage(0, 'comments')",
-    "last_chapter_url": "https://www.sexstories.com/story/115035/teasing_my_daddy_at_merwin_lake",
-    "last_chapter_number": 1,
-    "status": "Built",
-    "last_mode": "New Novel",
-    "created_at": "2026-05-31T21:52:26.474269+00:00",
-    "last_updated": "2026-05-31T21:52:26.474271+00:00",
-    "progress_state": "available",
-    "progress_reason": "",
-    "last_successful_source_url": "https://www.sexstories.com/story/115035/teasing_my_daddy_at_merwin_lake",
-    "preferred_source_url": "javascript:getCommentsPerPage(0, 'comments')",
-    "preferred_engine": "Auto",
-    "last_successful_site": "Sexstories",
-    "source_history": [
-      {
-        "site": "Sexstories",
-        "url": "https://www.sexstories.com/story/115035/teasing_my_daddy_at_merwin_lake",
-        "engine": "Auto",
-        "used_from_chapter": 1,
-        "used_until_chapter": 1,
-        "status": "success",
-        "updated_at": "2026-05-31T21:52:26.474274+00:00"
-      }
-    ],
-    "downloads": [
-      {
-        "label": "Chapters 1-1",
-        "start": 1,
-        "end": 1,
-        "url": "epubs/test-story_ch001-001.epub",
-        "mode": "New Novel",
-        "created_at": "2026-05-31T21:52:26.474244+00:00"
-      }
-    ]
-  },
-  {
     "title": "The Mirror Legacy",
     "slug": "the-mirror-legacy",
     "site": "WuxiaWorld",
