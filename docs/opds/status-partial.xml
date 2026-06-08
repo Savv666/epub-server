@@ -2,13 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>https://savv666.github.io/epub-server/opds/status-partial.xml</id>
   <title>Partial / Problem States</title>
-  <updated>2026-06-07T06:44:54.848703Z</updated>
+  <updated>2026-06-08T07:05:43.883144Z</updated>
   <link rel="self" href="https://savv666.github.io/epub-server/opds/status-partial.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   <link rel="start" href="https://savv666.github.io/epub-server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
   <entry>
     <title>Unintended Immortality — Chapters 1-150 (Combined)</title>
     <id>urn:epub-server:b24d14161855b6b7455bd2f17d5216a1fbef4c8a</id>
-    <updated>2026-06-07T06:44:49.911278Z</updated>
+    <updated>2026-06-08T07:05:38.533646Z</updated>
     <author>
       <name>WuxiaWorld</name>
     </author>
@@ -16,6 +16,90 @@
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/unintended-immortality_ch001-150_combined.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/unintended-immortality.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/unintended-immortality.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Nine Star Hegemon Body Art — Chapters 111-111</title>
+    <id>urn:epub-server:045af92aa7740246b7caea08ffa2a4518094f04f</id>
+    <updated>2026-06-08T07:04:57.935994Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Nine Star Hegemon Body Art (Partial / locked)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/nine-star-hegemon-body-art_ch111-111.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Nine Star Hegemon Body Art — Chapters 101-110</title>
+    <id>urn:epub-server:165566b7d61ceff4f4dc6ebd13b355db0ee552aa</id>
+    <updated>2026-06-07T06:44:09.609239Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Nine Star Hegemon Body Art (Partial / locked)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/nine-star-hegemon-body-art_ch101-110.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Nine Star Hegemon Body Art — Chapters 91-100</title>
+    <id>urn:epub-server:9905c849be6a798f7af1d6205a2a2dea4e3eacc1</id>
+    <updated>2026-06-06T06:04:18.540166Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Nine Star Hegemon Body Art (Partial / locked)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/nine-star-hegemon-body-art_ch091-100.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Nine Star Hegemon Body Art — Chapters 81-90</title>
+    <id>urn:epub-server:2b4b29a859e6a2759d807fa75b1480bef75f36e9</id>
+    <updated>2026-06-05T06:45:08.297551Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Nine Star Hegemon Body Art (Partial / locked)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/nine-star-hegemon-body-art_ch081-090.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Nine Star Hegemon Body Art — Chapters 71-80</title>
+    <id>urn:epub-server:1ef51ef98bf566ab7e5d59116f07f36a9689f86b</id>
+    <updated>2026-06-04T06:58:11.633421Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Nine Star Hegemon Body Art (Partial / locked)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/nine-star-hegemon-body-art_ch071-080.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Nine Star Hegemon Body Art — Chapters 61-70</title>
+    <id>urn:epub-server:4a3d0bd3b868ce6ae0dd151659d1dbf0cf81ce27</id>
+    <updated>2026-06-03T07:14:49.352481Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Nine Star Hegemon Body Art (Partial / locked)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/nine-star-hegemon-body-art_ch061-070.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Nine Star Hegemon Body Art — Chapters 51-60</title>
+    <id>urn:epub-server:6696d8c82847f91b050f9015b5dffdb1eb21a1f2</id>
+    <updated>2026-06-02T06:59:35.386538Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Nine Star Hegemon Body Art (Partial / locked)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/nine-star-hegemon-body-art_ch051-060.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
   </entry>
   <entry>
     <title>Tribulation of Myriad Races — Chapters 41-50</title>
@@ -100,6 +184,18 @@
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/scripture-of-days-past_ch041-050.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/scripture-of-days-past.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/scripture-of-days-past.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Nine Star Hegemon Body Art — Chapters 41-50</title>
+    <id>urn:epub-server:15a9a9db13b70b683e13359716dbd5bf01695d26</id>
+    <updated>2026-06-01T07:26:59.357512Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Nine Star Hegemon Body Art (Partial / locked)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/nine-star-hegemon-body-art_ch041-050.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
   </entry>
   <entry>
     <title>My Journey to Immortality Begins with Hunting — Chapters 41-50</title>
@@ -246,6 +342,18 @@
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/scripture-of-days-past.webp" type="image/webp"/>
   </entry>
   <entry>
+    <title>Nine Star Hegemon Body Art — Chapters 31-40</title>
+    <id>urn:epub-server:236ee65860dcfdef1a2514c3d58b171b0e513e05</id>
+    <updated>2026-05-31T06:38:32.629436Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Nine Star Hegemon Body Art (Partial / locked)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/nine-star-hegemon-body-art_ch031-040.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
+  </entry>
+  <entry>
     <title>My Journey to Immortality Begins with Hunting — Chapters 31-40</title>
     <id>urn:epub-server:6da0e4ab929fd6cf49f669ebf3792b6308563803</id>
     <updated>2026-05-31T06:38:14.070634Z</updated>
@@ -388,6 +496,18 @@
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/scripture-of-days-past_ch021-030.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/scripture-of-days-past.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/scripture-of-days-past.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Nine Star Hegemon Body Art — Chapters 21-30</title>
+    <id>urn:epub-server:c60fb9c8f67e63331db8d76c3d1fed56b1d1903b</id>
+    <updated>2026-05-30T05:59:23.101808Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Nine Star Hegemon Body Art (Partial / locked)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/nine-star-hegemon-body-art_ch021-030.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
   </entry>
   <entry>
     <title>My Journey to Immortality Begins with Hunting — Chapters 21-30</title>
@@ -570,6 +690,18 @@
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/scripture-of-days-past.webp" type="image/webp"/>
   </entry>
   <entry>
+    <title>Nine Star Hegemon Body Art — Chapters 11-20</title>
+    <id>urn:epub-server:27e1f698eca18cd275e7e993ba810a851a793e9b</id>
+    <updated>2026-05-29T06:36:58.635203Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Nine Star Hegemon Body Art (Partial / locked)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/nine-star-hegemon-body-art_ch011-020.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
+  </entry>
+  <entry>
     <title>My Journey to Immortality Begins with Hunting — Chapters 11-20</title>
     <id>urn:epub-server:24567a27f1c6f2eaea46b4bd3136fbd3f7ba4952</id>
     <updated>2026-05-29T06:36:39.838822Z</updated>
@@ -700,6 +832,18 @@
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/scripture-of-days-past_ch001-010.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/scripture-of-days-past.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/scripture-of-days-past.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Nine Star Hegemon Body Art — Chapters 1-10</title>
+    <id>urn:epub-server:ee6f923cdfb541c217f1459277b8126d21a2cdc9</id>
+    <updated>2026-05-22T11:25:05.174780Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Nine Star Hegemon Body Art (Partial / locked)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/nine-star-hegemon-body-art_ch001-010.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
   </entry>
   <entry>
     <title>First Immortal of the Sword — Chapters 1-10</title>

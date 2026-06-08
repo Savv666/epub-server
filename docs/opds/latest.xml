@@ -2,25 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>https://savv666.github.io/epub-server/opds/latest.xml</id>
   <title>Latest EPUBs</title>
-  <updated>2026-06-07T06:44:54.766135Z</updated>
+  <updated>2026-06-08T07:05:43.794363Z</updated>
   <link rel="self" href="https://savv666.github.io/epub-server/opds/latest.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   <link rel="start" href="https://savv666.github.io/epub-server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
   <entry>
-    <title>Xianxia Senior Brother of a Heavens Favoured — Chapters 77-79</title>
-    <id>urn:epub-server:bc89cd244750d1b9983f83d9c00b7625696fedaf</id>
-    <updated>2026-06-07T06:44:54.451024Z</updated>
+    <title>Xianxia Senior Brother of a Heavens Favoured — Chapters 80-82</title>
+    <id>urn:epub-server:7912a9fc4deb84987c3fe4f6f75059f93f7b3e3d</id>
+    <updated>2026-06-08T07:05:43.445547Z</updated>
     <author>
       <name>RoyalRoad</name>
     </author>
     <content>Xianxia Senior Brother of a Heavens Favoured (Complete or stopped at source)</content>
-    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/xianxia-senior-brother-of-a-heavens-favoured_ch077-079.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/xianxia-senior-brother-of-a-heavens-favoured_ch080-082.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/xianxia-senior-brother-of-a-heavens-favoured.png" type="image/png"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/xianxia-senior-brother-of-a-heavens-favoured.png" type="image/png"/>
   </entry>
   <entry>
     <title>Unintended Immortality — Chapters 1-150 (Combined)</title>
     <id>urn:epub-server:b24d14161855b6b7455bd2f17d5216a1fbef4c8a</id>
-    <updated>2026-06-07T06:44:49.911278Z</updated>
+    <updated>2026-06-08T07:05:38.533646Z</updated>
     <author>
       <name>WuxiaWorld</name>
     </author>
@@ -32,7 +32,7 @@
   <entry>
     <title>Starting as a Son-in-law to Establish an immortal Family — Chapters 1601-1710 (Combined)</title>
     <id>urn:epub-server:cdb0dc9749e09e65c6cb9d7fced00984692765af</id>
-    <updated>2026-06-07T06:44:47.446774Z</updated>
+    <updated>2026-06-08T07:05:36.209996Z</updated>
     <author>
       <name>NovelFull</name>
     </author>
@@ -40,6 +40,102 @@
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/starting-as-a-son-in-law-to-establish-an-immortal-family_ch1601-1710_combined.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/starting-as-a-son-in-law-to-establish-an-immortal-family.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/starting-as-a-son-in-law-to-establish-an-immortal-family.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Starting as a Son-in-law to Establish an immortal Family — Chapters 1811-1820</title>
+    <id>urn:epub-server:67926ee0e0b034f9384a654512d32d175b302cb0</id>
+    <updated>2026-06-08T07:05:36.209970Z</updated>
+    <author>
+      <name>NovelFull</name>
+    </author>
+    <content>Starting as a Son-in-law to Establish an immortal Family (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/starting-as-a-son-in-law-to-establish-an-immortal-family_ch1811-1820.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/starting-as-a-son-in-law-to-establish-an-immortal-family.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/starting-as-a-son-in-law-to-establish-an-immortal-family.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Sky Pride — Chapters 111-120</title>
+    <id>urn:epub-server:9e8d4484dbc5ad561eb32c2c56e0680f6592e19a</id>
+    <updated>2026-06-08T07:05:18.727630Z</updated>
+    <author>
+      <name>RoyalRoad</name>
+    </author>
+    <content>Sky Pride (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/sky-pride_ch111-120.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/sky-pride.png" type="image/png"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/sky-pride.png" type="image/png"/>
+  </entry>
+  <entry>
+    <title>Otherworld Therapy — Chapters 75-75</title>
+    <id>urn:epub-server:9349b002f61e2f94c1e0affeb735a71e07f1fe1c</id>
+    <updated>2026-06-08T07:04:58.744304Z</updated>
+    <author>
+      <name>RoyalRoad</name>
+    </author>
+    <content>Otherworld Therapy (Complete or stopped at source)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/otherworld-therapy_ch075-075.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/otherworld-therapy.png" type="image/png"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/otherworld-therapy.png" type="image/png"/>
+  </entry>
+  <entry>
+    <title>Nine Star Hegemon Body Art — Chapters 111-111</title>
+    <id>urn:epub-server:045af92aa7740246b7caea08ffa2a4518094f04f</id>
+    <updated>2026-06-08T07:04:57.935994Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Nine Star Hegemon Body Art (Partial / locked)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/nine-star-hegemon-body-art_ch111-111.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Mother of Learning — Chapters 111-115</title>
+    <id>urn:epub-server:feb17740a768716deceae65f8290e385bf3ed09e</id>
+    <updated>2026-06-08T07:04:54.673653Z</updated>
+    <author>
+      <name>RoyalRoad</name>
+    </author>
+    <content>Mother of Learning (Complete or stopped at source)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/mother-of-learning_ch111-115.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/mother-of-learning.jpg" type="image/jpeg"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/mother-of-learning.jpg" type="image/jpeg"/>
+  </entry>
+  <entry>
+    <title>Martial Peak — Chapters 111-120</title>
+    <id>urn:epub-server:52737e307e5354b1311e21b77fe6c6123db31340</id>
+    <updated>2026-06-08T07:04:46.063138Z</updated>
+    <author>
+      <name>NovelFull</name>
+    </author>
+    <content>Martial Peak (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/martial-peak_ch111-120.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/martial-peak.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/martial-peak.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Emperor’s Domination — Chapters 358-367</title>
+    <id>urn:epub-server:5db75a66856f33f5e96250e0264a71d07f7e3637</id>
+    <updated>2026-06-08T07:04:27.810108Z</updated>
+    <author>
+      <name>NovelFull</name>
+    </author>
+    <content>Emperor’s Domination (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/emperors-domination_ch358-367.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/emperors-domination.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/emperors-domination.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Xianxia Senior Brother of a Heavens Favoured — Chapters 77-79</title>
+    <id>urn:epub-server:bc89cd244750d1b9983f83d9c00b7625696fedaf</id>
+    <updated>2026-06-07T06:44:54.451024Z</updated>
+    <author>
+      <name>RoyalRoad</name>
+    </author>
+    <content>Xianxia Senior Brother of a Heavens Favoured (Complete or stopped at source)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/xianxia-senior-brother-of-a-heavens-favoured_ch077-079.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/xianxia-senior-brother-of-a-heavens-favoured.png" type="image/png"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/xianxia-senior-brother-of-a-heavens-favoured.png" type="image/png"/>
   </entry>
   <entry>
     <title>Starting as a Son-in-law to Establish an immortal Family — Chapters 1801-1810</title>
@@ -84,7 +180,7 @@
     <author>
       <name>WuxiaWorld</name>
     </author>
-    <content>Nine Star Hegemon Body Art (Built)</content>
+    <content>Nine Star Hegemon Body Art (Partial / locked)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/nine-star-hegemon-body-art_ch101-110.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
@@ -96,7 +192,7 @@
     <author>
       <name>RoyalRoad</name>
     </author>
-    <content>Mother of Learning (Built)</content>
+    <content>Mother of Learning (Complete or stopped at source)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/mother-of-learning_ch101-110.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/mother-of-learning.jpg" type="image/jpeg"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/mother-of-learning.jpg" type="image/jpeg"/>
@@ -180,7 +276,7 @@
     <author>
       <name>WuxiaWorld</name>
     </author>
-    <content>Nine Star Hegemon Body Art (Built)</content>
+    <content>Nine Star Hegemon Body Art (Partial / locked)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/nine-star-hegemon-body-art_ch091-100.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
@@ -192,7 +288,7 @@
     <author>
       <name>RoyalRoad</name>
     </author>
-    <content>Mother of Learning (Built)</content>
+    <content>Mother of Learning (Complete or stopped at source)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/mother-of-learning_ch091-100.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/mother-of-learning.jpg" type="image/jpeg"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/mother-of-learning.jpg" type="image/jpeg"/>
@@ -276,7 +372,7 @@
     <author>
       <name>WuxiaWorld</name>
     </author>
-    <content>Nine Star Hegemon Body Art (Built)</content>
+    <content>Nine Star Hegemon Body Art (Partial / locked)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/nine-star-hegemon-body-art_ch081-090.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
@@ -288,7 +384,7 @@
     <author>
       <name>RoyalRoad</name>
     </author>
-    <content>Mother of Learning (Built)</content>
+    <content>Mother of Learning (Complete or stopped at source)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/mother-of-learning_ch081-090.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/mother-of-learning.jpg" type="image/jpeg"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/mother-of-learning.jpg" type="image/jpeg"/>
@@ -372,7 +468,7 @@
     <author>
       <name>WuxiaWorld</name>
     </author>
-    <content>Nine Star Hegemon Body Art (Built)</content>
+    <content>Nine Star Hegemon Body Art (Partial / locked)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/nine-star-hegemon-body-art_ch071-080.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
@@ -384,7 +480,7 @@
     <author>
       <name>RoyalRoad</name>
     </author>
-    <content>Mother of Learning (Built)</content>
+    <content>Mother of Learning (Complete or stopped at source)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/mother-of-learning_ch071-080.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/mother-of-learning.jpg" type="image/jpeg"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/mother-of-learning.jpg" type="image/jpeg"/>
@@ -468,7 +564,7 @@
     <author>
       <name>WuxiaWorld</name>
     </author>
-    <content>Nine Star Hegemon Body Art (Built)</content>
+    <content>Nine Star Hegemon Body Art (Partial / locked)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/nine-star-hegemon-body-art_ch061-070.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
@@ -480,7 +576,7 @@
     <author>
       <name>RoyalRoad</name>
     </author>
-    <content>Mother of Learning (Built)</content>
+    <content>Mother of Learning (Complete or stopped at source)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/mother-of-learning_ch061-070.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/mother-of-learning.jpg" type="image/jpeg"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/mother-of-learning.jpg" type="image/jpeg"/>
@@ -506,102 +602,6 @@
     </author>
     <content>Emperor’s Domination (Built)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/emperors-domination_ch308-317.epub" type="application/epub+zip"/>
-    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/emperors-domination.webp" type="image/webp"/>
-    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/emperors-domination.webp" type="image/webp"/>
-  </entry>
-  <entry>
-    <title>Xianxia Senior Brother of a Heavens Favoured — Chapters 51-60</title>
-    <id>urn:epub-server:237f8b3280211ff4260cce78f1b02b5a4057ecd6</id>
-    <updated>2026-06-02T07:00:59.663710Z</updated>
-    <author>
-      <name>RoyalRoad</name>
-    </author>
-    <content>Xianxia Senior Brother of a Heavens Favoured (Complete or stopped at source)</content>
-    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/xianxia-senior-brother-of-a-heavens-favoured_ch051-060.epub" type="application/epub+zip"/>
-    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/xianxia-senior-brother-of-a-heavens-favoured.png" type="image/png"/>
-    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/xianxia-senior-brother-of-a-heavens-favoured.png" type="image/png"/>
-  </entry>
-  <entry>
-    <title>Starting as a Son-in-law to Establish an immortal Family — Chapters 1751-1760</title>
-    <id>urn:epub-server:a61d9cd9cf6e64ef74cc4a962463cd252ef2fb6a</id>
-    <updated>2026-06-02T07:00:36.614205Z</updated>
-    <author>
-      <name>NovelFull</name>
-    </author>
-    <content>Starting as a Son-in-law to Establish an immortal Family (Built)</content>
-    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/starting-as-a-son-in-law-to-establish-an-immortal-family_ch1751-1760.epub" type="application/epub+zip"/>
-    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/starting-as-a-son-in-law-to-establish-an-immortal-family.webp" type="image/webp"/>
-    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/starting-as-a-son-in-law-to-establish-an-immortal-family.webp" type="image/webp"/>
-  </entry>
-  <entry>
-    <title>Sky Pride — Chapters 51-60</title>
-    <id>urn:epub-server:563fa3719ab2f656996fda7a84f537b129b01562</id>
-    <updated>2026-06-02T07:00:17.985750Z</updated>
-    <author>
-      <name>RoyalRoad</name>
-    </author>
-    <content>Sky Pride (Built)</content>
-    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/sky-pride_ch051-060.epub" type="application/epub+zip"/>
-    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/sky-pride.png" type="image/png"/>
-    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/sky-pride.png" type="image/png"/>
-  </entry>
-  <entry>
-    <title>Otherworld Therapy — Chapters 51-60</title>
-    <id>urn:epub-server:ff27c8a841e23cdbf76c3971a02cb0d3f9ca5882</id>
-    <updated>2026-06-02T06:59:57.897937Z</updated>
-    <author>
-      <name>RoyalRoad</name>
-    </author>
-    <content>Otherworld Therapy (Complete or stopped at source)</content>
-    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/otherworld-therapy_ch051-060.epub" type="application/epub+zip"/>
-    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/otherworld-therapy.png" type="image/png"/>
-    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/otherworld-therapy.png" type="image/png"/>
-  </entry>
-  <entry>
-    <title>Nine Star Hegemon Body Art — Chapters 51-60</title>
-    <id>urn:epub-server:6696d8c82847f91b050f9015b5dffdb1eb21a1f2</id>
-    <updated>2026-06-02T06:59:35.386538Z</updated>
-    <author>
-      <name>WuxiaWorld</name>
-    </author>
-    <content>Nine Star Hegemon Body Art (Built)</content>
-    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/nine-star-hegemon-body-art_ch051-060.epub" type="application/epub+zip"/>
-    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
-    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
-  </entry>
-  <entry>
-    <title>Mother of Learning — Chapters 51-60</title>
-    <id>urn:epub-server:0c599d62678d0bc4a0653c3ef097e4189a2d352d</id>
-    <updated>2026-06-02T06:59:16.265444Z</updated>
-    <author>
-      <name>RoyalRoad</name>
-    </author>
-    <content>Mother of Learning (Built)</content>
-    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/mother-of-learning_ch051-060.epub" type="application/epub+zip"/>
-    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/mother-of-learning.jpg" type="image/jpeg"/>
-    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/mother-of-learning.jpg" type="image/jpeg"/>
-  </entry>
-  <entry>
-    <title>Martial Peak — Chapters 51-60</title>
-    <id>urn:epub-server:293acce1b43ce0c0ef7d774faa3b0e8e246cb4cb</id>
-    <updated>2026-06-02T06:58:56.094959Z</updated>
-    <author>
-      <name>NovelFull</name>
-    </author>
-    <content>Martial Peak (Built)</content>
-    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/martial-peak_ch051-060.epub" type="application/epub+zip"/>
-    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/martial-peak.webp" type="image/webp"/>
-    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/martial-peak.webp" type="image/webp"/>
-  </entry>
-  <entry>
-    <title>Emperor’s Domination — Chapters 298-307</title>
-    <id>urn:epub-server:ce1643792b5ecd24a0ce3667ec7fc8c7d266c7ff</id>
-    <updated>2026-06-02T06:58:37.119552Z</updated>
-    <author>
-      <name>NovelFull</name>
-    </author>
-    <content>Emperor’s Domination (Built)</content>
-    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/emperors-domination_ch298-307.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/emperors-domination.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/emperors-domination.webp" type="image/webp"/>
   </entry>
