@@ -2,25 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>https://savv666.github.io/epub-server/opds/sites.xml</id>
   <title>Sites</title>
-  <updated>2026-06-13T06:34:08.659312Z</updated>
+  <updated>2026-06-14T06:59:12.386426Z</updated>
   <link rel="self" href="https://savv666.github.io/epub-server/opds/sites.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
   <link rel="start" href="https://savv666.github.io/epub-server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
   <entry>
     <title>NovelFull</title>
     <id>https://savv666.github.io/epub-server/opds/sites/novelfull.xml</id>
-    <updated>2026-06-13T06:34:08.659333Z</updated>
+    <updated>2026-06-14T06:59:12.386452Z</updated>
     <link rel="subsection" href="https://savv666.github.io/epub-server/opds/sites/novelfull.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   </entry>
   <entry>
     <title>RoyalRoad</title>
     <id>https://savv666.github.io/epub-server/opds/sites/royalroad.xml</id>
-    <updated>2026-06-13T06:34:08.659344Z</updated>
+    <updated>2026-06-14T06:59:12.386463Z</updated>
     <link rel="subsection" href="https://savv666.github.io/epub-server/opds/sites/royalroad.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   </entry>
   <entry>
     <title>WuxiaWorld</title>
     <id>https://savv666.github.io/epub-server/opds/sites/wuxiaworld.xml</id>
-    <updated>2026-06-13T06:34:08.659352Z</updated>
+    <updated>2026-06-14T06:59:12.386472Z</updated>
     <link rel="subsection" href="https://savv666.github.io/epub-server/opds/sites/wuxiaworld.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   </entry>
 </feed>
