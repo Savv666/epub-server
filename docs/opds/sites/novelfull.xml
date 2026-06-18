@@ -2,13 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>https://savv666.github.io/epub-server/opds/sites/novelfull.xml</id>
   <title>NovelFull</title>
-  <updated>2026-06-17T07:29:33.094432Z</updated>
+  <updated>2026-06-18T07:10:01.226343Z</updated>
   <link rel="self" href="https://savv666.github.io/epub-server/opds/sites/novelfull.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   <link rel="start" href="https://savv666.github.io/epub-server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
   <entry>
     <title>Starting as a Son-in-law to Establish an immortal Family — Chapters 1601-1710 (Combined)</title>
     <id>urn:epub-server:cdb0dc9749e09e65c6cb9d7fced00984692765af</id>
-    <updated>2026-06-17T07:29:25.528534Z</updated>
+    <updated>2026-06-18T07:09:52.695652Z</updated>
     <author>
       <name>NovelFull</name>
     </author>
@@ -16,6 +16,42 @@
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/starting-as-a-son-in-law-to-establish-an-immortal-family_ch1601-1710_combined.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/starting-as-a-son-in-law-to-establish-an-immortal-family.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/starting-as-a-son-in-law-to-establish-an-immortal-family.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Starting as a Son-in-law to Establish an immortal Family — Chapters 1911-1920</title>
+    <id>urn:epub-server:9c5f82011cb26b42a861e7c2896c7855e3e2aa4b</id>
+    <updated>2026-06-18T07:09:52.695628Z</updated>
+    <author>
+      <name>NovelFull</name>
+    </author>
+    <content>Starting as a Son-in-law to Establish an immortal Family (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/starting-as-a-son-in-law-to-establish-an-immortal-family_ch1911-1920.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/starting-as-a-son-in-law-to-establish-an-immortal-family.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/starting-as-a-son-in-law-to-establish-an-immortal-family.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Martial Peak — Chapters 211-220</title>
+    <id>urn:epub-server:e8b138f97d780a0410531fa7f1e81b23b14a6ede</id>
+    <updated>2026-06-18T07:09:07.980463Z</updated>
+    <author>
+      <name>NovelFull</name>
+    </author>
+    <content>Martial Peak (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/martial-peak_ch211-220.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/martial-peak.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/martial-peak.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Emperor’s Domination — Chapters 458-467</title>
+    <id>urn:epub-server:057a5cc7430b9fc95f84708144e06f5802602281</id>
+    <updated>2026-06-18T07:08:48.747254Z</updated>
+    <author>
+      <name>NovelFull</name>
+    </author>
+    <content>Emperor’s Domination (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/emperors-domination_ch458-467.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/emperors-domination.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/emperors-domination.webp" type="image/webp"/>
   </entry>
   <entry>
     <title>Starting as a Son-in-law to Establish an immortal Family — Chapters 1901-1910</title>

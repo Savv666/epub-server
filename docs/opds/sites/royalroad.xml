@@ -2,9 +2,57 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>https://savv666.github.io/epub-server/opds/sites/royalroad.xml</id>
   <title>RoyalRoad</title>
-  <updated>2026-06-17T07:29:33.075148Z</updated>
+  <updated>2026-06-18T07:10:01.206214Z</updated>
   <link rel="self" href="https://savv666.github.io/epub-server/opds/sites/royalroad.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   <link rel="start" href="https://savv666.github.io/epub-server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
+  <entry>
+    <title>Xianxia Senior Brother of a Heavens Favoured — Chapters 110-112</title>
+    <id>urn:epub-server:8ebb7196ea1c3db783917b031b4335202d1acacc</id>
+    <updated>2026-06-18T07:10:00.648446Z</updated>
+    <author>
+      <name>RoyalRoad</name>
+    </author>
+    <content>Xianxia Senior Brother of a Heavens Favoured (Complete or stopped at source)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/xianxia-senior-brother-of-a-heavens-favoured_ch110-112.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/xianxia-senior-brother-of-a-heavens-favoured.png" type="image/png"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/xianxia-senior-brother-of-a-heavens-favoured.png" type="image/png"/>
+  </entry>
+  <entry>
+    <title>Sky Pride — Chapters 211-220</title>
+    <id>urn:epub-server:5d1361cd3f00394e12f0aa941ef28a53cb863564</id>
+    <updated>2026-06-18T07:09:33.858430Z</updated>
+    <author>
+      <name>RoyalRoad</name>
+    </author>
+    <content>Sky Pride (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/sky-pride_ch211-220.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/sky-pride.png" type="image/png"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/sky-pride.png" type="image/png"/>
+  </entry>
+  <entry>
+    <title>Otherworld Therapy — Chapters 85-85</title>
+    <id>urn:epub-server:cc57319381900a3de96007303f8bb7ff51367154</id>
+    <updated>2026-06-18T07:09:12.742188Z</updated>
+    <author>
+      <name>RoyalRoad</name>
+    </author>
+    <content>Otherworld Therapy (Complete or stopped at source)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/otherworld-therapy_ch085-085.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/otherworld-therapy.png" type="image/png"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/otherworld-therapy.png" type="image/png"/>
+  </entry>
+  <entry>
+    <title>Mother of Learning — Chapters 125-125</title>
+    <id>urn:epub-server:f0c29aeaad5f68cd592d43198332f0e2749359c7</id>
+    <updated>2026-06-18T07:09:10.969734Z</updated>
+    <author>
+      <name>RoyalRoad</name>
+    </author>
+    <content>Mother of Learning (Complete or stopped at source)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/mother-of-learning_ch125-125.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/mother-of-learning.jpg" type="image/jpeg"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/mother-of-learning.jpg" type="image/jpeg"/>
+  </entry>
   <entry>
     <title>Xianxia Senior Brother of a Heavens Favoured — Chapters 107-109</title>
     <id>urn:epub-server:992905adb8cfffabe20d2f04b13e37a37328fdb8</id>
