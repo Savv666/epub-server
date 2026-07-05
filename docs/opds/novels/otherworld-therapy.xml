@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>https://savv666.github.io/epub-server/opds/novels/otherworld-therapy.xml</id>
   <title>Otherworld Therapy</title>
-  <updated>2026-07-04T05:56:46.386822Z</updated>
+  <updated>2026-07-05T06:16:29.856397Z</updated>
   <link rel="self" href="https://savv666.github.io/epub-server/opds/novels/otherworld-therapy.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   <link rel="start" href="https://savv666.github.io/epub-server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
   <entry>
@@ -458,6 +458,18 @@
     </author>
     <content>Otherworld Therapy (Complete or stopped at source)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/otherworld-therapy_ch101-101.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/otherworld-therapy.png" type="image/png"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/otherworld-therapy.png" type="image/png"/>
+  </entry>
+  <entry>
+    <title>Otherworld Therapy — Chapters 102-102</title>
+    <id>urn:epub-server:6b43e5c94187bf0c8689d0a311f3de08576ae357</id>
+    <updated>2026-07-05T06:15:39.855977Z</updated>
+    <author>
+      <name>RoyalRoad</name>
+    </author>
+    <content>Otherworld Therapy (Complete or stopped at source)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/otherworld-therapy_ch102-102.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/otherworld-therapy.png" type="image/png"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/otherworld-therapy.png" type="image/png"/>
   </entry>
