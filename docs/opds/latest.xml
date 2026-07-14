@@ -2,25 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>https://savv666.github.io/epub-server/opds/latest.xml</id>
   <title>Latest EPUBs</title>
-  <updated>2026-07-13T05:50:03.697995Z</updated>
+  <updated>2026-07-14T05:11:21.945970Z</updated>
   <link rel="self" href="https://savv666.github.io/epub-server/opds/latest.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   <link rel="start" href="https://savv666.github.io/epub-server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
   <entry>
-    <title>Xianxia Senior Brother of a Heavens Favoured — Chapters 209-213</title>
-    <id>urn:epub-server:634df4befb136c704391b48302d07b241067cd49</id>
-    <updated>2026-07-13T05:50:03.342264Z</updated>
+    <title>Xianxia Senior Brother of a Heavens Favoured — Chapters 214-218</title>
+    <id>urn:epub-server:84daf5549eb8f8d71581973299673c6278b64d39</id>
+    <updated>2026-07-14T05:11:21.579483Z</updated>
     <author>
       <name>RoyalRoad</name>
     </author>
     <content>Xianxia Senior Brother of a Heavens Favoured (Complete or stopped at source)</content>
-    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/xianxia-senior-brother-of-a-heavens-favoured_ch209-213.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/xianxia-senior-brother-of-a-heavens-favoured_ch214-218.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/xianxia-senior-brother-of-a-heavens-favoured.png" type="image/png"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/xianxia-senior-brother-of-a-heavens-favoured.png" type="image/png"/>
   </entry>
   <entry>
     <title>Unintended Immortality — Chapters 1-150 (Combined)</title>
     <id>urn:epub-server:b24d14161855b6b7455bd2f17d5216a1fbef4c8a</id>
-    <updated>2026-07-13T05:49:54.329223Z</updated>
+    <updated>2026-07-14T05:11:12.009659Z</updated>
     <author>
       <name>WuxiaWorld</name>
     </author>
@@ -32,7 +32,7 @@
   <entry>
     <title>Starting as a Son-in-law to Establish an immortal Family — Chapters 1601-1710 (Combined)</title>
     <id>urn:epub-server:cdb0dc9749e09e65c6cb9d7fced00984692765af</id>
-    <updated>2026-07-13T05:49:51.844353Z</updated>
+    <updated>2026-07-14T05:11:09.730664Z</updated>
     <author>
       <name>NovelFull</name>
     </author>
@@ -40,6 +40,78 @@
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/starting-as-a-son-in-law-to-establish-an-immortal-family_ch1601-1710_combined.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/starting-as-a-son-in-law-to-establish-an-immortal-family.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/starting-as-a-son-in-law-to-establish-an-immortal-family.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Starting as a Son-in-law to Establish an immortal Family — Chapters 2171-2180</title>
+    <id>urn:epub-server:620a782585250b4249302a0702579841d4ca0e86</id>
+    <updated>2026-07-14T05:11:09.730636Z</updated>
+    <author>
+      <name>NovelFull</name>
+    </author>
+    <content>Starting as a Son-in-law to Establish an immortal Family (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/starting-as-a-son-in-law-to-establish-an-immortal-family_ch2171-2180.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/starting-as-a-son-in-law-to-establish-an-immortal-family.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/starting-as-a-son-in-law-to-establish-an-immortal-family.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Sky Pride — Chapters 471-480</title>
+    <id>urn:epub-server:e345caaf02f4834daf5be12f5406d4fa6451e5d3</id>
+    <updated>2026-07-14T05:10:51.033528Z</updated>
+    <author>
+      <name>RoyalRoad</name>
+    </author>
+    <content>Sky Pride (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/sky-pride_ch471-480.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/sky-pride.png" type="image/png"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/sky-pride.png" type="image/png"/>
+  </entry>
+  <entry>
+    <title>Otherworld Therapy — Chapters 111-111</title>
+    <id>urn:epub-server:3bdc62682876705a40a2c70ac9f03bafb8a2c235</id>
+    <updated>2026-07-14T05:10:29.238986Z</updated>
+    <author>
+      <name>RoyalRoad</name>
+    </author>
+    <content>Otherworld Therapy (Complete or stopped at source)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/otherworld-therapy_ch111-111.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/otherworld-therapy.png" type="image/png"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/otherworld-therapy.png" type="image/png"/>
+  </entry>
+  <entry>
+    <title>Martial Peak — Chapters 471-480</title>
+    <id>urn:epub-server:ae9c5263e01a8cd05317977af6aa6c5f7f687ce0</id>
+    <updated>2026-07-14T05:10:27.447062Z</updated>
+    <author>
+      <name>NovelFull</name>
+    </author>
+    <content>Martial Peak (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/martial-peak_ch471-480.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/martial-peak.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/martial-peak.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Emperor’s Domination — Chapters 718-727</title>
+    <id>urn:epub-server:d8b4b246c01a9bd6290bfc06ab452f3a1f1bdaf9</id>
+    <updated>2026-07-14T05:10:08.091931Z</updated>
+    <author>
+      <name>NovelFull</name>
+    </author>
+    <content>Emperor’s Domination (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/emperors-domination_ch718-727.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/emperors-domination.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/emperors-domination.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Xianxia Senior Brother of a Heavens Favoured — Chapters 209-213</title>
+    <id>urn:epub-server:634df4befb136c704391b48302d07b241067cd49</id>
+    <updated>2026-07-13T05:50:03.342264Z</updated>
+    <author>
+      <name>RoyalRoad</name>
+    </author>
+    <content>Xianxia Senior Brother of a Heavens Favoured (Complete or stopped at source)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/xianxia-senior-brother-of-a-heavens-favoured_ch209-213.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/xianxia-senior-brother-of-a-heavens-favoured.png" type="image/png"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/xianxia-senior-brother-of-a-heavens-favoured.png" type="image/png"/>
   </entry>
   <entry>
     <title>Starting as a Son-in-law to Establish an immortal Family — Chapters 2161-2170</title>
@@ -530,78 +602,6 @@
     </author>
     <content>Emperor’s Domination (Built)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/emperors-domination_ch648-657.epub" type="application/epub+zip"/>
-    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/emperors-domination.webp" type="image/webp"/>
-    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/emperors-domination.webp" type="image/webp"/>
-  </entry>
-  <entry>
-    <title>Xianxia Senior Brother of a Heavens Favoured — Chapters 174-178</title>
-    <id>urn:epub-server:6113d6bb151203b3a4ad94b6861061e3d581cb40</id>
-    <updated>2026-07-06T06:49:08.902526Z</updated>
-    <author>
-      <name>RoyalRoad</name>
-    </author>
-    <content>Xianxia Senior Brother of a Heavens Favoured (Complete or stopped at source)</content>
-    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/xianxia-senior-brother-of-a-heavens-favoured_ch174-178.epub" type="application/epub+zip"/>
-    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/xianxia-senior-brother-of-a-heavens-favoured.png" type="image/png"/>
-    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/xianxia-senior-brother-of-a-heavens-favoured.png" type="image/png"/>
-  </entry>
-  <entry>
-    <title>Starting as a Son-in-law to Establish an immortal Family — Chapters 2091-2100</title>
-    <id>urn:epub-server:515af746d7e88769f3b1097b68b14b42a963ab7d</id>
-    <updated>2026-07-06T06:48:57.969431Z</updated>
-    <author>
-      <name>NovelFull</name>
-    </author>
-    <content>Starting as a Son-in-law to Establish an immortal Family (Built)</content>
-    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/starting-as-a-son-in-law-to-establish-an-immortal-family_ch2091-2100.epub" type="application/epub+zip"/>
-    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/starting-as-a-son-in-law-to-establish-an-immortal-family.webp" type="image/webp"/>
-    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/starting-as-a-son-in-law-to-establish-an-immortal-family.webp" type="image/webp"/>
-  </entry>
-  <entry>
-    <title>Sky Pride — Chapters 391-400</title>
-    <id>urn:epub-server:f49a004d45dd756fa38c16b4ee5febc09305956e</id>
-    <updated>2026-07-06T06:48:40.099727Z</updated>
-    <author>
-      <name>RoyalRoad</name>
-    </author>
-    <content>Sky Pride (Built)</content>
-    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/sky-pride_ch391-400.epub" type="application/epub+zip"/>
-    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/sky-pride.png" type="image/png"/>
-    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/sky-pride.png" type="image/png"/>
-  </entry>
-  <entry>
-    <title>Otherworld Therapy — Chapters 103-103</title>
-    <id>urn:epub-server:8ea9509e150b2340992f1f1a42934b997825b384</id>
-    <updated>2026-07-06T06:48:19.713405Z</updated>
-    <author>
-      <name>RoyalRoad</name>
-    </author>
-    <content>Otherworld Therapy (Complete or stopped at source)</content>
-    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/otherworld-therapy_ch103-103.epub" type="application/epub+zip"/>
-    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/otherworld-therapy.png" type="image/png"/>
-    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/otherworld-therapy.png" type="image/png"/>
-  </entry>
-  <entry>
-    <title>Martial Peak — Chapters 391-400</title>
-    <id>urn:epub-server:a8d9994ae8b88b7141913e35696573e2ddb48a47</id>
-    <updated>2026-07-06T06:48:17.629632Z</updated>
-    <author>
-      <name>NovelFull</name>
-    </author>
-    <content>Martial Peak (Built)</content>
-    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/martial-peak_ch391-400.epub" type="application/epub+zip"/>
-    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/martial-peak.webp" type="image/webp"/>
-    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/martial-peak.webp" type="image/webp"/>
-  </entry>
-  <entry>
-    <title>Emperor’s Domination — Chapters 638-647</title>
-    <id>urn:epub-server:13f87ed5dea927b4a4e616d6976fceca5142b248</id>
-    <updated>2026-07-06T06:47:58.979560Z</updated>
-    <author>
-      <name>NovelFull</name>
-    </author>
-    <content>Emperor’s Domination (Built)</content>
-    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/emperors-domination_ch638-647.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/emperors-domination.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/emperors-domination.webp" type="image/webp"/>
   </entry>
