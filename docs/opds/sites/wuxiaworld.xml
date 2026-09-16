@@ -2,13 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>https://savv666.github.io/epub-server/opds/sites/wuxiaworld.xml</id>
   <title>WuxiaWorld</title>
-  <updated>2026-09-15T07:50:56.023670Z</updated>
+  <updated>2026-09-16T07:47:42.377064Z</updated>
   <link rel="self" href="https://savv666.github.io/epub-server/opds/sites/wuxiaworld.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   <link rel="start" href="https://savv666.github.io/epub-server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
   <entry>
     <title>Unintended Immortality — Chapters 1-150 (Combined)</title>
     <id>urn:epub-server:b24d14161855b6b7455bd2f17d5216a1fbef4c8a</id>
-    <updated>2026-09-15T07:50:48.508476Z</updated>
+    <updated>2026-09-16T07:47:34.509379Z</updated>
     <author>
       <name>WuxiaWorld</name>
     </author>
@@ -16,6 +16,174 @@
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/unintended-immortality_ch001-150_combined.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/unintended-immortality.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/unintended-immortality.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Unintended Immortality — Chapters 211-220</title>
+    <id>urn:epub-server:b331eadff2f1705c080de96b957859bd97a1c63f</id>
+    <updated>2026-09-16T07:47:34.509361Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Unintended Immortality (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/unintended-immortality_ch211-220.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/unintended-immortality.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/unintended-immortality.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Tribulation of Myriad Races — Chapters 111-120</title>
+    <id>urn:epub-server:8b9efca892cc60a089ef4d24ff5df0e3fa5c2a27</id>
+    <updated>2026-09-16T07:47:14.465897Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Tribulation of Myriad Races (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/tribulation-of-myriad-races_ch111-120.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/tribulation-of-myriad-races.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/tribulation-of-myriad-races.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>The Sorcerer's Handbook — Chapters 111-120</title>
+    <id>urn:epub-server:e4a9cc125dc3f15aafb1234d3b4485d1a0744056</id>
+    <updated>2026-09-16T07:46:54.186379Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>The Sorcerer's Handbook (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/the-sorcerer-s-handbook_ch111-120.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/the-sorcerer-s-handbook.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/the-sorcerer-s-handbook.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>The Prodigies War — Chapters 111-120</title>
+    <id>urn:epub-server:15dd60b194fc7e632ebe1a116345af3ace64cb65</id>
+    <updated>2026-09-16T07:46:34.487363Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>The Prodigies War (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/the-prodigies-war_ch111-120.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/the-prodigies-war.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/the-prodigies-war.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>The Mirror Legacy — Chapters 111-120</title>
+    <id>urn:epub-server:2819d522d7ace3676dcdfc4cb0b147746296b8b7</id>
+    <updated>2026-09-16T07:46:14.132739Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>The Mirror Legacy (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/the-mirror-legacy_ch111-120.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/the-mirror-legacy.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/the-mirror-legacy.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Star Odyssey — Chapters 111-120</title>
+    <id>urn:epub-server:2b4a1046fd3e49b55c6142cf33704576427c175e</id>
+    <updated>2026-09-16T07:45:35.786528Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Star Odyssey (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/star-odyssey_ch111-120.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/star-odyssey.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/star-odyssey.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Star Gate — Chapters 111-120</title>
+    <id>urn:epub-server:7ef2b62c0f32c0bd955bc4116ad863c291fb9a5b</id>
+    <updated>2026-09-16T07:45:15.632610Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Star Gate (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/star-gate_ch111-120.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/star-gate.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/star-gate.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Scripture of Days Past — Chapters 111-120</title>
+    <id>urn:epub-server:54279381c7f7659abf9d80217886ac1b34e3f5f2</id>
+    <updated>2026-09-16T07:44:55.361309Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Scripture of Days Past (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/scripture-of-days-past_ch111-120.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/scripture-of-days-past.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/scripture-of-days-past.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Nine Star Hegemon Body Art — Chapters 172-181</title>
+    <id>urn:epub-server:d2ecd1272c47bbb984d95eec237a5e732a9d0f47</id>
+    <updated>2026-09-16T07:44:34.359940Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Nine Star Hegemon Body Art (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/nine-star-hegemon-body-art_ch172-181.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>My Journey to Immortality Begins with Hunting — Chapters 111-120</title>
+    <id>urn:epub-server:c8cfd1602fc236f918d1c7d039769ee8d50487c9</id>
+    <updated>2026-09-16T07:44:13.267913Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>My Journey to Immortality Begins with Hunting (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/my-journey-to-immortality-begins-with-hunting_ch111-120.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/my-journey-to-immortality-begins-with-hunting.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/my-journey-to-immortality-begins-with-hunting.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Martial God Asura — Chapters 111-120</title>
+    <id>urn:epub-server:04c801548ab30e5cf86aae812a9abba09f0d6201</id>
+    <updated>2026-09-16T07:43:34.680655Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Martial God Asura (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/martial-god-asura_ch111-120.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/martial-god-asura.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/martial-god-asura.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>First Immortal of the Sword — Chapters 111-118</title>
+    <id>urn:epub-server:2b72fc1fabafb654485f385c74070fb40d3db581</id>
+    <updated>2026-09-16T07:43:14.077533Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>First Immortal of the Sword (Complete or stopped at source)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/first-immortal-of-the-sword_ch111-118.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/first-immortal-of-the-sword.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/first-immortal-of-the-sword.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Beastmaster King — Chapters 111-120</title>
+    <id>urn:epub-server:023f9b381bafbecea803858276786316619fd632</id>
+    <updated>2026-09-16T07:42:41.052025Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Beastmaster King (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/beastmaster-king_ch111-120.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/beastmaster-king.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/beastmaster-king.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>13 Mink Street — Chapters 111-120</title>
+    <id>urn:epub-server:c3953d19fd80545533c09550a86f2cbbfbcbcd95</id>
+    <updated>2026-09-16T07:42:20.374239Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>13 Mink Street (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/13-mink-street_ch111-120.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/13-mink-street.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/13-mink-street.webp" type="image/webp"/>
   </entry>
   <entry>
     <title>Unintended Immortality — Chapters 201-210</title>
@@ -156,7 +324,7 @@
     <author>
       <name>WuxiaWorld</name>
     </author>
-    <content>First Immortal of the Sword (Built)</content>
+    <content>First Immortal of the Sword (Complete or stopped at source)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/first-immortal-of-the-sword_ch101-110.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/first-immortal-of-the-sword.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/first-immortal-of-the-sword.webp" type="image/webp"/>
@@ -324,7 +492,7 @@
     <author>
       <name>WuxiaWorld</name>
     </author>
-    <content>First Immortal of the Sword (Built)</content>
+    <content>First Immortal of the Sword (Complete or stopped at source)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/first-immortal-of-the-sword_ch091-100.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/first-immortal-of-the-sword.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/first-immortal-of-the-sword.webp" type="image/webp"/>
@@ -492,7 +660,7 @@
     <author>
       <name>WuxiaWorld</name>
     </author>
-    <content>First Immortal of the Sword (Built)</content>
+    <content>First Immortal of the Sword (Complete or stopped at source)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/first-immortal-of-the-sword_ch081-090.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/first-immortal-of-the-sword.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/first-immortal-of-the-sword.webp" type="image/webp"/>
@@ -660,7 +828,7 @@
     <author>
       <name>WuxiaWorld</name>
     </author>
-    <content>First Immortal of the Sword (Built)</content>
+    <content>First Immortal of the Sword (Complete or stopped at source)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/first-immortal-of-the-sword_ch071-080.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/first-immortal-of-the-sword.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/first-immortal-of-the-sword.webp" type="image/webp"/>
@@ -828,7 +996,7 @@
     <author>
       <name>WuxiaWorld</name>
     </author>
-    <content>First Immortal of the Sword (Built)</content>
+    <content>First Immortal of the Sword (Complete or stopped at source)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/first-immortal-of-the-sword_ch061-070.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/first-immortal-of-the-sword.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/first-immortal-of-the-sword.webp" type="image/webp"/>
@@ -996,7 +1164,7 @@
     <author>
       <name>WuxiaWorld</name>
     </author>
-    <content>First Immortal of the Sword (Built)</content>
+    <content>First Immortal of the Sword (Complete or stopped at source)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/first-immortal-of-the-sword_ch051-060.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/first-immortal-of-the-sword.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/first-immortal-of-the-sword.webp" type="image/webp"/>
@@ -1236,7 +1404,7 @@
     <author>
       <name>WuxiaWorld</name>
     </author>
-    <content>First Immortal of the Sword (Built)</content>
+    <content>First Immortal of the Sword (Complete or stopped at source)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/first-immortal-of-the-sword_ch041-050.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/first-immortal-of-the-sword.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/first-immortal-of-the-sword.webp" type="image/webp"/>
@@ -1392,7 +1560,7 @@
     <author>
       <name>WuxiaWorld</name>
     </author>
-    <content>First Immortal of the Sword (Built)</content>
+    <content>First Immortal of the Sword (Complete or stopped at source)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/first-immortal-of-the-sword_ch031-040.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/first-immortal-of-the-sword.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/first-immortal-of-the-sword.webp" type="image/webp"/>
@@ -1548,7 +1716,7 @@
     <author>
       <name>WuxiaWorld</name>
     </author>
-    <content>First Immortal of the Sword (Built)</content>
+    <content>First Immortal of the Sword (Complete or stopped at source)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/first-immortal-of-the-sword_ch021-030.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/first-immortal-of-the-sword.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/first-immortal-of-the-sword.webp" type="image/webp"/>
@@ -1740,7 +1908,7 @@
     <author>
       <name>WuxiaWorld</name>
     </author>
-    <content>First Immortal of the Sword (Built)</content>
+    <content>First Immortal of the Sword (Complete or stopped at source)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/first-immortal-of-the-sword_ch011-020.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/first-immortal-of-the-sword.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/first-immortal-of-the-sword.webp" type="image/webp"/>
@@ -1860,7 +2028,7 @@
     <author>
       <name>WuxiaWorld</name>
     </author>
-    <content>First Immortal of the Sword (Built)</content>
+    <content>First Immortal of the Sword (Complete or stopped at source)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/first-immortal-of-the-sword_ch001-010.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/first-immortal-of-the-sword.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/first-immortal-of-the-sword.webp" type="image/webp"/>

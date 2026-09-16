@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>https://savv666.github.io/epub-server/opds/novels/unintended-immortality.xml</id>
   <title>Unintended Immortality</title>
-  <updated>2026-09-15T07:50:55.927056Z</updated>
+  <updated>2026-09-16T07:47:42.299686Z</updated>
   <link rel="self" href="https://savv666.github.io/epub-server/opds/novels/unintended-immortality.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   <link rel="start" href="https://savv666.github.io/epub-server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
   <entry>
@@ -20,7 +20,7 @@
   <entry>
     <title>Unintended Immortality — Chapters 1-150 (Combined)</title>
     <id>urn:epub-server:b24d14161855b6b7455bd2f17d5216a1fbef4c8a</id>
-    <updated>2026-09-15T07:50:48.508476Z</updated>
+    <updated>2026-09-16T07:47:34.509379Z</updated>
     <author>
       <name>WuxiaWorld</name>
     </author>
@@ -134,6 +134,18 @@
     </author>
     <content>Unintended Immortality (Built)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/unintended-immortality_ch201-210.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/unintended-immortality.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/unintended-immortality.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Unintended Immortality — Chapters 211-220</title>
+    <id>urn:epub-server:b331eadff2f1705c080de96b957859bd97a1c63f</id>
+    <updated>2026-09-16T07:47:34.509361Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Unintended Immortality (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/unintended-immortality_ch211-220.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/unintended-immortality.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/unintended-immortality.webp" type="image/webp"/>
   </entry>

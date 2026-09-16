@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>https://savv666.github.io/epub-server/opds/novels/star-odyssey.xml</id>
   <title>Star Odyssey</title>
-  <updated>2026-09-15T07:50:55.904946Z</updated>
+  <updated>2026-09-16T07:47:42.277792Z</updated>
   <link rel="self" href="https://savv666.github.io/epub-server/opds/novels/star-odyssey.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   <link rel="start" href="https://savv666.github.io/epub-server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
   <entry>
@@ -134,6 +134,18 @@
     </author>
     <content>Star Odyssey (Built)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/star-odyssey_ch101-110.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/star-odyssey.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/star-odyssey.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Star Odyssey — Chapters 111-120</title>
+    <id>urn:epub-server:2b4a1046fd3e49b55c6142cf33704576427c175e</id>
+    <updated>2026-09-16T07:45:35.786528Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Star Odyssey (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/star-odyssey_ch111-120.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/star-odyssey.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/star-odyssey.webp" type="image/webp"/>
   </entry>
