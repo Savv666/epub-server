@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>https://savv666.github.io/epub-server/opds/novels/beastmaster-king.xml</id>
   <title>Beastmaster King</title>
-  <updated>2026-09-26T07:47:34.885344Z</updated>
+  <updated>2026-09-27T08:16:11.900058Z</updated>
   <link rel="self" href="https://savv666.github.io/epub-server/opds/novels/beastmaster-king.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   <link rel="start" href="https://savv666.github.io/epub-server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
   <entry>
@@ -266,6 +266,18 @@
     </author>
     <content>Beastmaster King (Built)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/beastmaster-king_ch211-220.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/beastmaster-king.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/beastmaster-king.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Beastmaster King — Chapters 221-230</title>
+    <id>urn:epub-server:54062ed26f9ca74caeeae5536a6460653d26c8bc</id>
+    <updated>2026-09-27T08:11:51.641105Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Beastmaster King (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/beastmaster-king_ch221-230.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/beastmaster-king.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/beastmaster-king.webp" type="image/webp"/>
   </entry>
