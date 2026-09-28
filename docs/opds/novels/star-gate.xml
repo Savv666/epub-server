@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>https://savv666.github.io/epub-server/opds/novels/star-gate.xml</id>
   <title>Star Gate</title>
-  <updated>2026-09-27T08:16:11.942813Z</updated>
+  <updated>2026-09-28T08:47:29.294346Z</updated>
   <link rel="self" href="https://savv666.github.io/epub-server/opds/novels/star-gate.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   <link rel="start" href="https://savv666.github.io/epub-server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
   <entry>
@@ -278,6 +278,18 @@
     </author>
     <content>Star Gate (Built)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/star-gate_ch221-230.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/star-gate.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/star-gate.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Star Gate — Chapters 231-240</title>
+    <id>urn:epub-server:fa7e4bb3c8180e9f1a2d62538ab2ff3bd6dcc2f1</id>
+    <updated>2026-09-28T08:45:17.955556Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Star Gate (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/star-gate_ch231-240.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/star-gate.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/star-gate.webp" type="image/webp"/>
   </entry>

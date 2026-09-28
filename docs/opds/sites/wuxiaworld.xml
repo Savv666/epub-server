@@ -2,13 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>https://savv666.github.io/epub-server/opds/sites/wuxiaworld.xml</id>
   <title>WuxiaWorld</title>
-  <updated>2026-09-27T08:16:12.013461Z</updated>
+  <updated>2026-09-28T08:47:29.418303Z</updated>
   <link rel="self" href="https://savv666.github.io/epub-server/opds/sites/wuxiaworld.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   <link rel="start" href="https://savv666.github.io/epub-server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
   <entry>
     <title>Unintended Immortality — Chapters 1-150 (Combined)</title>
     <id>urn:epub-server:b24d14161855b6b7455bd2f17d5216a1fbef4c8a</id>
-    <updated>2026-09-27T08:16:04.728641Z</updated>
+    <updated>2026-09-28T08:47:21.779562Z</updated>
     <author>
       <name>WuxiaWorld</name>
     </author>
@@ -16,6 +16,162 @@
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/unintended-immortality_ch001-150_combined.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/unintended-immortality.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/unintended-immortality.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Unintended Immortality — Chapters 331-340</title>
+    <id>urn:epub-server:d6d76c1c1b640c02bcffd09b82d83f22e8ea7271</id>
+    <updated>2026-09-28T08:47:21.779538Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Unintended Immortality (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/unintended-immortality_ch331-340.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/unintended-immortality.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/unintended-immortality.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Tribulation of Myriad Races — Chapters 231-240</title>
+    <id>urn:epub-server:b8827d41cfd4ee829f11b7fbd249b7efa5899eeb</id>
+    <updated>2026-09-28T08:47:03.753931Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Tribulation of Myriad Races (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/tribulation-of-myriad-races_ch231-240.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/tribulation-of-myriad-races.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/tribulation-of-myriad-races.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>The Sorcerer's Handbook — Chapters 231-240</title>
+    <id>urn:epub-server:6c46468e7e93eeb7138d2566d680140654a5aef8</id>
+    <updated>2026-09-28T08:46:45.556026Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>The Sorcerer's Handbook (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/the-sorcerer-s-handbook_ch231-240.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/the-sorcerer-s-handbook.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/the-sorcerer-s-handbook.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>The Prodigies War — Chapters 231-240</title>
+    <id>urn:epub-server:748fc07751bd9ebc8e2bc551aefc02bd07aeebda</id>
+    <updated>2026-09-28T08:46:26.797941Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>The Prodigies War (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/the-prodigies-war_ch231-240.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/the-prodigies-war.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/the-prodigies-war.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>The Mirror Legacy — Chapters 231-240</title>
+    <id>urn:epub-server:cd0d2fa2082f25b58f7b95d26970f3ae65c49943</id>
+    <updated>2026-09-28T08:46:08.000538Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>The Mirror Legacy (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/the-mirror-legacy_ch231-240.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/the-mirror-legacy.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/the-mirror-legacy.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Star Odyssey — Chapters 231-240</title>
+    <id>urn:epub-server:3c8df79e1ebe22c2b8884b00503590d8656cb108</id>
+    <updated>2026-09-28T08:45:36.938458Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Star Odyssey (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/star-odyssey_ch231-240.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/star-odyssey.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/star-odyssey.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Star Gate — Chapters 231-240</title>
+    <id>urn:epub-server:fa7e4bb3c8180e9f1a2d62538ab2ff3bd6dcc2f1</id>
+    <updated>2026-09-28T08:45:17.955556Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Star Gate (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/star-gate_ch231-240.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/star-gate.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/star-gate.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Scripture of Days Past — Chapters 231-240</title>
+    <id>urn:epub-server:b551ae69bdcb1c788779c91b600d8dd376c1e404</id>
+    <updated>2026-09-28T08:44:57.470308Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Scripture of Days Past (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/scripture-of-days-past_ch231-240.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/scripture-of-days-past.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/scripture-of-days-past.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Nine Star Hegemon Body Art — Chapters 292-301</title>
+    <id>urn:epub-server:c946ac6ea4e45a173c36eb15e4cb14873f3ae444</id>
+    <updated>2026-09-28T08:44:38.754925Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Nine Star Hegemon Body Art (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/nine-star-hegemon-body-art_ch292-301.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/nine-star-hegemon-body-art.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>My Journey to Immortality Begins with Hunting — Chapters 231-240</title>
+    <id>urn:epub-server:f4adad114ebb72fa608f36fd5f0806bc67847bb2</id>
+    <updated>2026-09-28T08:44:19.871212Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>My Journey to Immortality Begins with Hunting (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/my-journey-to-immortality-begins-with-hunting_ch231-240.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/my-journey-to-immortality-begins-with-hunting.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/my-journey-to-immortality-begins-with-hunting.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Martial God Asura — Chapters 231-240</title>
+    <id>urn:epub-server:a18f19538a6c02ff424e32b7a285629e0c463700</id>
+    <updated>2026-09-28T08:43:42.795930Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Martial God Asura (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/martial-god-asura_ch231-240.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/martial-god-asura.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/martial-god-asura.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Beastmaster King — Chapters 231-240</title>
+    <id>urn:epub-server:ab0c9000b6a8e1403849f2ebaa090a8e9ad8abdf</id>
+    <updated>2026-09-28T08:43:07.546894Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Beastmaster King (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/beastmaster-king_ch231-240.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/beastmaster-king.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/beastmaster-king.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>13 Mink Street — Chapters 231-240</title>
+    <id>urn:epub-server:c572c03843b0a227789137b359b498ab4ef79b41</id>
+    <updated>2026-09-28T08:42:48.477363Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>13 Mink Street (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/13-mink-street_ch231-240.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/13-mink-street.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/13-mink-street.webp" type="image/webp"/>
   </entry>
   <entry>
     <title>Unintended Immortality — Chapters 321-330</title>
