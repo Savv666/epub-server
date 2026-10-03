@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>https://savv666.github.io/epub-server/opds/novels/tribulation-of-myriad-races.xml</id>
   <title>Tribulation of Myriad Races</title>
-  <updated>2026-10-02T08:38:31.558314Z</updated>
+  <updated>2026-10-03T08:12:02.866100Z</updated>
   <link rel="self" href="https://savv666.github.io/epub-server/opds/novels/tribulation-of-myriad-races.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   <link rel="start" href="https://savv666.github.io/epub-server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
   <entry>
@@ -338,6 +338,18 @@
     </author>
     <content>Tribulation of Myriad Races (Built)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/tribulation-of-myriad-races_ch271-280.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/tribulation-of-myriad-races.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/tribulation-of-myriad-races.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Tribulation of Myriad Races — Chapters 281-290</title>
+    <id>urn:epub-server:364e7d3d3cadc99804356bf3ef45da61cc38adb5</id>
+    <updated>2026-10-03T08:11:34.655642Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Tribulation of Myriad Races (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/tribulation-of-myriad-races_ch281-290.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/tribulation-of-myriad-races.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/tribulation-of-myriad-races.webp" type="image/webp"/>
   </entry>
