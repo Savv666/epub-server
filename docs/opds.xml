@@ -2,43 +2,43 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>https://savv666.github.io/epub-server/opds.xml</id>
   <title>Epub Library OPDS Catalog</title>
-  <updated>2026-10-03T08:12:02.560174Z</updated>
+  <updated>2026-10-04T08:32:11.095561Z</updated>
   <link rel="self" href="https://savv666.github.io/epub-server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
   <link rel="start" href="https://savv666.github.io/epub-server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
   <entry>
     <title>Latest EPUBs</title>
     <id>https://savv666.github.io/epub-server/opds/latest.xml</id>
-    <updated>2026-10-03T08:12:02.560203Z</updated>
+    <updated>2026-10-04T08:32:11.095588Z</updated>
     <link rel="subsection" href="https://savv666.github.io/epub-server/opds/latest.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   </entry>
   <entry>
     <title>Novels</title>
     <id>https://savv666.github.io/epub-server/opds/novels.xml</id>
-    <updated>2026-10-03T08:12:02.560215Z</updated>
+    <updated>2026-10-04T08:32:11.095597Z</updated>
     <link rel="subsection" href="https://savv666.github.io/epub-server/opds/novels.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
   </entry>
   <entry>
     <title>Sites</title>
     <id>https://savv666.github.io/epub-server/opds/sites.xml</id>
-    <updated>2026-10-03T08:12:02.560224Z</updated>
+    <updated>2026-10-04T08:32:11.095604Z</updated>
     <link rel="subsection" href="https://savv666.github.io/epub-server/opds/sites.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
   </entry>
   <entry>
     <title>Built / Complete</title>
     <id>https://savv666.github.io/epub-server/opds/status-built.xml</id>
-    <updated>2026-10-03T08:12:02.560259Z</updated>
+    <updated>2026-10-04T08:32:11.095611Z</updated>
     <link rel="subsection" href="https://savv666.github.io/epub-server/opds/status-built.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   </entry>
   <entry>
     <title>Partial / Problem States</title>
     <id>https://savv666.github.io/epub-server/opds/status-partial.xml</id>
-    <updated>2026-10-03T08:12:02.560268Z</updated>
+    <updated>2026-10-04T08:32:11.095617Z</updated>
     <link rel="subsection" href="https://savv666.github.io/epub-server/opds/status-partial.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   </entry>
   <entry>
     <title>All EPUBs</title>
     <id>https://savv666.github.io/epub-server/opds/all-epubs.xml</id>
-    <updated>2026-10-03T08:12:02.560276Z</updated>
+    <updated>2026-10-04T08:32:11.095623Z</updated>
     <link rel="subsection" href="https://savv666.github.io/epub-server/opds/all-epubs.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   </entry>
 </feed>
