@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>https://savv666.github.io/epub-server/opds/novels/the-sorcerer-s-handbook.xml</id>
   <title>The Sorcerer's Handbook</title>
-  <updated>2026-10-04T08:32:11.327418Z</updated>
+  <updated>2026-10-05T09:09:51.863364Z</updated>
   <link rel="self" href="https://savv666.github.io/epub-server/opds/novels/the-sorcerer-s-handbook.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   <link rel="start" href="https://savv666.github.io/epub-server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
   <entry>
@@ -362,6 +362,18 @@
     </author>
     <content>The Sorcerer's Handbook (Built)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/the-sorcerer-s-handbook_ch291-300.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/the-sorcerer-s-handbook.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/the-sorcerer-s-handbook.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>The Sorcerer's Handbook — Chapters 301-310</title>
+    <id>urn:epub-server:215c4676d36bd4d32b64adfb28a44fb28208585e</id>
+    <updated>2026-10-05T09:09:07.286705Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>The Sorcerer's Handbook (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/the-sorcerer-s-handbook_ch301-310.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/the-sorcerer-s-handbook.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/the-sorcerer-s-handbook.webp" type="image/webp"/>
   </entry>
