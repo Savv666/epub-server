@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>https://savv666.github.io/epub-server/opds/novels/the-mirror-legacy.xml</id>
   <title>The Mirror Legacy</title>
-  <updated>2026-10-12T09:18:27.831332Z</updated>
+  <updated>2026-10-13T09:30:53.948837Z</updated>
   <link rel="self" href="https://savv666.github.io/epub-server/opds/novels/the-mirror-legacy.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   <link rel="start" href="https://savv666.github.io/epub-server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
   <entry>
@@ -458,6 +458,18 @@
     </author>
     <content>The Mirror Legacy (Built)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/the-mirror-legacy_ch371-380.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/the-mirror-legacy.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/the-mirror-legacy.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>The Mirror Legacy — Chapters 381-390</title>
+    <id>urn:epub-server:0292c9413fb25c0a60f56a6649925ee6fa26b811</id>
+    <updated>2026-10-13T09:29:27.138311Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>The Mirror Legacy (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/the-mirror-legacy_ch381-390.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/the-mirror-legacy.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/the-mirror-legacy.webp" type="image/webp"/>
   </entry>

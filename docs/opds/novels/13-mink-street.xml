@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>https://savv666.github.io/epub-server/opds/novels/13-mink-street.xml</id>
   <title>13 Mink Street</title>
-  <updated>2026-10-12T09:18:27.678912Z</updated>
+  <updated>2026-10-13T09:30:53.838875Z</updated>
   <link rel="self" href="https://savv666.github.io/epub-server/opds/novels/13-mink-street.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   <link rel="start" href="https://savv666.github.io/epub-server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
   <entry>
@@ -458,6 +458,18 @@
     </author>
     <content>13 Mink Street (Complete or stopped at source)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/13-mink-street_ch308-309.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/13-mink-street.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/13-mink-street.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>13 Mink Street — Chapters 310-310</title>
+    <id>urn:epub-server:1284b2c9c25cdf2776a70e73239a822e80462973</id>
+    <updated>2026-10-13T09:26:08.666739Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>13 Mink Street (Complete or stopped at source)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/13-mink-street_ch310-310.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/13-mink-street.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/13-mink-street.webp" type="image/webp"/>
   </entry>
