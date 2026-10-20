@@ -2,9 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>https://savv666.github.io/epub-server/opds/sites/royalroad.xml</id>
   <title>RoyalRoad</title>
-  <updated>2026-10-19T07:51:52.247015Z</updated>
+  <updated>2026-10-20T07:40:27.816168Z</updated>
   <link rel="self" href="https://savv666.github.io/epub-server/opds/sites/royalroad.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   <link rel="start" href="https://savv666.github.io/epub-server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
+  <entry>
+    <title>Xianxia Senior Brother of a Heavens Favoured — Chapters 582-586</title>
+    <id>urn:epub-server:1569605b126b2f0124fd2b8a11e9673b22b5c140</id>
+    <updated>2026-10-20T07:40:26.702878Z</updated>
+    <author>
+      <name>RoyalRoad</name>
+    </author>
+    <content>Xianxia Senior Brother of a Heavens Favoured (Complete or stopped at source)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/xianxia-senior-brother-of-a-heavens-favoured_ch582-586.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/xianxia-senior-brother-of-a-heavens-favoured.png" type="image/png"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/xianxia-senior-brother-of-a-heavens-favoured.png" type="image/png"/>
+  </entry>
+  <entry>
+    <title>Otherworld Therapy — Chapters 209-209</title>
+    <id>urn:epub-server:bab33d5159d9bd0b86654f8bfa74298a3d011593</id>
+    <updated>2026-10-20T07:37:39.689535Z</updated>
+    <author>
+      <name>RoyalRoad</name>
+    </author>
+    <content>Otherworld Therapy (Complete or stopped at source)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/otherworld-therapy_ch209-209.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/otherworld-therapy.png" type="image/png"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/otherworld-therapy.png" type="image/png"/>
+  </entry>
   <entry>
     <title>Xianxia Senior Brother of a Heavens Favoured — Chapters 578-581</title>
     <id>urn:epub-server:60a11e4e3f9a964610433cc1789efc1f8b85f4dd</id>
