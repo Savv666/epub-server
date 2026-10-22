@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>https://savv666.github.io/epub-server/opds/novels/martial-peak.xml</id>
   <title>Martial Peak</title>
-  <updated>2026-10-21T07:45:04.525176Z</updated>
+  <updated>2026-10-22T07:40:29.253247Z</updated>
   <link rel="self" href="https://savv666.github.io/epub-server/opds/novels/martial-peak.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   <link rel="start" href="https://savv666.github.io/epub-server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
   <entry>
@@ -1766,6 +1766,18 @@
     </author>
     <content>Martial Peak (Built)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/martial-peak_ch1461-1470.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/martial-peak.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/martial-peak.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Martial Peak — Chapters 1471-1480</title>
+    <id>urn:epub-server:cd21fd6331769e2a4eec8263a3476648bcabf46e</id>
+    <updated>2026-10-22T07:37:00.320068Z</updated>
+    <author>
+      <name>NovelFull</name>
+    </author>
+    <content>Martial Peak (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/martial-peak_ch1471-1480.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/martial-peak.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/martial-peak.webp" type="image/webp"/>
   </entry>
