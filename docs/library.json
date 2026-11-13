@@ -4,15 +4,15 @@
     "slug": "13-mink-street",
     "site": "WuxiaWorld",
     "cover": "covers/13-mink-street.webp",
-    "chapters": 352,
-    "source_url": "https://www.wuxiaworld.com/novel/13-mink-street/13ms-chapter-352",
-    "next_url": "https://www.wuxiaworld.com/novel/13-mink-street/13ms-chapter-353",
-    "last_chapter_url": "https://www.wuxiaworld.com/novel/13-mink-street/13ms-chapter-352",
-    "last_chapter_number": 352,
+    "chapters": 353,
+    "source_url": "https://www.wuxiaworld.com/novel/13-mink-street/13ms-chapter-353",
+    "next_url": "https://www.wuxiaworld.com/novel/13-mink-street/13ms-chapter-354",
+    "last_chapter_url": "https://www.wuxiaworld.com/novel/13-mink-street/13ms-chapter-353",
+    "last_chapter_number": 353,
     "status": "Complete or stopped at source",
     "last_mode": "Update All Existing Novels",
     "created_at": "2026-05-22T22:41:11.446945+00:00",
-    "last_updated": "2026-11-12T09:50:56.994113+00:00",
+    "last_updated": "2026-11-13T09:31:31.324078+00:00",
     "downloads": [
       {
         "label": "Chapters 1-10",
@@ -565,13 +565,21 @@
         "url": "epubs/13-mink-street_ch352-352.epub",
         "mode": "Update All Existing Novels",
         "created_at": "2026-11-12T09:50:56.994075+00:00"
+      },
+      {
+        "label": "Chapters 353-353",
+        "start": 353,
+        "end": 353,
+        "url": "epubs/13-mink-street_ch353-353.epub",
+        "mode": "Update All Existing Novels",
+        "created_at": "2026-11-13T09:31:31.324039+00:00"
       }
     ],
-    "last_successful_source_url": "https://www.wuxiaworld.com/novel/13-mink-street/13ms-chapter-352",
+    "last_successful_source_url": "https://www.wuxiaworld.com/novel/13-mink-street/13ms-chapter-353",
     "last_successful_site": "WuxiaWorld",
     "progress_state": "available",
     "progress_reason": "",
-    "preferred_source_url": "https://www.wuxiaworld.com/novel/13-mink-street/13ms-chapter-353",
+    "preferred_source_url": "https://www.wuxiaworld.com/novel/13-mink-street/13ms-chapter-354",
     "preferred_engine": "Auto",
     "source_history": [
       {
@@ -1194,6 +1202,15 @@
         "used_until_chapter": 352,
         "status": "success",
         "updated_at": "2026-11-12T09:50:56.994118+00:00"
+      },
+      {
+        "site": "WuxiaWorld",
+        "url": "https://www.wuxiaworld.com/novel/13-mink-street/13ms-chapter-353",
+        "engine": "Auto",
+        "used_from_chapter": 353,
+        "used_until_chapter": 353,
+        "status": "success",
+        "updated_at": "2026-11-13T09:31:31.324083+00:00"
       }
     ]
   },
@@ -2315,15 +2332,15 @@
     "slug": "emperors-domination",
     "site": "NovelFull",
     "cover": "covers/emperors-domination.webp",
-    "chapters": 1937,
-    "source_url": "https://novelfull.com/emperors-domination/chapter-1928-high-god-against-grand-emperor.html",
-    "next_url": "https://novelfull.com/emperors-domination/chapter-1938-a-dominating-wave.html",
-    "last_chapter_url": "https://novelfull.com/emperors-domination/chapter-1937-wildlads-killing-move.html",
-    "last_chapter_number": 1937,
+    "chapters": 1947,
+    "source_url": "https://novelfull.com/emperors-domination/chapter-1938-a-dominating-wave.html",
+    "next_url": "https://novelfull.com/emperors-domination/chapter-1948-laying-the-trap.html",
+    "last_chapter_url": "https://novelfull.com/emperors-domination/chapter-1947-origin-of-the-forsaken-bloods.html",
+    "last_chapter_number": 1947,
     "status": "Built",
     "last_mode": "Update All Existing Novels",
     "created_at": "2026-05-20T09:49:46.079805+00:00",
-    "last_updated": "2026-11-12T09:51:14.436650+00:00",
+    "last_updated": "2026-11-13T09:31:50.537456+00:00",
     "downloads": [
       {
         "label": "Chapters 1-10",
@@ -3700,13 +3717,21 @@
         "url": "epubs/emperors-domination_ch1928-1937.epub",
         "mode": "Update All Existing Novels",
         "created_at": "2026-11-12T09:51:14.436585+00:00"
+      },
+      {
+        "label": "Chapters 1938-1947",
+        "start": 1938,
+        "end": 1947,
+        "url": "epubs/emperors-domination_ch1938-1947.epub",
+        "mode": "Update All Existing Novels",
+        "created_at": "2026-11-13T09:31:50.537398+00:00"
       }
     ],
-    "last_successful_source_url": "https://novelfull.com/emperors-domination/chapter-1937-wildlads-killing-move.html",
+    "last_successful_source_url": "https://novelfull.com/emperors-domination/chapter-1947-origin-of-the-forsaken-bloods.html",
     "last_successful_site": "NovelFull",
     "progress_state": "available",
     "progress_reason": "",
-    "preferred_source_url": "https://novelfull.com/emperors-domination/chapter-1938-a-dominating-wave.html",
+    "preferred_source_url": "https://novelfull.com/emperors-domination/chapter-1948-laying-the-trap.html",
     "preferred_engine": "Auto",
     "source_history": [
       {
@@ -5220,6 +5245,15 @@
         "used_until_chapter": 1937,
         "status": "success",
         "updated_at": "2026-11-12T09:51:14.436655+00:00"
+      },
+      {
+        "site": "NovelFull",
+        "url": "https://novelfull.com/emperors-domination/chapter-1938-a-dominating-wave.html",
+        "engine": "Auto",
+        "used_from_chapter": 1938,
+        "used_until_chapter": 1947,
+        "status": "success",
+        "updated_at": "2026-11-13T09:31:50.537461+00:00"
       }
     ]
   },
@@ -5457,15 +5491,15 @@
     "slug": "martial-god-asura",
     "site": "WuxiaWorld",
     "cover": "covers/martial-god-asura.webp",
-    "chapters": 690,
-    "source_url": "https://www.wuxiaworld.com/novel/martial-god-asura/mga-chapter-681",
-    "next_url": "https://www.wuxiaworld.com/novel/martial-god-asura/mga-chapter-691",
-    "last_chapter_url": "https://www.wuxiaworld.com/novel/martial-god-asura/mga-chapter-690",
-    "last_chapter_number": 690,
+    "chapters": 700,
+    "source_url": "https://www.wuxiaworld.com/novel/martial-god-asura/mga-chapter-691",
+    "next_url": "https://www.wuxiaworld.com/novel/martial-god-asura/mga-chapter-701",
+    "last_chapter_url": "https://www.wuxiaworld.com/novel/martial-god-asura/mga-chapter-700",
+    "last_chapter_number": 700,
     "status": "Built",
     "last_mode": "Update All Existing Novels",
     "created_at": "2026-05-20T09:50:06.909158+00:00",
-    "last_updated": "2026-11-12T09:51:33.933593+00:00",
+    "last_updated": "2026-11-13T09:32:12.892321+00:00",
     "downloads": [
       {
         "label": "Chapters 1-10",
@@ -6018,13 +6052,21 @@
         "url": "epubs/martial-god-asura_ch681-690.epub",
         "mode": "Update All Existing Novels",
         "created_at": "2026-11-12T09:51:33.933548+00:00"
+      },
+      {
+        "label": "Chapters 691-700",
+        "start": 691,
+        "end": 700,
+        "url": "epubs/martial-god-asura_ch691-700.epub",
+        "mode": "Update All Existing Novels",
+        "created_at": "2026-11-13T09:32:12.892273+00:00"
       }
     ],
-    "last_successful_source_url": "https://www.wuxiaworld.com/novel/martial-god-asura/mga-chapter-690",
+    "last_successful_source_url": "https://www.wuxiaworld.com/novel/martial-god-asura/mga-chapter-700",
     "last_successful_site": "WuxiaWorld",
     "progress_state": "available",
     "progress_reason": "",
-    "preferred_source_url": "https://www.wuxiaworld.com/novel/martial-god-asura/mga-chapter-691",
+    "preferred_source_url": "https://www.wuxiaworld.com/novel/martial-god-asura/mga-chapter-701",
     "preferred_engine": "Auto",
     "source_history": [
       {
@@ -6647,6 +6689,15 @@
         "used_until_chapter": 690,
         "status": "success",
         "updated_at": "2026-11-12T09:51:33.933598+00:00"
+      },
+      {
+        "site": "WuxiaWorld",
+        "url": "https://www.wuxiaworld.com/novel/martial-god-asura/mga-chapter-691",
+        "engine": "Auto",
+        "used_from_chapter": 691,
+        "used_until_chapter": 700,
+        "status": "success",
+        "updated_at": "2026-11-13T09:32:12.892326+00:00"
       }
     ]
   },
@@ -6655,15 +6706,15 @@
     "slug": "martial-peak",
     "site": "NovelFull",
     "cover": "covers/martial-peak.webp",
-    "chapters": 1690,
-    "source_url": "https://novelfull.com/martial-peak/chapter-1680-white-robed-corpse-general.html",
-    "next_url": "https://novelfull.com/martial-peak/chapter-1690-annoyed.html",
-    "last_chapter_url": "https://novelfull.com/martial-peak/chapter-1689-knowledge-sea.html",
-    "last_chapter_number": 1690,
+    "chapters": 1700,
+    "source_url": "https://novelfull.com/martial-peak/chapter-1690-annoyed.html",
+    "next_url": "https://novelfull.com/martial-peak/chapter-1700-sea-clan.html",
+    "last_chapter_url": "https://novelfull.com/martial-peak/chapter-1699-ocean-resources.html",
+    "last_chapter_number": 1700,
     "status": "Built",
     "last_mode": "Update All Existing Novels",
     "created_at": "2026-05-22T10:37:30.142078+00:00",
-    "last_updated": "2026-11-12T09:51:50.701628+00:00",
+    "last_updated": "2026-11-13T09:32:30.198883+00:00",
     "downloads": [
       {
         "label": "Chapters 1-10",
@@ -8016,13 +8067,21 @@
         "url": "epubs/martial-peak_ch1681-1690.epub",
         "mode": "Update All Existing Novels",
         "created_at": "2026-11-12T09:51:50.701571+00:00"
+      },
+      {
+        "label": "Chapters 1691-1700",
+        "start": 1691,
+        "end": 1700,
+        "url": "epubs/martial-peak_ch1691-1700.epub",
+        "mode": "Update All Existing Novels",
+        "created_at": "2026-11-13T09:32:30.198831+00:00"
       }
     ],
-    "last_successful_source_url": "https://novelfull.com/martial-peak/chapter-1689-knowledge-sea.html",
+    "last_successful_source_url": "https://novelfull.com/martial-peak/chapter-1699-ocean-resources.html",
     "last_successful_site": "NovelFull",
     "progress_state": "available",
     "progress_reason": "",
-    "preferred_source_url": "https://novelfull.com/martial-peak/chapter-1690-annoyed.html",
+    "preferred_source_url": "https://novelfull.com/martial-peak/chapter-1700-sea-clan.html",
     "preferred_engine": "Auto",
     "source_history": [
       {
@@ -9536,6 +9595,15 @@
         "used_until_chapter": 1690,
         "status": "success",
         "updated_at": "2026-11-12T09:51:50.701634+00:00"
+      },
+      {
+        "site": "NovelFull",
+        "url": "https://novelfull.com/martial-peak/chapter-1690-annoyed.html",
+        "engine": "Auto",
+        "used_from_chapter": 1691,
+        "used_until_chapter": 1700,
+        "status": "success",
+        "updated_at": "2026-11-13T09:32:30.198888+00:00"
       }
     ]
   },
@@ -9934,15 +10002,15 @@
     "slug": "my-journey-to-immortality-begins-with-hunting",
     "site": "WuxiaWorld",
     "cover": "covers/my-journey-to-immortality-begins-with-hunting.webp",
-    "chapters": 690,
-    "source_url": "https://www.wuxiaworld.com/novel/my-journey-to-immortality-begins-with-hunting/jibh-chapter-681",
-    "next_url": "https://www.wuxiaworld.com/novel/my-journey-to-immortality-begins-with-hunting/jibh-chapter-691",
-    "last_chapter_url": "https://www.wuxiaworld.com/novel/my-journey-to-immortality-begins-with-hunting/jibh-chapter-690",
-    "last_chapter_number": 690,
+    "chapters": 700,
+    "source_url": "https://www.wuxiaworld.com/novel/my-journey-to-immortality-begins-with-hunting/jibh-chapter-691",
+    "next_url": "https://www.wuxiaworld.com/novel/my-journey-to-immortality-begins-with-hunting/jibh-chapter-701",
+    "last_chapter_url": "https://www.wuxiaworld.com/novel/my-journey-to-immortality-begins-with-hunting/jibh-chapter-700",
+    "last_chapter_number": 700,
     "status": "Built",
     "last_mode": "Update All Existing Novels",
     "created_at": "2026-05-26T09:25:20.343954+00:00",
-    "last_updated": "2026-11-12T09:52:09.636370+00:00",
+    "last_updated": "2026-11-13T09:32:50.070089+00:00",
     "downloads": [
       {
         "label": "Chapters 1-10",
@@ -10495,13 +10563,21 @@
         "url": "epubs/my-journey-to-immortality-begins-with-hunting_ch681-690.epub",
         "mode": "Update All Existing Novels",
         "created_at": "2026-11-12T09:52:09.636328+00:00"
+      },
+      {
+        "label": "Chapters 691-700",
+        "start": 691,
+        "end": 700,
+        "url": "epubs/my-journey-to-immortality-begins-with-hunting_ch691-700.epub",
+        "mode": "Update All Existing Novels",
+        "created_at": "2026-11-13T09:32:50.070049+00:00"
       }
     ],
-    "last_successful_source_url": "https://www.wuxiaworld.com/novel/my-journey-to-immortality-begins-with-hunting/jibh-chapter-690",
+    "last_successful_source_url": "https://www.wuxiaworld.com/novel/my-journey-to-immortality-begins-with-hunting/jibh-chapter-700",
     "last_successful_site": "WuxiaWorld",
     "progress_state": "available",
     "progress_reason": "",
-    "preferred_source_url": "https://www.wuxiaworld.com/novel/my-journey-to-immortality-begins-with-hunting/jibh-chapter-691",
+    "preferred_source_url": "https://www.wuxiaworld.com/novel/my-journey-to-immortality-begins-with-hunting/jibh-chapter-701",
     "preferred_engine": "Auto",
     "source_history": [
       {
@@ -11124,6 +11200,15 @@
         "used_until_chapter": 690,
         "status": "success",
         "updated_at": "2026-11-12T09:52:09.636375+00:00"
+      },
+      {
+        "site": "WuxiaWorld",
+        "url": "https://www.wuxiaworld.com/novel/my-journey-to-immortality-begins-with-hunting/jibh-chapter-691",
+        "engine": "Auto",
+        "used_from_chapter": 691,
+        "used_until_chapter": 700,
+        "status": "success",
+        "updated_at": "2026-11-13T09:32:50.070093+00:00"
       }
     ]
   },
@@ -11132,15 +11217,15 @@
     "slug": "nine-star-hegemon-body-art",
     "site": "WuxiaWorld",
     "cover": "covers/nine-star-hegemon-body-art.webp",
-    "chapters": 746,
-    "source_url": "https://www.wuxiaworld.com/novel/nine-star-hegemon/nshba-chapter-726",
-    "next_url": "https://www.wuxiaworld.com/novel/nine-star-hegemon/nshba-chapter-736",
-    "last_chapter_url": "https://www.wuxiaworld.com/novel/nine-star-hegemon/nshba-chapter-735",
-    "last_chapter_number": 746,
+    "chapters": 756,
+    "source_url": "https://www.wuxiaworld.com/novel/nine-star-hegemon/nshba-chapter-736",
+    "next_url": "https://www.wuxiaworld.com/novel/nine-star-hegemon/nshba-chapter-746",
+    "last_chapter_url": "https://www.wuxiaworld.com/novel/nine-star-hegemon/nshba-chapter-745",
+    "last_chapter_number": 756,
     "status": "Built",
     "last_mode": "Update All Existing Novels",
     "created_at": "2026-05-22T11:25:05.174796+00:00",
-    "last_updated": "2026-11-12T09:52:27.809890+00:00",
+    "last_updated": "2026-11-13T09:33:09.873131+00:00",
     "downloads": [
       {
         "label": "Chapters 1-10",
@@ -11749,13 +11834,21 @@
         "url": "epubs/nine-star-hegemon-body-art_ch737-746.epub",
         "mode": "Update All Existing Novels",
         "created_at": "2026-11-12T09:52:27.809846+00:00"
+      },
+      {
+        "label": "Chapters 747-756",
+        "start": 747,
+        "end": 756,
+        "url": "epubs/nine-star-hegemon-body-art_ch747-756.epub",
+        "mode": "Update All Existing Novels",
+        "created_at": "2026-11-13T09:33:09.873096+00:00"
       }
     ],
-    "last_successful_source_url": "https://www.wuxiaworld.com/novel/nine-star-hegemon/nshba-chapter-735",
+    "last_successful_source_url": "https://www.wuxiaworld.com/novel/nine-star-hegemon/nshba-chapter-745",
     "last_successful_site": "WuxiaWorld",
     "progress_state": "available",
     "progress_reason": "",
-    "preferred_source_url": "https://www.wuxiaworld.com/novel/nine-star-hegemon/nshba-chapter-736",
+    "preferred_source_url": "https://www.wuxiaworld.com/novel/nine-star-hegemon/nshba-chapter-746",
     "preferred_engine": "Auto",
     "source_history": [
       {
@@ -12450,6 +12543,15 @@
         "used_until_chapter": 746,
         "status": "success",
         "updated_at": "2026-11-12T09:52:27.809895+00:00"
+      },
+      {
+        "site": "WuxiaWorld",
+        "url": "https://www.wuxiaworld.com/novel/nine-star-hegemon/nshba-chapter-736",
+        "engine": "Auto",
+        "used_from_chapter": 747,
+        "used_until_chapter": 756,
+        "status": "success",
+        "updated_at": "2026-11-13T09:33:09.873136+00:00"
       }
     ]
   },
@@ -17001,15 +17103,15 @@
     "slug": "star-gate",
     "site": "WuxiaWorld",
     "cover": "covers/star-gate.webp",
-    "chapters": 690,
-    "source_url": "https://www.wuxiaworld.com/novel/star-gate/sg-chapter-681",
-    "next_url": "https://www.wuxiaworld.com/novel/star-gate/sg-chapter-691",
-    "last_chapter_url": "https://www.wuxiaworld.com/novel/star-gate/sg-chapter-690",
-    "last_chapter_number": 690,
+    "chapters": 700,
+    "source_url": "https://www.wuxiaworld.com/novel/star-gate/sg-chapter-691",
+    "next_url": "https://www.wuxiaworld.com/novel/star-gate/sg-chapter-701",
+    "last_chapter_url": "https://www.wuxiaworld.com/novel/star-gate/sg-chapter-700",
+    "last_chapter_number": 700,
     "status": "Built",
     "last_mode": "Update All Existing Novels",
     "created_at": "2026-05-20T10:12:22.406734+00:00",
-    "last_updated": "2026-11-12T09:52:47.122506+00:00",
+    "last_updated": "2026-11-13T09:33:30.515738+00:00",
     "downloads": [
       {
         "label": "Chapters 1-10",
@@ -17562,13 +17664,21 @@
         "url": "epubs/star-gate_ch681-690.epub",
         "mode": "Update All Existing Novels",
         "created_at": "2026-11-12T09:52:47.122465+00:00"
+      },
+      {
+        "label": "Chapters 691-700",
+        "start": 691,
+        "end": 700,
+        "url": "epubs/star-gate_ch691-700.epub",
+        "mode": "Update All Existing Novels",
+        "created_at": "2026-11-13T09:33:30.515704+00:00"
       }
     ],
-    "last_successful_source_url": "https://www.wuxiaworld.com/novel/star-gate/sg-chapter-690",
+    "last_successful_source_url": "https://www.wuxiaworld.com/novel/star-gate/sg-chapter-700",
     "last_successful_site": "WuxiaWorld",
     "progress_state": "available",
     "progress_reason": "",
-    "preferred_source_url": "https://www.wuxiaworld.com/novel/star-gate/sg-chapter-691",
+    "preferred_source_url": "https://www.wuxiaworld.com/novel/star-gate/sg-chapter-701",
     "preferred_engine": "Auto",
     "source_history": [
       {
@@ -18191,6 +18301,15 @@
         "used_until_chapter": 690,
         "status": "success",
         "updated_at": "2026-11-12T09:52:47.122512+00:00"
+      },
+      {
+        "site": "WuxiaWorld",
+        "url": "https://www.wuxiaworld.com/novel/star-gate/sg-chapter-691",
+        "engine": "Auto",
+        "used_from_chapter": 691,
+        "used_until_chapter": 700,
+        "status": "success",
+        "updated_at": "2026-11-13T09:33:30.515743+00:00"
       }
     ]
   },
@@ -18199,15 +18318,15 @@
     "slug": "star-odyssey",
     "site": "WuxiaWorld",
     "cover": "covers/star-odyssey.webp",
-    "chapters": 689,
-    "source_url": "https://www.wuxiaworld.com/novel/star-odyssey/so-chapter-680",
-    "next_url": "https://www.wuxiaworld.com/novel/star-odyssey/so-chapter-690",
-    "last_chapter_url": "https://www.wuxiaworld.com/novel/star-odyssey/so-chapter-689",
-    "last_chapter_number": 689,
+    "chapters": 699,
+    "source_url": "https://www.wuxiaworld.com/novel/star-odyssey/so-chapter-690",
+    "next_url": "https://www.wuxiaworld.com/novel/star-odyssey/so-chapter-700",
+    "last_chapter_url": "https://www.wuxiaworld.com/novel/star-odyssey/so-chapter-699",
+    "last_chapter_number": 699,
     "status": "Built",
     "last_mode": "Update All Existing Novels",
     "created_at": "2026-05-20T09:52:05.450395+00:00",
-    "last_updated": "2026-11-12T09:53:05.974027+00:00",
+    "last_updated": "2026-11-13T09:33:48.540183+00:00",
     "downloads": [
       {
         "label": "Chapters 1-10",
@@ -18760,13 +18879,21 @@
         "url": "epubs/star-odyssey_ch680-689.epub",
         "mode": "Update All Existing Novels",
         "created_at": "2026-11-12T09:53:05.973985+00:00"
+      },
+      {
+        "label": "Chapters 690-699",
+        "start": 690,
+        "end": 699,
+        "url": "epubs/star-odyssey_ch690-699.epub",
+        "mode": "Update All Existing Novels",
+        "created_at": "2026-11-13T09:33:48.540117+00:00"
       }
     ],
-    "last_successful_source_url": "https://www.wuxiaworld.com/novel/star-odyssey/so-chapter-689",
+    "last_successful_source_url": "https://www.wuxiaworld.com/novel/star-odyssey/so-chapter-699",
     "last_successful_site": "WuxiaWorld",
     "progress_state": "available",
     "progress_reason": "",
-    "preferred_source_url": "https://www.wuxiaworld.com/novel/star-odyssey/so-chapter-690",
+    "preferred_source_url": "https://www.wuxiaworld.com/novel/star-odyssey/so-chapter-700",
     "preferred_engine": "Auto",
     "source_history": [
       {
@@ -19389,6 +19516,15 @@
         "used_until_chapter": 689,
         "status": "success",
         "updated_at": "2026-11-12T09:53:05.974032+00:00"
+      },
+      {
+        "site": "WuxiaWorld",
+        "url": "https://www.wuxiaworld.com/novel/star-odyssey/so-chapter-690",
+        "engine": "Auto",
+        "used_from_chapter": 690,
+        "used_until_chapter": 699,
+        "status": "success",
+        "updated_at": "2026-11-13T09:33:48.540191+00:00"
       }
     ]
   },
@@ -19397,17 +19533,17 @@
     "slug": "starting-as-a-son-in-law-to-establish-an-immortal-family",
     "site": "NovelFull",
     "cover": "covers/starting-as-a-son-in-law-to-establish-an-immortal-family.webp",
-    "chapters": 3251,
-    "source_url": "https://novelfull.com/starting-as-a-son-in-law-to-establish-an-immortal-family/chapter-2891-935-so-you-came-to-demand-answers-from-me.html",
-    "last_chapter_url": "https://novelfull.com/starting-as-a-son-in-law-to-establish-an-immortal-family/chapter-2900-937-battle-of-the-giants-2-in-1-supplement-5.html",
-    "last_chapter_number": 3251,
-    "status": "Built",
+    "chapters": 3256,
+    "source_url": "https://novelfull.com/starting-as-a-son-in-law-to-establish-an-immortal-family/chapter-2901-938-slaying.html",
+    "last_chapter_url": "https://novelfull.com/starting-as-a-son-in-law-to-establish-an-immortal-family/chapter-2905-939-resolution-nine-orifices-stone-embryo-2.html",
+    "last_chapter_number": 3256,
+    "status": "Complete or stopped at source",
     "last_mode": "Update All Existing Novels",
     "created_at": "2026-05-27T09:08:45.410617+00:00",
-    "last_updated": "2026-11-12T09:53:23.363615+00:00",
-    "progress_state": "available",
+    "last_updated": "2026-11-13T09:33:55.968273+00:00",
+    "progress_state": "complete",
     "progress_reason": "",
-    "last_successful_source_url": "https://novelfull.com/starting-as-a-son-in-law-to-establish-an-immortal-family/chapter-2900-937-battle-of-the-giants-2-in-1-supplement-5.html",
+    "last_successful_source_url": "https://novelfull.com/starting-as-a-son-in-law-to-establish-an-immortal-family/chapter-2905-939-resolution-nine-orifices-stone-embryo-2.html",
     "last_successful_site": "NovelFull",
     "source_history": [
       {
@@ -20937,6 +21073,15 @@
         "used_until_chapter": 3251,
         "status": "success",
         "updated_at": "2026-11-12T09:53:23.363620+00:00"
+      },
+      {
+        "site": "NovelFull",
+        "url": "https://novelfull.com/starting-as-a-son-in-law-to-establish-an-immortal-family/chapter-2901-938-slaying.html",
+        "engine": "Auto",
+        "used_from_chapter": 3252,
+        "used_until_chapter": 3256,
+        "status": "success",
+        "updated_at": "2026-11-13T09:33:55.968277+00:00"
       }
     ],
     "downloads": [
@@ -22295,28 +22440,35 @@
         "url": "epubs/starting-as-a-son-in-law-to-establish-an-immortal-family_ch3242-3251.epub",
         "mode": "Update All Existing Novels",
         "created_at": "2026-11-12T09:53:23.363545+00:00"
+      },
+      {
+        "label": "Chapters 3252-3256",
+        "start": 3252,
+        "end": 3256,
+        "url": "epubs/starting-as-a-son-in-law-to-establish-an-immortal-family_ch3252-3256.epub",
+        "mode": "Update All Existing Novels",
+        "created_at": "2026-11-13T09:33:55.968223+00:00"
       }
     ],
     "cover_updated_at": "2026-05-27T09:11:10.385948+00:00",
     "preferred_source_url": "https://novelfull.com/starting-as-a-son-in-law-to-establish-an-immortal-family/chapter-2901-938-slaying.html",
     "preferred_engine": "Auto",
-    "last_epub_url": "epubs/starting-as-a-son-in-law-to-establish-an-immortal-family_ch1601-1710_combined.epub",
-    "next_url": "https://novelfull.com/starting-as-a-son-in-law-to-establish-an-immortal-family/chapter-2901-938-slaying.html"
+    "last_epub_url": "epubs/starting-as-a-son-in-law-to-establish-an-immortal-family_ch1601-1710_combined.epub"
   },
   {
     "title": "The Mirror Legacy",
     "slug": "the-mirror-legacy",
     "site": "WuxiaWorld",
     "cover": "covers/the-mirror-legacy.webp",
-    "chapters": 682,
-    "source_url": "https://www.wuxiaworld.com/novel/the-mirror-legacy/tml-chapter-673",
-    "next_url": "https://www.wuxiaworld.com/novel/the-mirror-legacy/tml-chapter-683",
-    "last_chapter_url": "https://www.wuxiaworld.com/novel/the-mirror-legacy/tml-chapter-682",
-    "last_chapter_number": 682,
+    "chapters": 692,
+    "source_url": "https://www.wuxiaworld.com/novel/the-mirror-legacy/tml-chapter-683",
+    "next_url": "https://www.wuxiaworld.com/novel/the-mirror-legacy/tml-chapter-693",
+    "last_chapter_url": "https://www.wuxiaworld.com/novel/the-mirror-legacy/tml-chapter-692",
+    "last_chapter_number": 692,
     "status": "Built",
     "last_mode": "Update All Existing Novels",
     "created_at": "2026-05-20T10:12:56.948917+00:00",
-    "last_updated": "2026-11-12T09:53:42.999077+00:00",
+    "last_updated": "2026-11-13T09:34:15.652140+00:00",
     "downloads": [
       {
         "label": "Chapters 1-10",
@@ -22869,13 +23021,21 @@
         "url": "epubs/the-mirror-legacy_ch673-682.epub",
         "mode": "Update All Existing Novels",
         "created_at": "2026-11-12T09:53:42.999033+00:00"
+      },
+      {
+        "label": "Chapters 683-692",
+        "start": 683,
+        "end": 692,
+        "url": "epubs/the-mirror-legacy_ch683-692.epub",
+        "mode": "Update All Existing Novels",
+        "created_at": "2026-11-13T09:34:15.652107+00:00"
       }
     ],
-    "last_successful_source_url": "https://www.wuxiaworld.com/novel/the-mirror-legacy/tml-chapter-682",
+    "last_successful_source_url": "https://www.wuxiaworld.com/novel/the-mirror-legacy/tml-chapter-692",
     "last_successful_site": "WuxiaWorld",
     "progress_state": "available",
     "progress_reason": "",
-    "preferred_source_url": "https://www.wuxiaworld.com/novel/the-mirror-legacy/tml-chapter-683",
+    "preferred_source_url": "https://www.wuxiaworld.com/novel/the-mirror-legacy/tml-chapter-693",
     "preferred_engine": "Auto",
     "source_history": [
       {
@@ -23498,6 +23658,15 @@
         "used_until_chapter": 682,
         "status": "success",
         "updated_at": "2026-11-12T09:53:42.999081+00:00"
+      },
+      {
+        "site": "WuxiaWorld",
+        "url": "https://www.wuxiaworld.com/novel/the-mirror-legacy/tml-chapter-683",
+        "engine": "Auto",
+        "used_from_chapter": 683,
+        "used_until_chapter": 692,
+        "status": "success",
+        "updated_at": "2026-11-13T09:34:15.652145+00:00"
       }
     ]
   },
@@ -23506,15 +23675,15 @@
     "slug": "the-prodigies-war",
     "site": "WuxiaWorld",
     "cover": "covers/the-prodigies-war.webp",
-    "chapters": 682,
-    "source_url": "https://www.wuxiaworld.com/novel/the-prodigies-war/tpw-chapter-673",
-    "next_url": "https://www.wuxiaworld.com/novel/the-prodigies-war/tpw-chapter-683",
-    "last_chapter_url": "https://www.wuxiaworld.com/novel/the-prodigies-war/tpw-chapter-682",
-    "last_chapter_number": 682,
+    "chapters": 692,
+    "source_url": "https://www.wuxiaworld.com/novel/the-prodigies-war/tpw-chapter-683",
+    "next_url": "https://www.wuxiaworld.com/novel/the-prodigies-war/tpw-chapter-693",
+    "last_chapter_url": "https://www.wuxiaworld.com/novel/the-prodigies-war/tpw-chapter-692",
+    "last_chapter_number": 692,
     "status": "Built",
     "last_mode": "Update All Existing Novels",
     "created_at": "2026-05-20T10:12:39.621918+00:00",
-    "last_updated": "2026-11-12T09:54:02.585773+00:00",
+    "last_updated": "2026-11-13T09:34:35.616896+00:00",
     "downloads": [
       {
         "label": "Chapters 1-10",
@@ -24067,13 +24236,21 @@
         "url": "epubs/the-prodigies-war_ch673-682.epub",
         "mode": "Update All Existing Novels",
         "created_at": "2026-11-12T09:54:02.585731+00:00"
+      },
+      {
+        "label": "Chapters 683-692",
+        "start": 683,
+        "end": 692,
+        "url": "epubs/the-prodigies-war_ch683-692.epub",
+        "mode": "Update All Existing Novels",
+        "created_at": "2026-11-13T09:34:35.616858+00:00"
       }
     ],
-    "last_successful_source_url": "https://www.wuxiaworld.com/novel/the-prodigies-war/tpw-chapter-682",
+    "last_successful_source_url": "https://www.wuxiaworld.com/novel/the-prodigies-war/tpw-chapter-692",
     "last_successful_site": "WuxiaWorld",
     "progress_state": "available",
     "progress_reason": "",
-    "preferred_source_url": "https://www.wuxiaworld.com/novel/the-prodigies-war/tpw-chapter-683",
+    "preferred_source_url": "https://www.wuxiaworld.com/novel/the-prodigies-war/tpw-chapter-693",
     "preferred_engine": "Auto",
     "source_history": [
       {
@@ -24696,6 +24873,15 @@
         "used_until_chapter": 682,
         "status": "success",
         "updated_at": "2026-11-12T09:54:02.585778+00:00"
+      },
+      {
+        "site": "WuxiaWorld",
+        "url": "https://www.wuxiaworld.com/novel/the-prodigies-war/tpw-chapter-683",
+        "engine": "Auto",
+        "used_from_chapter": 683,
+        "used_until_chapter": 692,
+        "status": "success",
+        "updated_at": "2026-11-13T09:34:35.616901+00:00"
       }
     ]
   },
@@ -24704,15 +24890,15 @@
     "slug": "the-sorcerer-s-handbook",
     "site": "WuxiaWorld",
     "cover": "covers/the-sorcerer-s-handbook.webp",
-    "chapters": 555,
-    "source_url": "https://www.wuxiaworld.com/novel/the-sorcerers-handbook/tsh-chapter-554",
-    "next_url": "https://www.wuxiaworld.com/novel/the-sorcerers-handbook/tsh-chapter-556",
-    "last_chapter_url": "https://www.wuxiaworld.com/novel/the-sorcerers-handbook/tsh-chapter-555",
-    "last_chapter_number": 555,
+    "chapters": 557,
+    "source_url": "https://www.wuxiaworld.com/novel/the-sorcerers-handbook/tsh-chapter-556",
+    "next_url": "https://www.wuxiaworld.com/novel/the-sorcerers-handbook/tsh-chapter-558",
+    "last_chapter_url": "https://www.wuxiaworld.com/novel/the-sorcerers-handbook/tsh-chapter-557",
+    "last_chapter_number": 557,
     "status": "Complete or stopped at source",
     "last_mode": "Update All Existing Novels",
     "created_at": "2026-05-26T09:55:27.643985+00:00",
-    "last_updated": "2026-11-12T09:54:06.667042+00:00",
+    "last_updated": "2026-11-13T09:34:39.639265+00:00",
     "downloads": [
       {
         "label": "Chapters 1-10",
@@ -25265,13 +25451,21 @@
         "url": "epubs/the-sorcerer-s-handbook_ch554-555.epub",
         "mode": "Update All Existing Novels",
         "created_at": "2026-11-12T09:54:06.667000+00:00"
+      },
+      {
+        "label": "Chapters 556-557",
+        "start": 556,
+        "end": 557,
+        "url": "epubs/the-sorcerer-s-handbook_ch556-557.epub",
+        "mode": "Update All Existing Novels",
+        "created_at": "2026-11-13T09:34:39.639236+00:00"
       }
     ],
-    "last_successful_source_url": "https://www.wuxiaworld.com/novel/the-sorcerers-handbook/tsh-chapter-555",
+    "last_successful_source_url": "https://www.wuxiaworld.com/novel/the-sorcerers-handbook/tsh-chapter-557",
     "last_successful_site": "WuxiaWorld",
     "progress_state": "available",
     "progress_reason": "",
-    "preferred_source_url": "https://www.wuxiaworld.com/novel/the-sorcerers-handbook/tsh-chapter-556",
+    "preferred_source_url": "https://www.wuxiaworld.com/novel/the-sorcerers-handbook/tsh-chapter-558",
     "preferred_engine": "Auto",
     "source_history": [
       {
@@ -25894,6 +26088,15 @@
         "used_until_chapter": 555,
         "status": "success",
         "updated_at": "2026-11-12T09:54:06.667046+00:00"
+      },
+      {
+        "site": "WuxiaWorld",
+        "url": "https://www.wuxiaworld.com/novel/the-sorcerers-handbook/tsh-chapter-556",
+        "engine": "Auto",
+        "used_from_chapter": 556,
+        "used_until_chapter": 557,
+        "status": "success",
+        "updated_at": "2026-11-13T09:34:39.639270+00:00"
       }
     ]
   },
@@ -25902,15 +26105,15 @@
     "slug": "tribulation-of-myriad-races",
     "site": "WuxiaWorld",
     "cover": "covers/tribulation-of-myriad-races.webp",
-    "chapters": 686,
-    "source_url": "https://www.wuxiaworld.com/novel/tribulation-of-myriad-races/tmr-chapter-677",
-    "next_url": "https://www.wuxiaworld.com/novel/tribulation-of-myriad-races/tmr-chapter-687",
-    "last_chapter_url": "https://www.wuxiaworld.com/novel/tribulation-of-myriad-races/tmr-chapter-686",
-    "last_chapter_number": 686,
+    "chapters": 696,
+    "source_url": "https://www.wuxiaworld.com/novel/tribulation-of-myriad-races/tmr-chapter-687",
+    "next_url": "https://www.wuxiaworld.com/novel/tribulation-of-myriad-races/tmr-chapter-697",
+    "last_chapter_url": "https://www.wuxiaworld.com/novel/tribulation-of-myriad-races/tmr-chapter-696",
+    "last_chapter_number": 696,
     "status": "Built",
     "last_mode": "Update All Existing Novels",
     "created_at": "2026-05-20T09:49:25.834258+00:00",
-    "last_updated": "2026-11-12T09:54:25.193086+00:00",
+    "last_updated": "2026-11-13T09:34:59.729012+00:00",
     "downloads": [
       {
         "label": "Chapters 1-10",
@@ -26463,13 +26666,21 @@
         "url": "epubs/tribulation-of-myriad-races_ch677-686.epub",
         "mode": "Update All Existing Novels",
         "created_at": "2026-11-12T09:54:25.193044+00:00"
+      },
+      {
+        "label": "Chapters 687-696",
+        "start": 687,
+        "end": 696,
+        "url": "epubs/tribulation-of-myriad-races_ch687-696.epub",
+        "mode": "Update All Existing Novels",
+        "created_at": "2026-11-13T09:34:59.728969+00:00"
       }
     ],
-    "last_successful_source_url": "https://www.wuxiaworld.com/novel/tribulation-of-myriad-races/tmr-chapter-686",
+    "last_successful_source_url": "https://www.wuxiaworld.com/novel/tribulation-of-myriad-races/tmr-chapter-696",
     "last_successful_site": "WuxiaWorld",
     "progress_state": "available",
     "progress_reason": "",
-    "preferred_source_url": "https://www.wuxiaworld.com/novel/tribulation-of-myriad-races/tmr-chapter-687",
+    "preferred_source_url": "https://www.wuxiaworld.com/novel/tribulation-of-myriad-races/tmr-chapter-697",
     "preferred_engine": "Auto",
     "source_history": [
       {
@@ -27092,6 +27303,15 @@
         "used_until_chapter": 686,
         "status": "success",
         "updated_at": "2026-11-12T09:54:25.193090+00:00"
+      },
+      {
+        "site": "WuxiaWorld",
+        "url": "https://www.wuxiaworld.com/novel/tribulation-of-myriad-races/tmr-chapter-687",
+        "engine": "Auto",
+        "used_from_chapter": 687,
+        "used_until_chapter": 696,
+        "status": "success",
+        "updated_at": "2026-11-13T09:34:59.729017+00:00"
       }
     ]
   },
@@ -27100,18 +27320,18 @@
     "slug": "unintended-immortality",
     "site": "WuxiaWorld",
     "cover": "covers/unintended-immortality.webp",
-    "chapters": 781,
-    "source_url": "https://www.wuxiaworld.com/novel/unintended-immortality/ui-chapter-672",
-    "next_url": "https://www.wuxiaworld.com/novel/unintended-immortality/ui-chapter-682",
-    "last_chapter_url": "https://www.wuxiaworld.com/novel/unintended-immortality/ui-chapter-681",
-    "last_chapter_number": 781,
+    "chapters": 791,
+    "source_url": "https://www.wuxiaworld.com/novel/unintended-immortality/ui-chapter-682",
+    "next_url": "https://www.wuxiaworld.com/novel/unintended-immortality/ui-chapter-692",
+    "last_chapter_url": "https://www.wuxiaworld.com/novel/unintended-immortality/ui-chapter-691",
+    "last_chapter_number": 791,
     "status": "Built",
     "last_mode": "Update All Existing Novels",
     "created_at": "2026-05-27T09:12:04.466160+00:00",
-    "last_updated": "2026-11-12T09:54:44.562458+00:00",
+    "last_updated": "2026-11-13T09:35:19.071426+00:00",
     "progress_state": "available",
     "progress_reason": "",
-    "last_successful_source_url": "https://www.wuxiaworld.com/novel/unintended-immortality/ui-chapter-681",
+    "last_successful_source_url": "https://www.wuxiaworld.com/novel/unintended-immortality/ui-chapter-691",
     "last_successful_site": "WuxiaWorld",
     "source_history": [
       {
@@ -27732,6 +27952,15 @@
         "used_until_chapter": 781,
         "status": "success",
         "updated_at": "2026-11-12T09:54:44.562462+00:00"
+      },
+      {
+        "site": "WuxiaWorld",
+        "url": "https://www.wuxiaworld.com/novel/unintended-immortality/ui-chapter-682",
+        "engine": "Auto",
+        "used_from_chapter": 782,
+        "used_until_chapter": 791,
+        "status": "success",
+        "updated_at": "2026-11-13T09:35:19.071430+00:00"
       }
     ],
     "downloads": [
@@ -28292,9 +28521,17 @@
         "url": "epubs/unintended-immortality_ch772-781.epub",
         "mode": "Update All Existing Novels",
         "created_at": "2026-11-12T09:54:44.562415+00:00"
+      },
+      {
+        "label": "Chapters 782-791",
+        "start": 782,
+        "end": 791,
+        "url": "epubs/unintended-immortality_ch782-791.epub",
+        "mode": "Update All Existing Novels",
+        "created_at": "2026-11-13T09:35:19.071388+00:00"
       }
     ],
-    "preferred_source_url": "https://www.wuxiaworld.com/novel/unintended-immortality/ui-chapter-682",
+    "preferred_source_url": "https://www.wuxiaworld.com/novel/unintended-immortality/ui-chapter-692",
     "preferred_engine": "Auto"
   },
   {
