@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>https://savv666.github.io/epub-server/opds/novels/the-prodigies-war.xml</id>
   <title>The Prodigies War</title>
-  <updated>2026-11-13T09:35:19.811185Z</updated>
+  <updated>2026-11-14T09:02:33.307747Z</updated>
   <link rel="self" href="https://savv666.github.io/epub-server/opds/novels/the-prodigies-war.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   <link rel="start" href="https://savv666.github.io/epub-server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
   <entry>
@@ -842,6 +842,18 @@
     </author>
     <content>The Prodigies War (Built)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/the-prodigies-war_ch683-692.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/the-prodigies-war.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/the-prodigies-war.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>The Prodigies War — Chapters 693-702</title>
+    <id>urn:epub-server:590233d585c5d40690c888fb9800e8bbbfb86c72</id>
+    <updated>2026-11-14T09:01:50.919838Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>The Prodigies War (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/the-prodigies-war_ch693-702.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/the-prodigies-war.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/the-prodigies-war.webp" type="image/webp"/>
   </entry>

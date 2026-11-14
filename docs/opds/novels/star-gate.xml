@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>https://savv666.github.io/epub-server/opds/novels/star-gate.xml</id>
   <title>Star Gate</title>
-  <updated>2026-11-13T09:35:19.782106Z</updated>
+  <updated>2026-11-14T09:02:33.270476Z</updated>
   <link rel="self" href="https://savv666.github.io/epub-server/opds/novels/star-gate.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   <link rel="start" href="https://savv666.github.io/epub-server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
   <entry>
@@ -842,6 +842,18 @@
     </author>
     <content>Star Gate (Built)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/star-gate_ch691-700.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/star-gate.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/star-gate.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>Star Gate — Chapters 701-710</title>
+    <id>urn:epub-server:dd68a37c39eee683d4476c95de20734b59ea454f</id>
+    <updated>2026-11-14T09:00:40.186327Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>Star Gate (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/star-gate_ch701-710.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/star-gate.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/star-gate.webp" type="image/webp"/>
   </entry>

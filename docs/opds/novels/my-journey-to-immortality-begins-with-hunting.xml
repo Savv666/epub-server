@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:opds="http://opds-spec.org/2010/catalog">
   <id>https://savv666.github.io/epub-server/opds/novels/my-journey-to-immortality-begins-with-hunting.xml</id>
   <title>My Journey to Immortality Begins with Hunting</title>
-  <updated>2026-11-13T09:35:19.712248Z</updated>
+  <updated>2026-11-14T09:02:33.187268Z</updated>
   <link rel="self" href="https://savv666.github.io/epub-server/opds/novels/my-journey-to-immortality-begins-with-hunting.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
   <link rel="start" href="https://savv666.github.io/epub-server/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=navigation"/>
   <entry>
@@ -842,6 +842,18 @@
     </author>
     <content>My Journey to Immortality Begins with Hunting (Built)</content>
     <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/my-journey-to-immortality-begins-with-hunting_ch691-700.epub" type="application/epub+zip"/>
+    <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/my-journey-to-immortality-begins-with-hunting.webp" type="image/webp"/>
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/my-journey-to-immortality-begins-with-hunting.webp" type="image/webp"/>
+  </entry>
+  <entry>
+    <title>My Journey to Immortality Begins with Hunting — Chapters 701-710</title>
+    <id>urn:epub-server:13f2ff4141b0f5dbe9079cc40bdd7ef441d406d8</id>
+    <updated>2026-11-14T09:00:01.224665Z</updated>
+    <author>
+      <name>WuxiaWorld</name>
+    </author>
+    <content>My Journey to Immortality Begins with Hunting (Built)</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://savv666.github.io/epub-server/epubs/my-journey-to-immortality-begins-with-hunting_ch701-710.epub" type="application/epub+zip"/>
     <link rel="http://opds-spec.org/image" href="https://savv666.github.io/epub-server/covers/my-journey-to-immortality-begins-with-hunting.webp" type="image/webp"/>
     <link rel="http://opds-spec.org/image/thumbnail" href="https://savv666.github.io/epub-server/covers/my-journey-to-immortality-begins-with-hunting.webp" type="image/webp"/>
   </entry>
